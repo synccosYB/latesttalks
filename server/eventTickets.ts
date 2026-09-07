@@ -37,9 +37,12 @@ async function sendResendEmail(input: { to: string | string[]; subject: string; 
   if (!apiKey) throw new Error("RESEND_API_KEY is not configured");
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST", headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: "Latest Talks Events <tickets@event.latesttalks.com>", reply_to: "Hello@latesttalks.com", ...input }),
+    body: JSON.stringify({ from: process.env.RESEND_FROM_EMAIL || "Latest Talks Events <tickets@latesttalks.com>", reply_to: "Hello@latesttalks.com", ...input }),
   });
-  if (!response.ok) throw new Error(`Resend rejected the message (${response.status})`);
+  const result = await response.json().catch(() => null) as { id?: string; message?: string; name?: string } | null;
+  if (!response.ok) throw new Error(result?.message || result?.name || `Resend rejected the message (${response.status})`);
+  if (!result?.id) throw new Error("Resend did not return a message ID");
+  return result.id;
 }
 
 export async function sendTicketEmails(ticket: {orderNumber:string;ticketCode:string;buyerName:string;buyerEmail:string;buyerPhone?:string|null;quantity:number;amountCents:number;solaReferenceNumber:string}) {
@@ -47,6 +50,11 @@ export async function sendTicketEmails(ticket: {orderNumber:string;ticketCode:st
   const safeName = escapeHtml(ticket.buyerName);
   const total = (ticket.amountCents / 100).toFixed(2);
   const html = `<!doctype html><html><body style="margin:0;background:#f0edeb;font-family:Arial,sans-serif;color:#10213a"><table width="100%"><tr><td align="center" style="padding:28px 12px"><table width="600" style="max-width:600px;background:#fff;border-radius:14px;overflow:hidden"><tr><td style="background:#10213a;padding:24px;text-align:center;color:#fff"><div style="font-size:25px;font-weight:700">Latest Talks</div><div style="color:#ef4444;margin-top:5px">EVENT TICKET</div></td></tr><tr><td style="padding:32px;text-align:center"><h1 style="margin:0 0 4px;font-size:27px">${EVENT.name}</h1><div dir="rtl" style="font-size:24px;font-weight:700;margin-bottom:24px">${EVENT.subtitle}</div><p style="font-size:17px;line-height:1.6">Admit <strong>${ticket.quantity}</strong><br>${EVENT.date} · ${EVENT.time}<br>${EVENT.venue}<br>${EVENT.address}</p><img src="cid:event-ticket-barcode" width="360" height="94" alt="Ticket barcode" style="max-width:100%;height:auto"><div style="font-family:monospace;font-size:17px;letter-spacing:1px;font-weight:700">${ticket.ticketCode}</div><p style="color:#657080;font-size:13px">Present this barcode at the entrance.</p><hr style="border:0;border-top:1px solid #e5e7eb;margin:25px 0"><p style="text-align:left;line-height:1.7"><strong>Purchased by:</strong> ${safeName}<br><strong>Order:</strong> ${ticket.orderNumber}<br><strong>Paid:</strong> $${total}</p></td></tr></table></td></tr></table></body></html>`;
-  await sendResendEmail({ to: ticket.buyerEmail, subject: `Your ticket — ${EVENT.name}`, html, attachments: [{ filename: `${ticket.ticketCode}.svg`, content: barcode.toString("base64"), content_id: "event-ticket-barcode" }] });
-  await sendResendEmail({ to: "Hello@latesttalks.com", subject: `Ticket purchased: ${ticket.quantity} — ${safeName}`, html: `<h2>New event ticket purchase</h2><p><strong>Buyer:</strong> ${safeName}<br><strong>Email:</strong> ${escapeHtml(ticket.buyerEmail)}<br><strong>Phone:</strong> ${escapeHtml(ticket.buyerPhone || "Not provided")}<br><strong>Quantity:</strong> ${ticket.quantity}<br><strong>Total:</strong> $${total}<br><strong>Order:</strong> ${ticket.orderNumber}<br><strong>Ticket code:</strong> ${ticket.ticketCode}<br><strong>Sola reference:</strong> ${escapeHtml(ticket.solaReferenceNumber)}</p>` });
+  const buyerMessageId = await sendResendEmail({ to: ticket.buyerEmail, subject: `Your ticket — ${EVENT.name}`, html, attachments: [{ filename: `${ticket.ticketCode}.svg`, content: barcode.toString("base64"), content_id: "event-ticket-barcode" }] });
+  try {
+    await sendResendEmail({ to: "Hello@latesttalks.com", subject: `Ticket purchased: ${ticket.quantity} — ${safeName}`, html: `<h2>New event ticket purchase</h2><p><strong>Buyer:</strong> ${safeName}<br><strong>Email:</strong> ${escapeHtml(ticket.buyerEmail)}<br><strong>Phone:</strong> ${escapeHtml(ticket.buyerPhone || "Not provided")}<br><strong>Quantity:</strong> ${ticket.quantity}<br><strong>Total:</strong> $${total}<br><strong>Order:</strong> ${ticket.orderNumber}<br><strong>Ticket code:</strong> ${ticket.ticketCode}<br><strong>Sola reference:</strong> ${escapeHtml(ticket.solaReferenceNumber)}</p>` });
+  } catch (error) {
+    console.error("Ticket purchase admin notification failed", error);
+  }
+  return buyerMessageId;
 }
