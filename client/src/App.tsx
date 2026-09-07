@@ -51,6 +51,7 @@ import AdminMembers from "@/pages/admin/AdminMembers";
 import AdminPhotos from "@/pages/admin/AdminPhotos";
 import AdminMarketing from "@/pages/admin/AdminMarketing";
 import AdminSettings from "@/pages/admin/AdminSettings";
+import AdminEventTickets from "@/pages/admin/AdminEventTickets";
 import OperationsDashboard from "@/pages/admin/operations/OperationsDashboard";
 import TeamPage from "@/pages/admin/operations/TeamPage";
 import PipelinePage from "@/pages/admin/operations/PipelinePage";
@@ -74,6 +75,7 @@ import PlatformPortal from "@/pages/PlatformPortal";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage";
 import CookiePolicyPage from "@/pages/CookiePolicyPage";
 import TermsOfServicePage from "@/pages/TermsOfServicePage";
+import EventsPage from "@/pages/EventsPage";
 
 function Router() {
   return (
@@ -102,6 +104,7 @@ function Router() {
         <Route path="/plus/success" component={MemberSuccessPage} />
         <Route path="/plus/welcome" component={PlusWelcomePage} />
         <Route path="/community" component={CommunityPage} />
+        <Route path="/events" component={EventsPage} />
         <Route path="/privacy-policy" component={PrivacyPolicyPage} />
         <Route path="/cookie-policy" component={CookiePolicyPage} />
         <Route path="/terms-of-service" component={TermsOfServicePage} />
@@ -125,6 +128,7 @@ function Router() {
         <Route path="/admin/platforms" component={AdminPlatforms} />
         <Route path="/admin/platforms/:id" component={AdminPlatformDetail} />
         <Route path="/admin/settings" component={AdminSettings} />
+        <Route path="/admin/event-tickets" component={AdminEventTickets} />
         <Route path="/admin/operations" component={OperationsDashboard} />
         <Route path="/admin/operations/episodes" component={EpisodesOperationsPage} />
         <Route path="/admin/operations/team" component={TeamPage} />

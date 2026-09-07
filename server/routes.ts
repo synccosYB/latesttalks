@@ -54,6 +54,10 @@ import { getVideoStatistics, isYouTubeConfigured } from "./youtubeService";
 import { whatsappService } from "./whatsappService";
 import { insertWhatsappContactSchema, insertWhatsappTemplateSchema } from "@shared/schema";
 import { stripHtmlToText } from "@shared/textUtils";
+import { db } from "./db";
+import { eventTickets } from "@shared/schema";
+import { desc, eq, sql } from "drizzle-orm";
+import { EVENT, sendTicketEmails } from "./eventTickets";
 
 // Token-based auth for webview cookie issues
 // Stores valid tokens mapped to userId (cleared on restart, just like sessions)
@@ -199,6 +203,58 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  app.get("/api/events/live/status", async (_req, res) => {
+    const [row] = await db.select({ sold: sql<number>`coalesce(sum(${eventTickets.quantity}), 0)::int` }).from(eventTickets).where(sql`${eventTickets.paymentStatus} = 'paid'`);
+    const sold = Number(row?.sold || 0);
+    res.json({ ...EVENT, sold, remaining: Math.max(0, EVENT.capacity - sold) });
+  });
+
+  app.get("/api/admin/event-tickets", requireAdmin, async (_req, res) => {
+    const tickets = await db.select().from(eventTickets).orderBy(desc(eventTickets.createdAt));
+    const sold = tickets.filter(t => t.paymentStatus === "paid").reduce((sum, t) => sum + t.quantity, 0);
+    const revenueCents = tickets.filter(t => t.paymentStatus === "paid").reduce((sum, t) => sum + t.amountCents, 0);
+    res.json({ tickets, totals: { orders: tickets.length, sold, revenueCents, remaining: Math.max(0, EVENT.capacity - sold) } });
+  });
+
+  app.patch("/api/admin/event-tickets/:id/check-in", requireAdmin, async (req, res) => {
+    const count = Number(req.body?.checkedInCount);
+    const [current] = await db.select().from(eventTickets).where(eq(eventTickets.id, req.params.id));
+    if (!current) return res.status(404).json({ error: "Ticket order not found." });
+    if (!Number.isInteger(count) || count < 0 || count > current.quantity) return res.status(400).json({ error: `Check-in must be between 0 and ${current.quantity}.` });
+    const [updated] = await db.update(eventTickets).set({ checkedInCount: count }).where(eq(eventTickets.id, current.id)).returning();
+    res.json(updated);
+  });
+
+  app.post("/api/events/live/purchase", async (req, res) => {
+    const { name, email, phone, quantity, cardToken, cvvToken, expiration, billingZip } = req.body || {};
+    const qty = Number(quantity);
+    if (typeof name !== "string" || name.trim().length < 2 || typeof email !== "string" || !/^\S+@\S+\.\S+$/.test(email)) return res.status(400).json({ error: "Please enter a valid name and email address." });
+    if (!Number.isInteger(qty) || qty < 1 || qty > 10) return res.status(400).json({ error: "Choose between 1 and 10 tickets." });
+    if (typeof cardToken !== "string" || !cardToken || typeof cvvToken !== "string" || !cvvToken) return res.status(400).json({ error: "Enter your card information again." });
+    if (typeof expiration !== "string" || !/^\d{4}$/.test(expiration) || typeof billingZip !== "string" || !/^\d{5}(-\d{4})?$/.test(billingZip)) return res.status(400).json({ error: "Enter a valid expiration date and billing ZIP code." });
+    const solaKey = process.env.SOLA_API_KEY;
+    if (!solaKey) return res.status(503).json({ error: "Ticket checkout is temporarily unavailable." });
+
+    try {
+      const [inventory] = await db.select({ sold: sql<number>`coalesce(sum(${eventTickets.quantity}), 0)::int` }).from(eventTickets).where(sql`${eventTickets.paymentStatus} = 'paid'`);
+      if (Number(inventory?.sold || 0) + qty > EVENT.capacity) return res.status(409).json({ error: "There are not enough tickets remaining for this order." });
+      const orderNumber = `LT-EVT-${Date.now()}-${crypto.randomUUID().slice(0, 6).toUpperCase()}`;
+      const ticketCode = `LTE-${crypto.randomUUID().replace(/-/g, "").slice(0, 14).toUpperCase()}`;
+      const amountCents = EVENT.priceCents * qty;
+      const gatewayResponse = await fetch("https://x1.cardknox.com/gatewayjson", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ xKey: solaKey, xVersion: "5.0.0", xSoftwareName: process.env.SOLA_SOFTWARE_NAME || "Latest Talks", xSoftwareVersion: process.env.SOLA_SOFTWARE_VERSION || "1.0.0", xCommand: "cc:sale", xAmount: (amountCents / 100).toFixed(2), xCardNum: cardToken, xCVV: cvvToken, xExp: expiration, xZip: billingZip, xName: name.trim(), xEmail: email.trim().toLowerCase(), xInvoice: orderNumber, xDescription: `${qty} ticket(s) — ${EVENT.name}`, xCurrency: "USD", xRecurringIndicator: "Single", xIP: req.ip }),
+      });
+      const gateway = await gatewayResponse.json() as Record<string, string>;
+      if (!gatewayResponse.ok || gateway.xResult !== "A" || Math.round(Number(gateway.xAuthAmount) * 100) !== amountCents) return res.status(402).json({ error: gateway.xError || "The payment was not approved. Please try again with fresh card details." });
+      const [ticket] = await db.insert(eventTickets).values({ orderNumber, ticketCode, buyerName: name.trim(), buyerEmail: email.trim().toLowerCase(), buyerPhone: typeof phone === "string" ? phone.trim() : null, quantity: qty, amountCents, solaReferenceNumber: gateway.xRefNum, solaAuthorizationCode: gateway.xAuthCode, maskedCardNumber: gateway.xMaskedCardNumber, cardType: gateway.xCardType }).returning();
+      try { await sendTicketEmails(ticket); } catch (emailError) { console.error("Ticket email delivery failed", emailError); }
+      return res.status(201).json({ success: true, orderNumber, ticketCode, quantity: qty, amountCents });
+    } catch (error) {
+      console.error("Event ticket purchase failed", error);
+      return res.status(500).json({ error: "We could not complete the purchase. Please contact Hello@latesttalks.com before trying again." });
+    }
+  });
   
   // ============ EPISODES ============
   app.get("/api/episodes", async (req, res) => {

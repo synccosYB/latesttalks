@@ -47,6 +47,7 @@ import {
   BarChart3,
   Image,
   Monitor,
+  TicketCheck,
 } from "lucide-react";
 import logoUrl from "@assets/logo.jpg";
 
@@ -78,6 +79,7 @@ const communityItems = [
 ];
 
 const businessItems = [
+  { href: "/admin/event-tickets", label: "Event Tickets", icon: TicketCheck },
   { href: "/admin/marketing", label: "Marketing", icon: Megaphone },
   { href: "/admin/ad-requests", label: "Ad Slot Requests", icon: DollarSign },
 ];

@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/apply", label: "Be a Guest" },
   { href: "/ads", label: "Advertise" },
   { href: "/in-flight", label: "In-Flight" },
+  { href: "/events", label: "Events" },
 ];
 
 const socialLinks = [

@@ -1031,3 +1031,23 @@ export const sponsorPromoCodes = pgTable("sponsor_promo_codes", {
 export const insertSponsorPromoCodeSchema = createInsertSchema(sponsorPromoCodes).omit({ id: true, createdAt: true });
 export type InsertSponsorPromoCode = z.infer<typeof insertSponsorPromoCodeSchema>;
 export type SponsorPromoCode = typeof sponsorPromoCodes.$inferSelect;
+
+export const eventTickets = pgTable("event_tickets", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  orderNumber: varchar("order_number").notNull().unique(),
+  ticketCode: varchar("ticket_code").notNull().unique(),
+  buyerName: text("buyer_name").notNull(),
+  buyerEmail: text("buyer_email").notNull(),
+  buyerPhone: text("buyer_phone"),
+  quantity: integer("quantity").notNull(),
+  amountCents: integer("amount_cents").notNull(),
+  paymentStatus: text("payment_status").notNull().default("paid"),
+  solaReferenceNumber: text("sola_reference_number").notNull().unique(),
+  solaAuthorizationCode: text("sola_authorization_code"),
+  maskedCardNumber: text("masked_card_number"),
+  cardType: text("card_type"),
+  checkedInCount: integer("checked_in_count").notNull().default(0),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+export type EventTicket = typeof eventTickets.$inferSelect;
