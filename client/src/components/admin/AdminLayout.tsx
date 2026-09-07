@@ -120,6 +120,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
     { prefix: "/admin/whatsapp", key: "whatsapp" },
     { prefix: "/admin/photos", key: "photos" },
     { prefix: "/admin/bug-reports", key: "bug-reports" },
+    { prefix: "/admin/event-tickets", key: "event-tickets" },
   ];
 
   const hrefToSectionKey: Record<string, string> = Object.fromEntries(
@@ -297,6 +298,12 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           <header className="flex items-center gap-4 h-14 px-4 border-b bg-background">
             <SidebarTrigger data-testid="button-sidebar-toggle" />
             <h1 className="font-semibold">Latest Talks Admin</h1>
+            {(notificationCounts?.["event-tickets"] || 0) > 0 && (
+              <Link href="/admin/event-tickets" className="ml-auto flex items-center gap-2 rounded-full bg-green-100 px-3 py-1.5 text-sm font-semibold text-green-800 hover:bg-green-200">
+                <TicketCheck className="h-4 w-4" />
+                {notificationCounts!["event-tickets"]} new ticket {notificationCounts!["event-tickets"] === 1 ? "purchase" : "purchases"}
+              </Link>
+            )}
           </header>
           <main className="flex-1 overflow-auto p-6 bg-muted/30">
             {children}
