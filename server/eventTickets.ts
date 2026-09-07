@@ -1,5 +1,5 @@
 export const EVENT = {
-  name: "Latest Talks Podcast Live", subtitle: "התעורר־זיץ תשפ״ז",
+  name: "Latest Talks Podcast Live", subtitle: "התעורר-זיץ תשפ״ז",
   date: "Thursday, September 17, 2026", time: "7:45–11:00 PM",
   venue: "Young Israel Beth El of Boro Park", address: "4802 15th Ave, Brooklyn, NY 11219",
   priceCents: 2000, capacity: 1000,
