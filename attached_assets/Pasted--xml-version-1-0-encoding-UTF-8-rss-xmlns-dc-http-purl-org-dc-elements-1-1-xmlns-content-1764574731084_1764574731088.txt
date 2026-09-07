@@ -1,0 +1,2131 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:anchor="https://anchor.fm/xmlns" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:psc="http://podlove.org/simple-chapters">
+	<channel>
+		<title><![CDATA[Latest Talks]]></title>
+		<description><![CDATA[Welcome to the Latest Talks Podcast!
+
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.
+
+For ad placements email: ads@latesttalks.com]]></description>
+		<link>https://www.LatestTalks.com</link>
+		<generator>Anchor Podcasts</generator>
+		<lastBuildDate>Sun, 30 Nov 2025 06:12:57 GMT</lastBuildDate>
+		<atom:link href="https://anchor.fm/s/55c3378c/podcast/rss" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[Latest Talks ]]></author>
+		<copyright><![CDATA[Latest Talks ]]></copyright>
+		<language><![CDATA[yi]]></language>
+		<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+		<itunes:author>Latest Talks </itunes:author>
+		<itunes:summary>Welcome to the Latest Talks Podcast!
+
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.
+
+For ad placements email: ads@latesttalks.com</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>Latest Talks </itunes:name>
+			<itunes:email>latestsimchas@gmail.com</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:category text="TV &amp; Film">
+			<itunes:category text="Film Interviews"/>
+		</itunes:category>
+		<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/14288571/14288571-1617750683947-a4c74607f818c.jpg"/>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #60 | Guest: Lev Leyeled Live Podcast Replay]]></title>
+			<description><![CDATA[<p><b>Lev Leyeled Live Podcast Replay</b></p><p><b>Donate: </b>https://LevLeyeled.org/LT</p><p><br></p><p><b>Host:</b> Pinchus Raab</p><p><b>Guest</b><b>:</b> Gershon Mendel Taub & Pinchus Rosneberg</p><p><b>Podium</b><b> Guest:</b> Michy Herzog, Beri Glauber, Mordechai Pinkas</p><p><b>Filmed</b><b>:</b> TwoTone Media</p><p><b>Stage</b><b>: </b>Spark Production</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>Prime Time Sponsors:</p><p>• <b>United Refuah HealthShare</b> | +1914-908-3300https://UnitedRefuah.org</p><p>Ad Break Sponsors:</p><p>• <b>Mifal Hachok / Yoely Lebowitz</b> https://choklrebyoel.com | https://youtube.com/@rebyoelylebovits </p><p>• <b>Hiring4Less</b> | https://Hiring4Less.com | info@hiring4less.com Call/Text/Whatsapp: +1845-682-0990</p><p>-------------</p><p><b>Host:</b> Pinchus Raab</p><p><b>Advertisements:</b> ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-60--Guest-Lev-Leyeled-Live-Podcast-Replay-e3bjb47</link>
+			<guid isPermaLink="false">c6aafbb8-7052-48aa-af5d-9c5653219e14</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 30 Nov 2025 00:17:02 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/111831623/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-28%2F413350051-44100-2-ab3d2b85b541d.mp3" length="59376116" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;&lt;b&gt;Lev Leyeled Live Podcast Replay&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Donate: &lt;/b&gt;https://LevLeyeled.org/LT&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Host:&lt;/b&gt; Pinchus Raab&lt;/p&gt;&lt;p&gt;&lt;b&gt;Guest&lt;/b&gt;&lt;b&gt;:&lt;/b&gt; Gershon Mendel Taub &amp; Pinchus Rosneberg&lt;/p&gt;&lt;p&gt;&lt;b&gt;Podium&lt;/b&gt;&lt;b&gt; Guest:&lt;/b&gt; Michy Herzog, Beri Glauber, Mordechai Pinkas&lt;/p&gt;&lt;p&gt;&lt;b&gt;Filmed&lt;/b&gt;&lt;b&gt;:&lt;/b&gt; TwoTone Media&lt;/p&gt;&lt;p&gt;&lt;b&gt;Stage&lt;/b&gt;&lt;b&gt;: &lt;/b&gt;Spark Production&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;Prime Time Sponsors:&lt;/p&gt;&lt;p&gt;• &lt;b&gt;United Refuah HealthShare&lt;/b&gt; | +1914-908-3300https://UnitedRefuah.org&lt;/p&gt;&lt;p&gt;Ad Break Sponsors:&lt;/p&gt;&lt;p&gt;• &lt;b&gt;Mifal Hachok / Yoely Lebowitz&lt;/b&gt; https://choklrebyoel.com | https://youtube.com/@rebyoelylebovits &lt;/p&gt;&lt;p&gt;• &lt;b&gt;Hiring4Less&lt;/b&gt; | https://Hiring4Less.com | info@hiring4less.com Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;&lt;b&gt;Host:&lt;/b&gt; Pinchus Raab&lt;/p&gt;&lt;p&gt;&lt;b&gt;Advertisements:&lt;/b&gt; ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:01:50</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/14288571/14288571-1617750683947-a4c74607f818c.jpg"/>
+			<itunes:episode>60</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #59 | Guest: Mendy Feferkorn]]></title>
+			<description><![CDATA[<p>Topics: <strong>How to make money in the long term | Adir Publishing | Mendy Feferkorn.</strong></p><p><br></p><p><strong>Guest:</strong> Mendy Feferkorn • Public Speaker on financial planning</p><p><strong>Contact Guest:</strong> mendy@feferkorn.com | MendyFeferkorn.com</p><p><strong>Guest 2: </strong>Chuny Deutsch • Technical Partner</p><p><br></p><p>-------------</p><p><br></p><p>This Episode Is Sponsored By:</p><p>Prime Time Sponsors:</p><p>•<strong> Levana Teeth Whitening</strong> | Call/Text/Whatsapp +1929-269-5771</p><p>• <strong>United Refuah HealthShare</strong> | +1914-908-3300https://UnitedRefuah.org</p><p>Ad Break Sponsors:</p><p>• <strong>Budget Yid</strong> | https://BudgetYid.com | Available on Apple &amp; Android</p><p>• <strong>Mifal Hachok / Yoely Lebowitz</strong> https://choklrebyoel.com | https://youtube.com/@rebyoelylebovits </p><p>• <strong>Hiring4Less</strong> | https://Hiring4Less.com | info@hiring4less.com Call/Text/Whatsapp: +1845-682-0990</p><p>•<strong> Oak Private Wealth</strong> | +1212-680-4133 cdeutsch@oakprivate.com</p><p>-------------</p><p><strong>Host:</strong> Pinchus Raab</p><p><strong>Advertisements:</strong> ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-59--Guest-Mendy-Feferkorn-e3bcne0</link>
+			<guid isPermaLink="false">bb5145e0-b0e1-4738-a658-2dc17c5ccbf2</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 24 Nov 2025 06:32:50 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/111614848/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-24%2F413046374-44100-2-04caa33f2c533.mp3" length="126131721" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: &lt;strong&gt;How to make money in the long term | Adir Publishing | Mendy Feferkorn.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Guest:&lt;/strong&gt; Mendy Feferkorn • Public Speaker on financial planning&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Contact Guest:&lt;/strong&gt; mendy@feferkorn.com | MendyFeferkorn.com&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Guest 2: &lt;/strong&gt;Chuny Deutsch • Technical Partner&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;Prime Time Sponsors:&lt;/p&gt;&lt;p&gt;•&lt;strong&gt; Levana Teeth Whitening&lt;/strong&gt; | Call/Text/Whatsapp +1929-269-5771&lt;/p&gt;&lt;p&gt;• &lt;strong&gt;United Refuah HealthShare&lt;/strong&gt; | +1914-908-3300https://UnitedRefuah.org&lt;/p&gt;&lt;p&gt;Ad Break Sponsors:&lt;/p&gt;&lt;p&gt;• &lt;strong&gt;Budget Yid&lt;/strong&gt; | https://BudgetYid.com | Available on Apple &amp;amp; Android&lt;/p&gt;&lt;p&gt;• &lt;strong&gt;Mifal Hachok / Yoely Lebowitz&lt;/strong&gt; https://choklrebyoel.com | https://youtube.com/@rebyoelylebovits &lt;/p&gt;&lt;p&gt;• &lt;strong&gt;Hiring4Less&lt;/strong&gt; | https://Hiring4Less.com | info@hiring4less.com Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;•&lt;strong&gt; Oak Private Wealth&lt;/strong&gt; | +1212-680-4133 cdeutsch@oakprivate.com&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Host:&lt;/strong&gt; Pinchus Raab&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Advertisements:&lt;/strong&gt; ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:11:23</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1763962643327-f592f95a3213d.jpg"/>
+			<itunes:episode>59</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #58 | Guest: Moshe Berish Teitelbaum]]></title>
+			<description><![CDATA[<p>Topics: <strong>Finding Jobs | Building Businesses | Tech Startups | VCs | AI Shidduchim.</strong></p><p><br></p><p>Guest: Moshe Berish Teitelbaum • Co-Founder &amp; CTO of Cherry</p><p>Contact Guest: moshe@teitelbaum.me</p><p>Join vShul: https://VShul.org</p><p><br></p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• Ovel Furniture | https://wa.me/message/RAQGTFSGWJDHB1</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• Appliance Choice | +1845-402-1703</p><p>• CardRight | Sign Up👉: https://CardRight.com/LT</p><p>-------------</p><p>Host: Pinchus Raab</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-58--Guest-Moshe-Berish-Teitelbaum-e37ljgf</link>
+			<guid isPermaLink="false">0ed64f39-1d0d-4bb8-9f57-3acd7cc60940</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 03 Sep 2025 03:29:49 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2597224922.mp3" length="119876127" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: &lt;strong&gt;Finding Jobs | Building Businesses | Tech Startups | VCs | AI Shidduchim.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Guest: Moshe Berish Teitelbaum • Co-Founder &amp;amp; CTO of Cherry&lt;/p&gt;&lt;p&gt;Contact Guest: moshe@teitelbaum.me&lt;/p&gt;&lt;p&gt;Join vShul: https://VShul.org&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• Ovel Furniture | https://wa.me/message/RAQGTFSGWJDHB1&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• Appliance Choice | +1845-402-1703&lt;/p&gt;&lt;p&gt;• CardRight | Sign Up👉: https://CardRight.com/LT&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:04:52</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1756854017445-4cef0475f93de.jpg"/>
+			<itunes:episode>58</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #57 | Guest: Yoel Gold]]></title>
+			<description><![CDATA[<p>Topics: <strong>Upbringing | Divorce | Production Films | Klei Hamikdosh Project.</strong></p><p>Guest: Yoel Gold | +1 845-646-4600 | info@hashkifa.com</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• CardRight | Giveaway Raffle on Aug/05/2025 at 9PMSign Up👉: https://CardRight.com/LT</p><p>• United Refuah HealthShare | +1914-908-3300 | https://UnitedRefuah.org</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• Appliance Choice | +1845-402-1703</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990• Jell Tel | +1212.444.1122</p><p>-------------</p><p>Host: Pinchus Raab</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-57--Guest-Yoel-Gold-e363m45</link>
+			<guid isPermaLink="false">2cf06a51-fdf8-4737-ada9-0724f92a2c02</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 27 Jul 2025 22:54:27 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2404932156.mp3" length="137730925" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: &lt;strong&gt;Upbringing | Divorce | Production Films | Klei Hamikdosh Project.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Guest: Yoel Gold | +1 845-646-4600 | info@hashkifa.com&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• CardRight | Giveaway Raffle on Aug/05/2025 at 9PMSign Up👉: https://CardRight.com/LT&lt;/p&gt;&lt;p&gt;• United Refuah HealthShare | +1914-908-3300 | https://UnitedRefuah.org&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• Appliance Choice | +1845-402-1703&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990• Jell Tel | +1212.444.1122&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:23:28</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1753654700541-48729a87bbe47.jpg"/>
+			<itunes:episode>57</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #56 | Guest: Moishe Katz]]></title>
+			<description><![CDATA[<p>Topics: <b>The Affordable "Jewish" Alternative to Health Insurance | United Refuah HealthShare.</b></p><p>Guest: Moishe Katz | CEO of United Refuah HealthShare+1 786-664-7435 | mkatz@unitedrefuah.org</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• CardRight | Giveaway Raffle on Aug/05/2025 at 9PMSign Up👉: https://CardRight.com/LT</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p><p>-------------</p><p>Host: Pinchus Raab</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-56--Guest-Moishe-Katz-e358juq</link>
+			<guid isPermaLink="false">2a38efff-1494-4b61-9b29-7162f878f196</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 08 Jul 2025 07:43:46 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO1080122681.mp3" length="92811598" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: &lt;b&gt;The Affordable &quot;Jewish&quot; Alternative to Health Insurance | United Refuah HealthShare.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Guest: Moishe Katz | CEO of United Refuah HealthShare+1 786-664-7435 | mkatz@unitedrefuah.org&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• CardRight | Giveaway Raffle on Aug/05/2025 at 9PMSign Up👉: https://CardRight.com/LT&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:36:40</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1751960605920-4f1d18388576e.jpg"/>
+			<itunes:episode>56</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #55 | Guest: Jake Turx - P2]]></title>
+			<description><![CDATA[<p>Topics: Bnei Yissaschar’s Rare Sefer | Ovadia’s Nevios | 15 Days of Darkness.</p><p><br></p><p>Guest: Jake Turx (Part 2)</p><p>+1 646-535-2434 | Kmwh1100@gmail.com</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• Donate for more episodes | Zelle: Donate@LatestTalks.com</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• Cost Crunch | Cost Crunch.ai | +1929-422-1137</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p><p>-------------</p><p>Host: Pinchus Raab</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-55--Guest-Jake-Turx---P2-e341iec</link>
+			<guid isPermaLink="false">f0ee7c4e-dcfa-4e24-bea6-217b383f10ff</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 10 Jun 2025 16:28:15 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO8743852029.mp3" length="189916473" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Bnei Yissaschar’s Rare Sefer | Ovadia’s Nevios | 15 Days of Darkness.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Guest: Jake Turx (Part 2)&lt;/p&gt;&lt;p&gt;+1 646-535-2434 | Kmwh1100@gmail.com&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• Donate for more episodes | Zelle: Donate@LatestTalks.com&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• Cost Crunch | Cost Crunch.ai | +1929-422-1137&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>03:17:49</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1749529795998-08c45ebcfe556.jpg"/>
+			<itunes:episode>55</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #54 | Guest: Rabbi YY Jacobson]]></title>
+			<description><![CDATA[<p>Topics: Happiness | Meaning in Life | Lubavitcher Rebbe | Our Nefesh.</p><p><br></p><p>Guest: Rabbi YY Jacobson | info@theyeshiva.net</p><p>https://TheYeshiva.net | https://www.instagram.com/yyjacobson</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• Hire Pinchus Raab for Speaking Engagements | Hello@LatestTalks.com</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• Cost Crunch | Cost Crunch.ai | +1929-422-1137</p><p>• Meal Mart | Amazing Meals Ready To Eat</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p><p>• Park Ave Floors | 718-871-2323</p><p>-------------</p><p>Host: Pinchus Raab</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-54--Guest-Rabbi-YY-Jacobson-e31blke</link>
+			<guid isPermaLink="false">341b7492-b601-4da7-8b02-96c024105458</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 10 Apr 2025 07:51:18 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO5828883331.mp3" length="103376352" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Happiness | Meaning in Life | Lubavitcher Rebbe | Our Nefesh.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Guest: Rabbi YY Jacobson | info@theyeshiva.net&lt;/p&gt;&lt;p&gt;https://TheYeshiva.net | https://www.instagram.com/yyjacobson&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• Hire Pinchus Raab for Speaking Engagements | Hello@LatestTalks.com&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• Cost Crunch | Cost Crunch.ai | +1929-422-1137&lt;/p&gt;&lt;p&gt;• Meal Mart | Amazing Meals Ready To Eat&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;• Park Ave Floors | 718-871-2323&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:47:41</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1744261758767-e1cc90425d533.jpg"/>
+			<itunes:episode>54</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[ Latest Talks Podcast - Ep #53 | Guest: Pinny Glick]]></title>
+			<description><![CDATA[<p>Topics: Marketing | Comedy Writing | Technology | Picnic | Business.</p><p><br /></p><p>Guest: Pinny GlickMarketing Consultant, Comedy &amp; Entertainment Scriptwritermeetpinny@gmail.com | https://enjoypicnic.com | https://prettysmart.co</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• Hire Pinchus Raab for Speaking Engagements | Hello@LatestTalks.com</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• W-WebWorks | https://wwebworks.com | +1718-683-4932</p><p>• Cost Crunch | Cost Crunch.ai | +1929-422-1137</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p><p>• Meal Mart | Amazing Meals Ready To Eat</p><p><br /></p><p>-------------</p><p>DJI Mic 2: https://amzn.to/4hrGVkU</p><p>Hollyland Lark M2: https://amzn.to/3FjWHRv</p><p>-------------</p><p><br /></p><p>Host: Pinchus Raab, Ari Abramowitz</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-53--Guest-Pinny-Glick-e301mqc</link>
+			<guid isPermaLink="false">86dc58cf-d963-4fd7-a08e-226d7fa8eb56</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 11 Mar 2025 23:10:08 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO9536183019.mp3" length="95455608" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Marketing | Comedy Writing | Technology | Picnic | Business.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Guest: Pinny GlickMarketing Consultant, Comedy &amp;amp; Entertainment Scriptwritermeetpinny@gmail.com | https://enjoypicnic.com | https://prettysmart.co&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• Hire Pinchus Raab for Speaking Engagements | Hello@LatestTalks.com&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• W-WebWorks | https://wwebworks.com | +1718-683-4932&lt;/p&gt;&lt;p&gt;• Cost Crunch | Cost Crunch.ai | +1929-422-1137&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;• Meal Mart | Amazing Meals Ready To Eat&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;DJI Mic 2: https://amzn.to/4hrGVkU&lt;/p&gt;&lt;p&gt;Hollyland Lark M2: https://amzn.to/3FjWHRv&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab, Ari Abramowitz&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:39:25</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1741733899968-2cf6a1a74eee5.jpg"/>
+			<itunes:episode>53</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #52 | Guest: Yoely Weiser]]></title>
+			<description><![CDATA[<p><br /></p><p>Topics: The Prison System | Yoely's Mission | Insights &amp; Stories.</p><p>Guest: Yoely Weiser+1347-865-9964 | yoelyweiserhq@gmail.comCampaign Link: https://dryveup.com/yw/101</p><p>-------------</p><p>This Episode Is Sponsored By:</p><p>• Jetwork Services | +1718-230-5555</p><p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p><p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p><p>• Meal Mart | Amazing Meals Ready To Eat</p><p>-------------</p><p><br /></p><p>Host: Pinchus Raab</p><p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-52--Guest-Yoely-Weiser-e2u7rlk</link>
+			<guid isPermaLink="false">e140b536-e89f-463e-b382-42270a439c63</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 02 Feb 2025 20:00:00 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO8048038786.mp3" length="126872764" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Topics: The Prison System | Yoely&apos;s Mission | Insights &amp;amp; Stories.&lt;/p&gt;&lt;p&gt;Guest: Yoely Weiser+1347-865-9964 | yoelyweiserhq@gmail.comCampaign Link: https://dryveup.com/yw/101&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;&lt;p&gt;• Jetwork Services | +1718-230-5555&lt;/p&gt;&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;&lt;p&gt;• Meal Mart | Amazing Meals Ready To Eat&lt;/p&gt;&lt;p&gt;-------------&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:12:09</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1738325227118-988ba39e957dd.jpg"/>
+			<itunes:episode>52</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #51 | Guest: Yonasan Schwartz & Yitzchok Stralberg]]></title>
+			<description><![CDATA[<p>Topics: Health | Diets | Diabetes | Obesity | Smoking | Exercise.</p>
+<p>Guest: Yonasan Schwartz &amp; Yitzchok Stralberg</p>
+<p><br /></p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• PHC Medical Center | +1718-854-0001 | https://PHCmedical.org</p>
+<p>• Lerner Candles | Available in all Heimishe stores</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• The Donors Fund | https://www.thedonorsfund.org/create-account</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>• Meal Mart | Amazing Meals Ready To Eat</p>
+<p>-------------</p>
+<p><br /></p>
+<p>Host: Pinchus Raab</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-51--Guest-Yonasan-Schwartz--Yitzchok-Stralberg-e2t5ec0</link>
+			<guid isPermaLink="false">27a87ae5-5298-4da4-9b62-5a977d4aa270</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 06 Jan 2025 23:40:30 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO9873498401.mp3" length="119881560" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Health | Diets | Diabetes | Obesity | Smoking | Exercise.&lt;/p&gt;
+&lt;p&gt;Guest: Yonasan Schwartz &amp;amp; Yitzchok Stralberg&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• PHC Medical Center | +1718-854-0001 | https://PHCmedical.org&lt;/p&gt;
+&lt;p&gt;• Lerner Candles | Available in all Heimishe stores&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• The Donors Fund | https://www.thedonorsfund.org/create-account&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;• Meal Mart | Amazing Meals Ready To Eat&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Host: Pinchus Raab&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:04:52</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1736204910950-1ae504c0d9368.jpg"/>
+			<itunes:episode>51</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #50 | Guest: R' Yankel Miller]]></title>
+			<description><![CDATA[<p>Topics: Life History | Badchen Career | Connection to Viznitz Rebbe.</p>
+<p><br /></p>
+<p>Guest: R' Yankel Miller - World Renowned Badchen</p>
+<p><br /></p>
+<p>-------------</p>
+<p><br /></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Lusso Fine Jewels | +1212-433-1800 | Office@LussoFineJewels.com | https://LussoFineJewels.com</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• The Donors Fund | https://www.thedonorsfund.org/create-account</p>
+<p>• Interest Waiver | Call/Text/Whatsapp: +1845-459-5777</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>• Meal Mart | Amazing Meals Ready To Eat</p>
+<p><br /></p>
+<p>-------------</p>
+<p><br /></p>
+<p>Hosts: Pinchus Raab, Moshe Milstein, Chaim Brown</p>
+<p><br /></p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-50--Guest-R-Yankel-Miller-e2s7qfj</link>
+			<guid isPermaLink="false">4d79dfe7-862b-49d5-895c-3e4a7e11cd52</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 12 Dec 2024 19:17:43 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO4930681923.mp3" length="77240529" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Life History | Badchen Career | Connection to Viznitz Rebbe.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest: R&apos; Yankel Miller - World Renowned Badchen&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Lusso Fine Jewels | +1212-433-1800 | Office@LussoFineJewels.com | https://LussoFineJewels.com&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• The Donors Fund | https://www.thedonorsfund.org/create-account&lt;/p&gt;
+&lt;p&gt;• Interest Waiver | Call/Text/Whatsapp: +1845-459-5777&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;• Meal Mart | Amazing Meals Ready To Eat&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Moshe Milstein, Chaim Brown&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:20:27</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1733986806470-2e0321bdda567.jpg"/>
+			<itunes:episode>50</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #49 | Guest: R' Mota Frank]]></title>
+			<description><![CDATA[Topics: Uman Rosh Hashanah | Kiruv | Neturei Karta | Loi Niskabel.
+
+R' Mota Frank - Breslev Mashpia
++1 (646) 530-1185 | https://www.motafrank.com
+
+-------------
+This Episode Is Sponsored By:
+• Lusso Fine Jewels | +1212-433-1800 | Office@LussoFineJewels.com | https://LussoFineJewels.com
+• Lerner Candles | Available in all Heimishe stores
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Park Ave Floors | 718-871-2323
+• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990
+• Promojo | Abe.promojo@gmail.com
+917-656-7496 | https://Promojony.com
+-------------
+Hosts: Pinchus Raab, Moshe Milstein, Chilu Posen
+Advertisements: ads@latesttalks.com
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-49--Guest-R-Mota-Frank-e2p02nh</link>
+			<guid isPermaLink="false">f1bf4c6d-96c9-4097-bb88-68c3cd47a28f</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sat, 28 Sep 2024 21:03:55 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO3340637822.mp3" length="166241175" type="audio/mpeg"/>
+			<itunes:summary>Topics: Uman Rosh Hashanah | Kiruv | Neturei Karta | Loi Niskabel.
+
+R&apos; Mota Frank - Breslev Mashpia
++1 (646) 530-1185 | https://www.motafrank.com
+
+-------------
+This Episode Is Sponsored By:
+• Lusso Fine Jewels | +1212-433-1800 | Office@LussoFineJewels.com | https://LussoFineJewels.com
+• Lerner Candles | Available in all Heimishe stores
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Park Ave Floors | 718-871-2323
+• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990
+• Promojo | Abe.promojo@gmail.com
+917-656-7496 | https://Promojony.com
+-------------
+Hosts: Pinchus Raab, Moshe Milstein, Chilu Posen
+Advertisements: ads@latesttalks.com
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:53:10</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1727557049035-21273de06b02a.jpg"/>
+			<itunes:episode>49</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #48 | Guest: Chaim Hersh Friedman]]></title>
+			<description><![CDATA[<p>Topics: Sound Healing | The Possible You | Self Growth | Energies.</p>
+<p><br /></p>
+<p>Guest: Chaim Hersh Friedman - Sound Healer | +1 845-867-7878 | SacredAncientHealing@gmail.com</p>
+<p><br /></p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Fundi Business Loans - Lines Of Credit | +1845-432-9375 | Chaim.B@Fundipros.com</p>
+<p>• Lerner Candles | Available in all Heimishe stores</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• UpperTech | info@uppertech.net | Call: +1845-474-8324 |Text/Whatsapp: +1845-293-0175</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Moshe Milstein</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-48--Guest-Chaim-Hersh-Friedman-e2o0u0g</link>
+			<guid isPermaLink="false">1c5b9ec9-9d4d-4293-a1b5-5a539accade8</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 05 Sep 2024 01:26:17 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2453236160.mp3" length="145026821" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Sound Healing | The Possible You | Self Growth | Energies.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest: Chaim Hersh Friedman - Sound Healer | +1 845-867-7878 | SacredAncientHealing@gmail.com&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Fundi Business Loans - Lines Of Credit | +1845-432-9375 | Chaim.B@Fundipros.com&lt;/p&gt;
+&lt;p&gt;• Lerner Candles | Available in all Heimishe stores&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• UpperTech | info@uppertech.net | Call: +1845-474-8324 |Text/Whatsapp: +1845-293-0175&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Moshe Milstein&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:31:04</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1725499558606-93692a7b5de49.jpg"/>
+			<itunes:episode>48</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #47 | Guest: R' Avraham Goldstein]]></title>
+			<description><![CDATA[<p>Topics: Ger Tzedek | Violins | National Anthems | Mashgiach Kashrus.</p>
+<p>
+Guest: R' Avraham Goldstein - Ger Tzedek | +1 (914) 720-5405 </p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Yechiels Transportation | Call/Whatsapp: +1845-444-8800</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-47--Guest-R-Avraham-Goldstein-e2n0ma0</link>
+			<guid isPermaLink="false">b02e368f-3f29-47f3-b0fe-8c9a3be89df6</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Fri, 09 Aug 2024 16:20:27 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO3612927893.mp3" length="128265404" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Ger Tzedek | Violins | National Anthems | Mashgiach Kashrus.&lt;/p&gt;
+&lt;p&gt;
+Guest: R&apos; Avraham Goldstein - Ger Tzedek | +1 (914) 720-5405 &lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Yechiels Transportation | Call/Whatsapp: +1845-444-8800&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:13:36</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1723219888358-a079e8a5cfdc8.jpg"/>
+			<itunes:episode>47</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #46 | Guest: R' Yossi Klein]]></title>
+			<description><![CDATA[<p>Topics: Our Economy | Bullying | Mercaz Daf Yomi | People at Risk</p>
+<p>
+Guest: Yossi Klein - Owner of Superior Plumbing &amp; Heating
+https://SuperiorPH.com
+Yossi@SuperiorPH.com | +1 (845) 694-4313</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• DAASS Courses | https://daass.krtra.com/t/tNuMKnTV7YXc</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Vendors | +1718-836-3677 | https://TheVendors.net | WhatsApp: https://shorturl.at/ZZVpG</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>• MDY | Get Your Free Gemara Today
+JoinDafYomi.com/Latest</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Yitzchok Hershkowitz.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-46--Guest-R-Yossi-Klein-e2ldau9</link>
+			<guid isPermaLink="false">7201da31-df40-408d-8a1c-64da39d00f32</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Fri, 28 Jun 2024 02:52:23 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO6275420266.mp3" length="106631418" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Our Economy | Bullying | Mercaz Daf Yomi | People at Risk&lt;/p&gt;
+&lt;p&gt;
+Guest: Yossi Klein - Owner of Superior Plumbing &amp;amp; Heating
+https://SuperiorPH.com
+Yossi@SuperiorPH.com | +1 (845) 694-4313&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• DAASS Courses | https://daass.krtra.com/t/tNuMKnTV7YXc&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Vendors | +1718-836-3677 | https://TheVendors.net | WhatsApp: https://shorturl.at/ZZVpG&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;• MDY | Get Your Free Gemara Today
+JoinDafYomi.com/Latest&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Yitzchok Hershkowitz.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:51:04</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1719543065140-7c6fa09033512.jpg"/>
+			<itunes:episode>46</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #45 | Guest: Naftali Schnitzler]]></title>
+			<description><![CDATA[<p>Topics: Sound Healing | The Future For Music | Music Producing.</p>
+<p><br /></p>
+<p>Guest: Naftali Schnitzler - A House Of Music</p>
+<p>https://ahouseofmusic.com</p>
+<p>naftali@ahouseofmusic.com | 718-304-0941</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• DAASS Courses | https://daass.krtra.com/t/HRcIazh91goQ</p>
+<p>• Azure Poconos Mansion | Call/Whatsapp: +1484-258-9879</p>
+<p>AzurePoconos @gmail.com gmail.com</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Lilac Party Rentals | +1929-244-9377</p>
+<p>https://Lilac.party | LilacPartyRental@gmail.com </p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>• Interest Waiver | Call/Text/Whatsapp: +1845-459-5777</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-45--Guest-Naftali-Schnitzler-e2kjrdk</link>
+			<guid isPermaLink="false">11f3ebd0-958f-49fe-8b86-25b76d449277</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 09 Jun 2024 10:51:47 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO9809946525.mp3" length="130858422" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Sound Healing | The Future For Music | Music Producing.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest: Naftali Schnitzler - A House Of Music&lt;/p&gt;
+&lt;p&gt;https://ahouseofmusic.com&lt;/p&gt;
+&lt;p&gt;naftali@ahouseofmusic.com | 718-304-0941&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• DAASS Courses | https://daass.krtra.com/t/HRcIazh91goQ&lt;/p&gt;
+&lt;p&gt;• Azure Poconos Mansion | Call/Whatsapp: +1484-258-9879&lt;/p&gt;
+&lt;p&gt;AzurePoconos @gmail.com gmail.com&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Lilac Party Rentals | +1929-244-9377&lt;/p&gt;
+&lt;p&gt;https://Lilac.party | LilacPartyRental@gmail.com &lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;• Interest Waiver | Call/Text/Whatsapp: +1845-459-5777&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:16:18</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1717736846651-6ebdb19a2b097.jpg"/>
+			<itunes:episode>45</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #44 | Guest: Ari Chaimowitz]]></title>
+			<description><![CDATA[Topics: Ari's Yetzias Mitzrayim Journey | What A Day Vlogs | Videos.
+
+Guest: Ari Chaimowitz - Owner of PR Productions
++1 (347) 420-4995 | Ari@prprony.com
+https://www.linkedin.com/in/ari-chaimowitz-521775156/
+
+-------------
+This Episode Is Sponsored By:
+• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990
+-------------
+Hosts: Pinchus Raab, Yitzchok Hershkowitz, Duvid Feder.
+Advertisements: ads@latesttalks.com
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-44--Guest-Ari-Chaimowitz-e2j63te</link>
+			<guid isPermaLink="false">8088b4bf-6c07-4ede-9247-0ab6a42b3009</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 02 May 2024 18:01:01 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO8546658145.mp3" length="143936365" type="audio/mpeg"/>
+			<itunes:summary>Topics: Ari&apos;s Yetzias Mitzrayim Journey | What A Day Vlogs | Videos.
+
+Guest: Ari Chaimowitz - Owner of PR Productions
++1 (347) 420-4995 | Ari@prprony.com
+https://www.linkedin.com/in/ari-chaimowitz-521775156/
+
+-------------
+This Episode Is Sponsored By:
+• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990
+-------------
+Hosts: Pinchus Raab, Yitzchok Hershkowitz, Duvid Feder.
+Advertisements: ads@latesttalks.com
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:29:56</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1714672611121-896aeed9ff61a.jpg"/>
+			<itunes:episode>44</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #43 | Guest: Rabbi Shloime Ehrlich - #2]]></title>
+			<description><![CDATA[<p>Topics:</p>
+<p>Chasidus | Mushrooms | Trees | His School | Lyme Disease.</p>
+<p><br /></p>
+<p>Guest:</p>
+<p>Rabbi Shloime Ehrlich</p>
+<p>https://rabbiehrlich.org | +1 845-659-4897</p>
+<p>Donate To Bnos NY: https://www.dryveup.com/bnosny</p>
+<p><br /></p>
+<p>-------------</p>
+<p><br /></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• The Donors Fund | https://www.thedonorsfund.org/create-account</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Chilu Posen, Gershy Schwarcz.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-43--Guest-Rabbi-Shloime-Ehrlich---2-e2humdq</link>
+			<guid isPermaLink="false">6468df1e-cfd9-4193-a49b-f93b25c1a3eb</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 04 Apr 2024 00:19:02 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO8232855686.mp3" length="102323513" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics:&lt;/p&gt;
+&lt;p&gt;Chasidus | Mushrooms | Trees | His School | Lyme Disease.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Rabbi Shloime Ehrlich&lt;/p&gt;
+&lt;p&gt;https://rabbiehrlich.org | +1 845-659-4897&lt;/p&gt;
+&lt;p&gt;Donate To Bnos NY: https://www.dryveup.com/bnosny&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• The Donors Fund | https://www.thedonorsfund.org/create-account&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Chilu Posen, Gershy Schwarcz.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:46:35</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1712188292907-5f7c08eab4fdb.jpg"/>
+			<itunes:episode>43</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #42 | Guest: Moishe Mayer]]></title>
+			<description><![CDATA[<p>Topics:
+Purim Episode | Comedy | Moishe's Life | Wine | Olive Oil.
+</p>
+<p>Guest:
+Moishe Mayer - Owner of 4 Wine Stores
+https://bit.ly/2QShVr4 | wine10956@gmail.com | https://instagram.com/moishemayer
+</p>
+<p>-------------</p>
+<p><br /></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• The Donors Fund | https://www.thedonorsfund.org/create-account</p>
+<p>• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Chaim Brown, Duvid Feder.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-42--Guest-Moishe-Mayer-e2hd2jk</link>
+			<guid isPermaLink="false">37b2c8b1-f185-4dd5-98ec-d9f3433a80f6</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 21 Mar 2024 18:33:17 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO5319046148.mp3" length="103813955" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics:
+Purim Episode | Comedy | Moishe&apos;s Life | Wine | Olive Oil.
+&lt;/p&gt;
+&lt;p&gt;Guest:
+Moishe Mayer - Owner of 4 Wine Stores
+https://bit.ly/2QShVr4 | wine10956@gmail.com | https://instagram.com/moishemayer
+&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• The Donors Fund | https://www.thedonorsfund.org/create-account&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Chaim Brown, Duvid Feder.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:48:08</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1711045847924-b7ce3e996e82b.jpg"/>
+			<itunes:episode>42</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #41 | Guest: Shloime Zionce]]></title>
+			<description><![CDATA[<p>Topics:</p>
+<p>Living in Texas | Travel | Peter Santenello Vlogs | Chabad.</p>
+<p><br /></p>
+<p>Guest:</p>
+<p>Shloime Zionce - Chasidisha Travler / Vlogger</p>
+<p>-------------</p>
+<p><br /></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• FluenTalk | 8458362355 | MyFluenTalk.com | https://wa.me/message/6KXGHO7RU7IEN1</p>
+<p>Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-41--Guest-Shloime-Zionce-e2fg259</link>
+			<guid isPermaLink="false">d0f99948-808d-4631-8e5f-360104bfc2c8</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 07 Feb 2024 23:51:24 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO3753045373.mp3" length="122347520" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics:&lt;/p&gt;
+&lt;p&gt;Living in Texas | Travel | Peter Santenello Vlogs | Chabad.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Shloime Zionce - Chasidisha Travler / Vlogger&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• FluenTalk | 8458362355 | MyFluenTalk.com | https://wa.me/message/6KXGHO7RU7IEN1&lt;/p&gt;
+&lt;p&gt;Hiring4Less | https://Hiring4Less.com | info@hiring4less.com | Call/Text/Whatsapp: +1845-682-0990&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:07:26</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1707349377093-69bc42c0be9.jpg"/>
+			<itunes:episode>41</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #40 | Guest: Shulem Lemmer]]></title>
+			<description><![CDATA[Topics:
+Universal Record Deal | Personal Health | Learning | Fame.
+
+Guest:
+Shulem Lemmer | Universal Music Recording Artist
+-------------
+
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply
+• Masbia | https://masbia.org/sponsor
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• FluenTalk | 8458362355 | MyFluenTalk.com | https://wa.me/message/6KXGHO7RU7IEN1
+
+-------------
+Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.
+Advertisements: ads@latesttalks.com
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-40--Guest-Shulem-Lemmer-e2d7n8l</link>
+			<guid isPermaLink="false">a0b94297-380b-4b3e-a166-84eb49d069f7</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 14 Dec 2023 03:35:41 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO5671601570.mp3" length="98792594" type="audio/mpeg"/>
+			<itunes:summary>Topics:
+Universal Record Deal | Personal Health | Learning | Fame.
+
+Guest:
+Shulem Lemmer | Universal Music Recording Artist
+-------------
+
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Sara Schenirer | +1718-633-8557 | https://sarasch.com/apply
+• Masbia | https://masbia.org/sponsor
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• FluenTalk | 8458362355 | MyFluenTalk.com | https://wa.me/message/6KXGHO7RU7IEN1
+
+-------------
+Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.
+Advertisements: ads@latesttalks.com
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:42:54</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1702522070899-1019c16348fcf.jpg"/>
+			<itunes:episode>40</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #39 | Guest: Moishe Greenstein]]></title>
+			<description><![CDATA[<p>Topics:</p>
+<p>Events &amp; Productions | Big Party Coming Up | Hasc In Covid.</p>
+<p><br /></p>
+<p>Guest:</p>
+<p>Moishe Greenstein | Green Events</p>
+<p>-------------</p>
+<p><br /></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Masbia | https://masbia.org/sponsor</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Status Vids | https://statusvids.com</p>
+<p>• S Pro Mechanical | +1 (718) 720-7200 | Spromechanical@gmail.com</p>
+<p><br /></p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-39--Guest-Moishe-Greenstein-e2cfo0a</link>
+			<guid isPermaLink="false">379cd8a0-1abe-4776-a1b7-37f571e88cb9</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 27 Nov 2023 18:23:55 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO6905916883.mp3" length="70950661" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics:&lt;/p&gt;
+&lt;p&gt;Events &amp;amp; Productions | Big Party Coming Up | Hasc In Covid.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Moishe Greenstein | Green Events&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Masbia | https://masbia.org/sponsor&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Status Vids | https://statusvids.com&lt;/p&gt;
+&lt;p&gt;• S Pro Mechanical | +1 (718) 720-7200 | Spromechanical@gmail.com&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab, Chilu Posen, Moshe Milstein.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:13:54</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1701108099027-dc2376588d15e.jpg"/>
+			<itunes:episode>39</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #38 | Guest: Lipa Schmeltzer]]></title>
+			<description><![CDATA[<p>Topics:</p>
+<p>Breath Work | Healing | YomTov Lipa, Album Review.</p>
+<p><br /></p>
+<p>Guest:</p>
+<p>Lipa Schmeltzer | Music Artist </p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Masbia | https://masbia.org/sponsor</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Viewpoint Academy | https://viewpointlearn.com/gmm3</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Ari Samet - Abisel Status, Yossi Brach - Food Reviewer.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-38--Guest-Lipa-Schmeltzer-e2ae0an</link>
+			<guid isPermaLink="false">d3fe06bf-3b7c-47c1-8f3d-254cd6c5ee9d</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 11 Oct 2023 03:43:24 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/77053719/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-9-11%2F350632868-44100-2-46d668aaa7ad7.mp3" length="86933837" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics:&lt;/p&gt;
+&lt;p&gt;Breath Work | Healing | YomTov Lipa, Album Review.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Lipa Schmeltzer | Music Artist &lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Masbia | https://masbia.org/sponsor&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Viewpoint Academy | https://viewpointlearn.com/gmm3&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Ari Samet - Abisel Status, Yossi Brach - Food Reviewer.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:30:33</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1696994085083-70f1f98b4a39f.jpg"/>
+			<itunes:episode>38</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #37 | Guest: Reb Eli Stefansky]]></title>
+			<description><![CDATA[<p>Topics:</p>
+<p>Rise To Fame | How He's Consistent | Over 20,000 Talmidim.</p>
+<p>
+Guest:</p>
+<p>Reb Eli Stefansky | MercazDafYomi  </p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Viewpoint Academy | https://viewpointlearn.com/gmm3</p>
+<p>• S Pro Mechanical | 718-720-7200 | Spromechanical@gmail.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, 
+Ari Abramowitz - Guest Host, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-37--Guest-Reb-Eli-Stefansky-e2871hk</link>
+			<guid isPermaLink="false">60885e5a-5564-41c0-a780-1e71a6dba7bd</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 17 Aug 2023 07:49:22 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/74728436/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-17%2F343389185-44100-2-aa5681205a57c.mp3" length="94813203" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics:&lt;/p&gt;
+&lt;p&gt;Rise To Fame | How He&apos;s Consistent | Over 20,000 Talmidim.&lt;/p&gt;
+&lt;p&gt;
+Guest:&lt;/p&gt;
+&lt;p&gt;Reb Eli Stefansky | MercazDafYomi  &lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Viewpoint Academy | https://viewpointlearn.com/gmm3&lt;/p&gt;
+&lt;p&gt;• S Pro Mechanical | 718-720-7200 | Spromechanical@gmail.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, 
+Ari Abramowitz - Guest Host, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:38:45</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1692258514634-53b4b0dc6019.jpg"/>
+			<itunes:episode>37</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #36 | Guest: R' Yeedle Melber]]></title>
+			<description><![CDATA[Topics:
+Lehasig Courses | Nice Vs. Real | How To Be More Successful.
+
+Guest:
+R' Yeedle Melber
+Lehasig | (844) 534-2744
+-------------
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+-------------
+Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Gershy Schwarcz - Edgware Studios.
+Advertisements: ads@latesttalks.com
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-36--Guest-R-Yeedle-Melber-e27l7l3</link>
+			<guid isPermaLink="false">b25d3471-2cf1-4b62-bdee-be841e2f7028</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 02 Aug 2023 04:37:55 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/74144867/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-7-2%2F341577913-44100-2-4a125014a6188.mp3" length="88223241" type="audio/mpeg"/>
+			<itunes:summary>Topics:
+Lehasig Courses | Nice Vs. Real | How To Be More Successful.
+
+Guest:
+R&apos; Yeedle Melber
+Lehasig | (844) 534-2744
+-------------
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+-------------
+Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Gershy Schwarcz - Edgware Studios.
+Advertisements: ads@latesttalks.com
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:31:53</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1690950706892-12eecc1a50e78.jpg"/>
+			<itunes:episode>36</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #35 | Guest: Yonasan Schwartz (2.0)]]></title>
+			<description><![CDATA[<p>Topics: 
+Second Marriage | Divorce | Trade Dress Law | New Album.
+
+Guest: 
+Yonasan Schwartz - 2.0
+https://toys2discover.com | +1 718-232-8658</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Viewpoint Academy | https://viewpointlearn.com/gmm3</p>
+<p>• Simcha Card | +1845-293-0686 | https://simchacard.com</p>
+<p>• Brud Group | +1518-329-9237 | Whatsapp +972-58-535-2527 | https://BrudGroup.com | stays@brudgroup.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-35--Guest-Yonasan-Schwartz-2-0-e26c321</link>
+			<guid isPermaLink="false">457b5e47-d6c3-4582-9f12-0681fdf5c355</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 29 Jun 2023 20:50:12 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/72796673/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-5-29%2F337394836-44100-2-d448e46732987.mp3" length="82292400" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: 
+Second Marriage | Divorce | Trade Dress Law | New Album.
+
+Guest: 
+Yonasan Schwartz - 2.0
+https://toys2discover.com | +1 718-232-8658&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Viewpoint Academy | https://viewpointlearn.com/gmm3&lt;/p&gt;
+&lt;p&gt;• Simcha Card | +1845-293-0686 | https://simchacard.com&lt;/p&gt;
+&lt;p&gt;• Brud Group | +1518-329-9237 | Whatsapp +972-58-535-2527 | https://BrudGroup.com | stays@brudgroup.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:25:43</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1688071467745-19566960ed47e.jpg"/>
+			<itunes:episode>35</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #34 | Guest: Rabbi Elazar Meisels]]></title>
+			<description><![CDATA[<p>Topics: Kiruv | ABA | Sara Schenirer History &amp; Men's Program.
+
+Guest: Rabbi Elazar Meisels - Dean of Sara Schenirer Institute
+https://sarasch.com | +1 718-633-8557 | information@sarasch.com </p>
+<p>-------------
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+-------------
+Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-34--Guest-Rabbi-Elazar-Meisels-e25k8ev</link>
+			<guid isPermaLink="false">3b68a860-ecbf-484e-80c9-0dde560dfc56</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 12 Jun 2023 13:10:12 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/72015775/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-5-12%2F334689409-44100-2-7caaf664a2f86.mp3" length="90596413" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Kiruv | ABA | Sara Schenirer History &amp;amp; Men&apos;s Program.
+
+Guest: Rabbi Elazar Meisels - Dean of Sara Schenirer Institute
+https://sarasch.com | +1 718-633-8557 | information@sarasch.com &lt;/p&gt;
+&lt;p&gt;-------------
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+-------------
+Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:34:22</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1686606623140-915ff3e60e07b.jpg"/>
+			<itunes:episode>34</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #33 | Guest: Yitzchok Hershkowitz]]></title>
+			<description><![CDATA[Topics: Special Lag Baomer Episode | Beis Hashchita | Touring.
+
+Guest: Yitzchok Hershkowitz | Solo Crew | Low Voltage Experts | +1 929-900-2112 
+-------------
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+• 15 Minutes Halacha | +1845-552-2525 | https://jewishpodcasts.fm/15minhalacha 
+-------------
+Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, 
+Chaim Brown - Famous Singer / Kumzitzer / Actor.
+Advertisements: ads@latesttalks.com
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-33--Guest-Yitzchok-Hershkowitz-e24knuh</link>
+			<guid isPermaLink="false">60f165dd-a9df-42be-9924-dc7b879d2962</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 24 May 2023 19:02:10 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/70983057/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-4-24%2F331415454-44100-2-0f0701d0e11fc.mp3" length="85605563" type="audio/mpeg"/>
+			<itunes:summary>Topics: Special Lag Baomer Episode | Beis Hashchita | Touring.
+
+Guest: Yitzchok Hershkowitz | Solo Crew | Low Voltage Experts | +1 929-900-2112 
+-------------
+This Episode Is Sponsored By:
+• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim
+• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+• 15 Minutes Halacha | +1845-552-2525 | https://jewishpodcasts.fm/15minhalacha 
+-------------
+Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, 
+Chaim Brown - Famous Singer / Kumzitzer / Actor.
+Advertisements: ads@latesttalks.com
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:29:10</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1686609043172-80ba6896c0d35.jpg"/>
+			<itunes:episode>33</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #32 | Guest: Chaim Itzkowitz]]></title>
+			<description><![CDATA[<p> Topics: Pesach Episode | Chabura's | Housing | Plays | Spoiled Milk.</p>
+<p><br /></p>
+<p>Guest: Chaim Itzkowitz | Toys4You | Epic Shpiel | https://www.nigunmusic.com/artist/view/index/id/1124</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Jake Turx - Senior White-House Correspondent, Gershy Schwarcz - Edgware Studios.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-32--Guest-Chaim-Itzkowitz-e22g0re</link>
+			<guid isPermaLink="false">1d750153-97ef-427e-92bb-e704b471cccb</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 16 Apr 2023 21:50:50 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/68731182/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-3-16%2F324303065-44100-2-f52a75c97f335.mp3" length="115620883" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt; Topics: Pesach Episode | Chabura&apos;s | Housing | Plays | Spoiled Milk.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest: Chaim Itzkowitz | Toys4You | Epic Shpiel | https://www.nigunmusic.com/artist/view/index/id/1124&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com
+• Viewpoint Academy | https://viewpointlearn.com/gmm3
+-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Jake Turx - Senior White-House Correspondent, Gershy Schwarcz - Edgware Studios.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:00:26</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/14288571/14288571-1681681670828-a058bbd06b3af.jpg"/>
+			<itunes:episode>32</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #30 | Guest: Yonasan Schwartz]]></title>
+			<description><![CDATA[<p>Topics: Shidduchim | His Magna-Tiles Lawsuit | Chaburas | Music.</p>
+<p>Guest: Yonasan Schwartz | https://toys2discover.com | +1 718-232-8658</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>• Simcha Card | +1 845-293-0686 https://simchacard.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-30--Guest-Yonasan-Schwartz-e1u0ib8</link>
+			<guid isPermaLink="false">76c4213c-6bd1-4607-a490-ddea15ef3564</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 25 Jan 2023 19:30:10 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/64030504/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-0-25%2F309369243-44100-2-8f0f68429af9b.mp3" length="117876609" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Shidduchim | His Magna-Tiles Lawsuit | Chaburas | Music.&lt;/p&gt;
+&lt;p&gt;Guest: Yonasan Schwartz | https://toys2discover.com | +1 718-232-8658&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;• Simcha Card | +1 845-293-0686 https://simchacard.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:02:47</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1674674759643-16d6b103b2c13.jpg"/>
+			<itunes:episode>30</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #29 | Guest: Assemblyman Simcha Eichenstein]]></title>
+			<description><![CDATA[<p>Topics: How Simcha Is Helping People | Personal Stories | City Cameras.</p>
+<p><br /></p>
+<p>Guest: Assemblyman Simcha Eichenstein | <a href="https://studio.youtube.com/channel/UC2zxQ3Dy4zrXy-U7c9UM9bg" target="_blank" rel="ugc noopener noreferrer"> @simchaeichenstein8558 </a></p>
+<p>Assembly District 48 | https://nyassembly.gov/mem/Simcha-Eichenstein</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-29--Guest-Assemblyman-Simcha-Eichenstein-e1srcm4</link>
+			<guid isPermaLink="false">ba324dcd-262a-42f5-ac7e-3a632d187107</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Thu, 29 Dec 2022 16:53:31 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/62812292/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-11-29%2F305157551-44100-2-79f6e75609714.mp3" length="122633403" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: How Simcha Is Helping People | Personal Stories | City Cameras.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Guest: Assemblyman Simcha Eichenstein | &lt;a href=&quot;https://studio.youtube.com/channel/UC2zxQ3Dy4zrXy-U7c9UM9bg&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt; @simchaeichenstein8558 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Assembly District 48 | https://nyassembly.gov/mem/Simcha-Eichenstein&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:07:44</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1672332200510-e5e92f1b59e2.jpg"/>
+			<itunes:episode>29</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #28 | Guest: R' Gedalia Miller]]></title>
+			<description><![CDATA[<p>Topics: Parents Struggling With Children | Kesher Nafshi Shabbasim.</p>
+<p>Guest: R' Gedalia Miller - <a href="https://studio.youtube.com/channel/UCe7PkbGZoS_lHTf-vz6Stsw" rel="ugc noopener noreferrer" target="_blank"> @Kesher Nafshi </a> </p>
+<p>Donate to Kesher Nafshi: <a href="https://keshernafshi.org/latesttalks" target="_blank" rel="ugc noopener noreferrer">https://keshernafshi.org/latesttalks </a></p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-28--Guest-R-Gedalia-Miller-e1qs9se</link>
+			<guid isPermaLink="false">6891eb4e-97f9-40e5-b226-de207f8d1419</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 16 Nov 2022 19:58:46 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/60745038/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-10-16%2F297430917-44100-2-b05f1da510872.mp3" length="87350542" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Parents Struggling With Children | Kesher Nafshi Shabbasim.&lt;/p&gt;
+&lt;p&gt;Guest: R&apos; Gedalia Miller - &lt;a href=&quot;https://studio.youtube.com/channel/UCe7PkbGZoS_lHTf-vz6Stsw&quot; rel=&quot;ugc noopener noreferrer&quot; target=&quot;_blank&quot;&gt; @Kesher Nafshi &lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;Donate to Kesher Nafshi: &lt;a href=&quot;https://keshernafshi.org/latesttalks&quot; target=&quot;_blank&quot; rel=&quot;ugc noopener noreferrer&quot;&gt;https://keshernafshi.org/latesttalks &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:30:59</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1668628713435-c94ab77d57e44.jpg"/>
+			<itunes:episode>28</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #27 | Guest: Shaya Weinberger]]></title>
+			<description><![CDATA[<p>Topics: Kosher Vacation Rentals - How He Sold Shares To An Employee.</p>
+<p>Guest: Shaya Weinberger - CEO of Luxury Kosher Villas https://LuxuryKosherVillas.com | +1305-650-8830</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com </p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-27--Guest-Shaya-Weinberger-e1nco24</link>
+			<guid isPermaLink="false">e6f41efd-3090-44d2-b893-7f89aef5d44c</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 04 Sep 2022 22:12:16 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO1728947826.mp3" length="93541773" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Kosher Vacation Rentals - How He Sold Shares To An Employee.&lt;/p&gt;
+&lt;p&gt;Guest: Shaya Weinberger - CEO of Luxury Kosher Villas https://LuxuryKosherVillas.com | +1305-650-8830&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Luxury Kosher Villas | +1305-650-8830 https://LuxuryKosherVillas.com &lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:37:26</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1662327770124-459a96f24bbed.jpg"/>
+			<itunes:episode>27</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #26 | Guest: Yanky Perl]]></title>
+			<description><![CDATA[<p>Topics: How To Build Your Brand - Strategy - Becoming A Designer.</p>
+<p>Guest: Yanky Perl - Art Director https://YankyPerl.com</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By: • Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group. Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-26--Guest-Yanky-Perl-e1mj3as</link>
+			<guid isPermaLink="false">84b38990-8c24-479e-a9b4-1f7e46520759</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 16 Aug 2022 15:37:15 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/56249116/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-7-16%2F281115812-44100-2-00a782bdf0ada.mp3" length="74147212" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: How To Build Your Brand - Strategy - Becoming A Designer.&lt;/p&gt;
+&lt;p&gt;Guest: Yanky Perl - Art Director https://YankyPerl.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By: • Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group. Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:17:14</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1661483189985-b7dd32df88508.jpg"/>
+			<itunes:episode>26</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #25 | Guest: Ari Berkowitz]]></title>
+			<description><![CDATA[<p>Topics: Real Estate Deal - Adorama Sales Dept. - Thank You Hashem.</p>
+<p>Guest: Ari Berkowitz - #TYH </p>
+<p>https://ThankYouHashem.com</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com</p>
+<p>https://instagram.com/homes.by.chaim</p>
+<p>• Florida Morning Realty | 845-826-6599 </p>
+<p>• Yochanan Mann | Ark Mortgage | 845-325-3255 | jmann@arkmortgage.com</p>
+<p>• Excore Credit | 888-510-1850 | help@excorecredit.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-25--Guest-Ari-Berkowitz-e1lcmaa</link>
+			<guid isPermaLink="false">db5b9318-9c30-4e34-8b60-e69b9ed91800</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 18 Jul 2022 16:51:40 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO5002738641.mp3" length="172790595" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Topics: Real Estate Deal - Adorama Sales Dept. - Thank You Hashem.&lt;/p&gt;
+&lt;p&gt;Guest: Ari Berkowitz - #TYH &lt;/p&gt;
+&lt;p&gt;https://ThankYouHashem.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com&lt;/p&gt;
+&lt;p&gt;https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Florida Morning Realty | 845-826-6599 &lt;/p&gt;
+&lt;p&gt;• Yochanan Mann | Ark Mortgage | 845-325-3255 | jmann@arkmortgage.com&lt;/p&gt;
+&lt;p&gt;• Excore Credit | 888-510-1850 | help@excorecredit.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:59:59</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1658162724286-9f4bcfe6094fe.jpg"/>
+			<itunes:episode>25</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #24 | Topics: Is The Golem of Prague Real? - Kankan Magazine - Genealogy.]]></title>
+			<description><![CDATA[<p>Guest: Yossi Kwadrat - Jewish Historian</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Blinds Decor | 845-202-0183 | sales@blindsdecornj.com</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-24--Topics-Is-The-Golem-of-Prague-Real----Kankan-Magazine---Genealogy-e1kq4fm</link>
+			<guid isPermaLink="false">20f8ceb7-1137-425a-bb01-7743273d179b</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 04 Jul 2022 17:02:36 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/54382518/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-6-4%2F274938850-44100-2-ce648ef5b3f9.mp3" length="85970023" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Guest: Yossi Kwadrat - Jewish Historian&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Blinds Decor | 845-202-0183 | sales@blindsdecornj.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:29:33</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1656954142178-7ebdb966fa7c5.jpg"/>
+			<itunes:episode>24</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #23 | Topics: Managing Employees - Why Ads Are Effective - Life/Business.]]></title>
+			<description><![CDATA[<p>Guest: Meny Hoffman - Ptex Group</p>
+<p>https://ptexgroup.com | +1 888-977-7839</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Hiring4Less | 845-682-0990 https://hiring4less.com</p>
+<p>• Glauber's Clothing | 718-514-7993 Boro Park: Corner 13-49 | Williamsburg: 113 Spencer st. | Monroe: 252 Acres rd.</p>
+<p>• Chess Master Yoel Ehrlich 347-882-8037</p>
+<p>• Prestige Flooring | 929-275-2330 | sol@prestigeflooringusa.com https://instagram.com/prestigeflooringusa/</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-23--Topics-Managing-Employees---Why-Ads-Are-Effective---LifeBusiness-e1k6b4e</link>
+			<guid isPermaLink="false">2106aa78-ef2c-4442-9698-82517c55373a</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 20 Jun 2022 05:35:12 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/53733966/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-5-20%2F272596159-44100-2-9dd161cdf822c.mp3" length="114132113" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Guest: Meny Hoffman - Ptex Group&lt;/p&gt;
+&lt;p&gt;https://ptexgroup.com | +1 888-977-7839&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Hiring4Less | 845-682-0990 https://hiring4less.com&lt;/p&gt;
+&lt;p&gt;• Glauber&apos;s Clothing | 718-514-7993 Boro Park: Corner 13-49 | Williamsburg: 113 Spencer st. | Monroe: 252 Acres rd.&lt;/p&gt;
+&lt;p&gt;• Chess Master Yoel Ehrlich 347-882-8037&lt;/p&gt;
+&lt;p&gt;• Prestige Flooring | 929-275-2330 | sol@prestigeflooringusa.com https://instagram.com/prestigeflooringusa/&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:58:53</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1655702877965-d109073d560d7.jpg"/>
+			<itunes:episode>23</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #22 | Topics: Special Shavuos Episode - Korns Hachnosos Sefer Torah Truck.]]></title>
+			<description><![CDATA[<p>Guest: Shulem Pesach Korn - Korn's Hachnosos Sefer Torah Truck</p>
+<p>+1 845-642-7204 | http://www.torahtruck.com/</p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com | https://instagram.com/homes.by.chaim</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-22--Topics-Special-Shavuos-Episode---Korns-Hachnosos-Sefer-Torah-Truck-e1jl2cj</link>
+			<guid isPermaLink="false">5094d308-bf0f-4544-a491-10f460dd0bc7</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 07 Jun 2022 20:54:15 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO9780258913.mp3" length="76839288" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Guest: Shulem Pesach Korn - Korn&apos;s Hachnosos Sefer Torah Truck&lt;/p&gt;
+&lt;p&gt;+1 845-642-7204 | http://www.torahtruck.com/&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com | https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:20:02</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1654635252902-2258b3c6304b9.jpg"/>
+			<itunes:episode>22</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #21 | Topics: Selling on Amazon - Founding Bizfluence App - Investments.]]></title>
+			<description><![CDATA[<p>Guest: Joel Wolh - CEO of <a href="https://bizfluenceapp.com/join/link/pinchusraab" target="_blank">Bizfluence App</a></p>
+<p>To invest in Bizfluence, <a href="https://wa.me/17188121400?text=I%20wanna%20hear%20more%20about%20Bizfluence%20investment" target="_blank">WhatsApp us on 718-812-1400</a></p>
+<p>-------------</p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com | https://instagram.com/homes.by.chaim</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-21--Topics-Selling-on-Amazon---Founding-Bizfluence-App---Investments-e1j7qsi</link>
+			<guid isPermaLink="false">20f52f99-fee9-41e3-8b46-783981cc1d09</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 29 May 2022 18:28:04 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/52734290/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-4-29%2F268599922-44100-2-d5365710b59eb.mp3" length="81704750" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Guest: Joel Wolh - CEO of &lt;a href=&quot;https://bizfluenceapp.com/join/link/pinchusraab&quot; target=&quot;_blank&quot;&gt;Bizfluence App&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To invest in Bizfluence, &lt;a href=&quot;https://wa.me/17188121400?text=I%20wanna%20hear%20more%20about%20Bizfluence%20investment&quot; target=&quot;_blank&quot;&gt;WhatsApp us on 718-812-1400&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com | https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:25:06</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1653848845439-89f911afac047.jpg"/>
+			<itunes:episode>21</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #20 | Topics: Shidduchim - Second Marriage - 30 Seconds Of Inspiration.]]></title>
+			<description><![CDATA[<p>Guest: Rabbi Shloime Ehrlich | https://rabbiehrlich.org | +1 845-659-4897</p>
+<p>&nbsp;-------------</p>
+<p>This Episode Is Sponsored By: • Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com | https://instagram.com/homes.by.chaim</p>
+<p>-------------</p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p>Advertisements: ads@latesttalks.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-20--Topics-Shidduchim---Second-Marriage---30-Seconds-Of-Inspiration-e1hvsah</link>
+			<guid isPermaLink="false">1d460ff6-c187-4e43-bccb-2a6a3095a936</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 02 May 2022 21:33:28 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/51425041/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-4-2%2F263157423-44100-2-1479fc895c984.mp3" length="81262967" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Guest: Rabbi Shloime Ehrlich | https://rabbiehrlich.org | +1 845-659-4897&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;-------------&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By: • Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com | https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;Advertisements: ads@latesttalks.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:24:38</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1651527177063-b5d022a47512d.jpg"/>
+			<itunes:episode>20</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #19 | Topics: Traveling - Filming/Editing - Fear/Risk.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! &nbsp;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p><br></p>
+<p>Guest: Ezra Bodansky</p>
+<p><br></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• Yoely Weider | 347-986-6520 | jwgoodwater@gmail.com | Change Your Water, Change Your Life! DROPLETS</p>
+<p>• Old Williamsburg | Smoked Nova Salmon Available In Stores</p>
+<p><br></p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Designer at Pencil Point.</p>
+<p><br></p>
+<p>Sales: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-19--Topics-Traveling---FilmingEditing---FearRisk-e1h5coe</link>
+			<guid isPermaLink="false">b12069d8-0a50-42d4-b8f2-e159fb624669</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 13 Apr 2022 22:40:58 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/50557134/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-13%2F259640041-44100-2-0078b5a3a75d7.mp3" length="86097083" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! &amp;nbsp;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Guest: Ezra Bodansky&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• Yoely Weider | 347-986-6520 | jwgoodwater@gmail.com | Change Your Water, Change Your Life! DROPLETS&lt;/p&gt;
+&lt;p&gt;• Old Williamsburg | Smoked Nova Salmon Available In Stores&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Designer at Pencil Point.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Sales: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:29:41</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1649889434718-fa51a06733685.jpg"/>
+			<itunes:episode>19</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #18 | Topics: Purim Episode - Comedy - Jewish Plays History - Chinuch.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! &nbsp;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p><br></p>
+<p>Guest: Ari Abramowitz</p>
+<p><br></p>
+<p>This Episode Is Sponsored By:</p>
+<p>• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim</p>
+<p>• UpdateIT | 845-637-5265 | service@updateitny.com https://link.updateitny.com/wa</p>
+<p>• Prestige Flooring | 929-275-2330 | sol@prestigeflooringusa.com https://instagram.com/prestigeflooringusa/</p>
+<p>• Chavivim 24h Roadside Assistance | 718-871-7299 https://instagram.com/chavivim_ny/</p>
+<p><br></p>
+<p>Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.</p>
+<p><br></p>
+<p>Sales: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-18--Topics-Purim-Episode---Comedy---Jewish-Plays-History---Chinuch-e1g0ftg</link>
+			<guid isPermaLink="false">e824074d-1275-4663-ba24-3de885dd4e56</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 20 Mar 2022 23:07:41 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/49347952/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-2-20%2F254915921-44100-2-c53649ea3a833.mp3" length="139445393" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! &amp;nbsp;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Guest: Ari Abramowitz&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;This Episode Is Sponsored By:&lt;/p&gt;
+&lt;p&gt;• Chaim Blau | 347-786-4144 | Chaim@goodchoicerealtynj.com https://instagram.com/homes.by.chaim&lt;/p&gt;
+&lt;p&gt;• UpdateIT | 845-637-5265 | service@updateitny.com https://link.updateitny.com/wa&lt;/p&gt;
+&lt;p&gt;• Prestige Flooring | 929-275-2330 | sol@prestigeflooringusa.com https://instagram.com/prestigeflooringusa/&lt;/p&gt;
+&lt;p&gt;• Chavivim 24h Roadside Assistance | 718-871-7299 https://instagram.com/chavivim_ny/&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hosts: Pinchus Raab - Owner of PR Marketing Group, Chilu Posen - Owner of Mezamrim Choir, Moshe Milstein - Owner of Oh That Group.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Sales: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>02:25:15</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode400/14288571/14288571-1647817500346-9fac6ea182cee.jpg"/>
+			<itunes:episode>18</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #17 Topics What Is A Business - Sales Psychology - Business System.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p><br></p>
+<p><strong>This Episode Is Sponsored By Pitale Grill-House, 5326 13th Ave, Brooklyn, NY 11219.</strong></p>
+<p><br></p>
+<p>Guest:</p>
+<p>Rabbi Issamar Ginzberg - Business Consultant</p>
+<p>https://rabbiissamar.com</p>
+<p><br></p>
+<p>Hosts:</p>
+<p>Pinchus Raab - Owner of PR Marketing Group</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To advertise on the podcast email: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-17-Topics-What-Is-A-Business---Sales-Psychology---Business-System-e1dfg3j</link>
+			<guid isPermaLink="false">409259dd-5e19-4ff9-88b8-49fb2a38d705</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 26 Jan 2022 05:38:30 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/46693939/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-0-26%2F244405329-44100-2-3afdfd515038c.mp3" length="63711189" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This Episode Is Sponsored By Pitale Grill-House, 5326 13th Ave, Brooklyn, NY 11219.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Rabbi Issamar Ginzberg - Business Consultant&lt;/p&gt;
+&lt;p&gt;https://rabbiissamar.com&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hosts:&lt;/p&gt;
+&lt;p&gt;Pinchus Raab - Owner of PR Marketing Group&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To advertise on the podcast email: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:06:21</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1643175403457-3b7ba65e6c19f.jpg"/>
+			<itunes:episode>17</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #16 | Topics: What Is The Real TECHEILES?? - The Camel That Didn't Move!]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p><em><strong>This Episode Is Sponsored By Pitale Grill-House, 5326 13th Ave, Brooklyn, NY 11219.</strong></em></p>
+<p>Guest:</p>
+<p>Rabbi Yiddy Fuxman - The Tzitzis Rebbe</p>
+<p>Knot The Tzitzit | +1 917-856-9486</p>
+<p>Hosts:</p>
+<p>Pinchus Raab - Owner of PR Marketing Group</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To advertise on the podcast email: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-16--Topics-What-Is-The-Real-TECHEILES-----The-Camel-That-Didnt-Move-e1bvqn3</link>
+			<guid isPermaLink="false">e7603053-a86b-4a1b-a25e-4679da248c4b</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 20 Dec 2021 20:38:56 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/45131939/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-11-20%2F238772774-44100-2-3ecbcf49586fc.mp3" length="90508224" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;This Episode Is Sponsored By Pitale Grill-House, 5326 13th Ave, Brooklyn, NY 11219.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Rabbi Yiddy Fuxman - The Tzitzis Rebbe&lt;/p&gt;
+&lt;p&gt;Knot The Tzitzit | +1 917-856-9486&lt;/p&gt;
+&lt;p&gt;Hosts:&lt;/p&gt;
+&lt;p&gt;Pinchus Raab - Owner of PR Marketing Group&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To advertise on the podcast email: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:34:16</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo400/14288571/14288571-1617750682195-206366db1220d.jpg"/>
+			<itunes:episode>16</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #15 | Topics: Shulem Bayis - Cults - Chinuch.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>Guest:</p>
+<p>Rabbi Shea Hecht - Crisis Counselor</p>
+<p>https://www.ncfje.org | +1 718-735-0223</p>
+<p>Hosts:</p>
+<p>Pinchus Raab - Owner of PR Marketing Group</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To advertise on the podcast email: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-15--Topics-Shulem-Bayis---Cults---Chinuch-e1aclvq</link>
+			<guid isPermaLink="false">e1181887-ea64-41b4-93c8-337208fa7b52</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 16 Nov 2021 22:05:29 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/43455930/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-10-16%2F231521822-44100-2-8ba9103f66ede.mp3" length="75705363" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Rabbi Shea Hecht - Crisis Counselor&lt;/p&gt;
+&lt;p&gt;https://www.ncfje.org | +1 718-735-0223&lt;/p&gt;
+&lt;p&gt;Hosts:&lt;/p&gt;
+&lt;p&gt;Pinchus Raab - Owner of PR Marketing Group&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To advertise on the podcast email: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:18:51</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo400/14288571/14288571-1617750682195-206366db1220d.jpg"/>
+			<itunes:episode>15</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #14 | Topics: How Rabbi Issamar Sold Icons For Apple - His Unknown Backstory - Credit Score Secrets.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p><br></p>
+<p>Guest:</p>
+<p>Rabbi Issamar Ginzberg - Business Consultant</p>
+<p>https://rabbiissamar.com</p>
+<p><br></p>
+<p>Hosts:</p>
+<p>Pinchus Raab - Owner of PR Marketing Group</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-14--Topics-How-Rabbi-Issamar-Sold-Icons-For-Apple---His-Unknown-Backstory---Credit-Score-Secrets-e1615eo</link>
+			<guid isPermaLink="false">8a3c13ce-d794-4c7b-80ac-8b036bfd6f00</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 16 Aug 2021 22:44:51 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/38884248/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-6%2F258369167-44100-2-313e2b4e43c37.mp3" length="58604981" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Rabbi Issamar Ginzberg - Business Consultant&lt;/p&gt;
+&lt;p&gt;https://rabbiissamar.com&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hosts:&lt;/p&gt;
+&lt;p&gt;Pinchus Raab - Owner of PR Marketing Group&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:01:02</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/14288571/14288571-1617750683947-a4c74607f818c.jpg"/>
+			<itunes:episode>14</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #13 Topics The Founding of Keiravtuni Shabbasim - Ringel & Co.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p><br></p>
+<p>Guest:</p>
+<p>Avrumy Ringel - CoFounder of Keiravtuni.</p>
+<p>Owner of Ringel &amp; Co. (718) 475-1817</p>
+<p><br></p>
+<p>Hosts:</p>
+<p>Pinchus Raab - Owner of PR Marketing Group</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-13-Topics-The-Founding-of-Keiravtuni-Shabbasim---Ringel--Co-e140gpg</link>
+			<guid isPermaLink="false">82d78221-05c8-4c18-9abd-d4a35f8404e7</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 06 Jul 2021 10:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/36765936/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-7%2F258369751-44100-2-95bd4150cbf85.mp3" length="82796877" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Avrumy Ringel - CoFounder of Keiravtuni.&lt;/p&gt;
+&lt;p&gt;Owner of Ringel &amp;amp; Co. (718) 475-1817&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hosts:&lt;/p&gt;
+&lt;p&gt;Pinchus Raab - Owner of PR Marketing Group&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:26:14</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1625558329035-97adf6ad9b747.jpg"/>
+			<itunes:episode>11</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #12 | Topics: The Founding of BP Shomrim & Dee Voch Magazine.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p><br></p>
+<p>Guest:</p>
+<p>Hershy Rubinstein - Founder of Dee Voch Magazine &amp; BP Shomrim</p>
+<p><br></p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-12--Topics-The-Founding-of-BP-Shomrim--Dee-Voch-Magazine-e1340nf</link>
+			<guid isPermaLink="false">e5714922-2cbe-4b1c-af0a-380b742924a0</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 20 Jun 2021 19:00:00 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/35831983/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-7%2F258370715-44100-2-af220afdb7b28.mp3" length="81298075" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Hershy Rubinstein - Founder of Dee Voch Magazine &amp;amp; BP Shomrim&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:24:41</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1624183489618-29ce621a212f4.jpg"/>
+			<itunes:episode>12</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #11 | Topics: Multi Level Marketing - Ponzi Schemes - Friedrich A/C.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p>Guest:</p>
+<p>Yanky Fried - x Multi Level Marketing Agent</p>
+<p><br></p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-11--Topics-Multi-Level-Marketing---Ponzi-Schemes---Friedrich-AC-e1340ka</link>
+			<guid isPermaLink="false">ebf44da1-115d-45c6-a700-1ff2d28ace22</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Sun, 20 Jun 2021 10:00:14 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/35831882/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-7%2F258371337-44100-2-4bf5437c97b42.mp3" length="58775091" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Yanky Fried - x Multi Level Marketing Agent&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:01:13</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1624183220507-658d30cd5417b.jpg"/>
+			<itunes:episode>11</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #10 | Topics: JohnToGo History - Business Growth/Scaling - Antiques.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p>Guest:</p>
+<p>Avrumy Breuer - Owner of John To Go / VIP To Go</p>
+<p>https://www.johntogo.com • +1877-564-6977</p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-10--Topics-JohnToGo-History---Business-GrowthScaling---Antiques-e1218a8</link>
+			<guid isPermaLink="false">f3e5a6f6-2699-4adf-9b68-1feec3f8bc90</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 02 Jun 2021 06:59:06 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/34692872/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-7%2F258372902-44100-2-0f9d712f0f931.mp3" length="80388178" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Avrumy Breuer - Owner of John To Go / VIP To Go&lt;/p&gt;
+&lt;p&gt;https://www.johntogo.com • +1877-564-6977&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:23:44</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1622617155269-a1995a0892208.jpg"/>
+			<itunes:episode>10</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #9 | Topics: The Lakewood Real Estate Market]]></title>
+			<description><![CDATA[Welcome to the Latest Talks Podcast!
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.
+About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share & Subscribe.
+Guest:
+Chaim Blau - NJ Real Estate Agent - 347-786-4144
+
+Cast:
+Chilu Posen - Owner of Mezamrim Choir
+Moshe Milstein - Designer • Pencil Point
+To place an ad email us at: LatestSimchas@gmail.com
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-9--Topics-The-Lakewood-Real-Estate-Market-e11jt7f</link>
+			<guid isPermaLink="false">421a3d5a-06aa-4260-aac5-cbc49c04ba6d</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 26 May 2021 07:01:02 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/34255535/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-7%2F258373398-44100-2-6b525c0d60d91.mp3" length="67309817" type="audio/mpeg"/>
+			<itunes:summary>Welcome to the Latest Talks Podcast!
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.
+About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.
+Guest:
+Chaim Blau - NJ Real Estate Agent - 347-786-4144
+
+Cast:
+Chilu Posen - Owner of Mezamrim Choir
+Moshe Milstein - Designer • Pencil Point
+To place an ad email us at: LatestSimchas@gmail.com
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:10:06</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1622012470433-0414f2c9a1591.jpg"/>
+			<itunes:episode>9</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #8 | Topics: Alkaline Water - Oil/Tea - Tomatoes.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p>Guest:</p>
+<p>Yoely Weider - Owner of Droplets</p>
+<p>To buy a machine, call today: 347-986-6520</p>
+<p><br></p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-8--Topics-Alkaline-Water---OilTea---Tomatoes-e11jt1c</link>
+			<guid isPermaLink="false">78ccdaf6-abdc-4a6e-a801-2dea6e9a79df</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 26 May 2021 06:53:29 GMT</pubDate>
+			<enclosure url="https://anchor.fm/s/55c3378c/podcast/play/34255340/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-3-7%2F258373939-44100-2-0a2f0fb22981.mp3" length="55899950" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;Guest:&lt;/p&gt;
+&lt;p&gt;Yoely Weider - Owner of Droplets&lt;/p&gt;
+&lt;p&gt;To buy a machine, call today: 347-986-6520&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>00:58:13</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1622012017738-ba77e1b9a411c.jpg"/>
+			<itunes:episode>8</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #7 | Topics: Audience Questions!]]></title>
+			<description><![CDATA[Welcome to the Latest Talks Podcast!
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.
+About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share & Subscribe.
+Cast:
+Chilu Posen - Owner of Mezamrim Choir
+Moshe Milstein - Designer • Pencil Point
+To place an ad email us at: LatestSimchas@gmail.com
+-------------
+Raffle: We are giving away a $500 lakewoodhosts.com vacation gift card. How To Enter: Subscribe to our Youtube channel, press the bell icon, take a screenshot and send it to Talks@LatestSimchas.com.
+Enter a second time if you comment below, take a screenshot, and include both of your screenshots in the same email.
+#latesttalks #jewish #latestsimchas
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-7--Topics-Audience-Questions-e10615b</link>
+			<guid isPermaLink="false">a50138e2-e7e6-452d-be6f-8e9857cb51a0</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 03 May 2021 22:00:00 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2136366197.mp3" length="25839072" type="audio/mpeg"/>
+			<itunes:summary>Welcome to the Latest Talks Podcast!
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.
+About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.
+Cast:
+Chilu Posen - Owner of Mezamrim Choir
+Moshe Milstein - Designer • Pencil Point
+To place an ad email us at: LatestSimchas@gmail.com
+-------------
+Raffle: We are giving away a $500 lakewoodhosts.com vacation gift card. How To Enter: Subscribe to our Youtube channel, press the bell icon, take a screenshot and send it to Talks@LatestSimchas.com.
+Enter a second time if you comment below, take a screenshot, and include both of your screenshots in the same email.
+#latesttalks #jewish #latestsimchas
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>00:26:54</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1620066799819-e15a0e57a020c.jpg"/>
+			<itunes:episode>7</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #6 | Topics: Gun Control - Dream Story - True Caller.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p>
+<p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p><br></p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+<p>-------------</p>
+<p>Raffle: We are giving away a $500 lakewoodhosts.com vacation gift card. How To Enter: Subscribe to our Youtube channel, press the bell icon, take a screenshot and send it to Talks@LatestSimchas.com.</p>
+<p>Enter a second time if you comment below, take a screenshot, and include both of your screenshots in the same email.</p>
+<p>#latesttalks #jewish #latestsimchas</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-6--Topics-Gun-Control---Dream-Story---True-Caller-e105u0q</link>
+			<guid isPermaLink="false">0c4fbd24-1909-4ded-968c-9e9d555debf1</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Mon, 03 May 2021 18:02:23 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2028699918.mp3" length="60108800" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;
+&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+&lt;p&gt;-------------&lt;/p&gt;
+&lt;p&gt;Raffle: We are giving away a $500 lakewoodhosts.com vacation gift card. How To Enter: Subscribe to our Youtube channel, press the bell icon, take a screenshot and send it to Talks@LatestSimchas.com.&lt;/p&gt;
+&lt;p&gt;Enter a second time if you comment below, take a screenshot, and include both of your screenshots in the same email.&lt;/p&gt;
+&lt;p&gt;#latesttalks #jewish #latestsimchas&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:02:36</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1620064951820-832f4734bbe3e.jpg"/>
+			<itunes:episode>6</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Ep #5 | Guest: Jake Turx]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast!</p><p>Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p><p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&#39;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p><p>Guest:</p><p>Jake Turx - Senior White-House Correspondent</p><p>Cast:</p><p>Chilu Posen - Owner of Mezamrim Choir</p><p>Moshe Milstein - Designer • Pencil Point</p><p>To place an ad email us at: LatestSimchas@gmail.com</p><p><br></p><p>------------- </p><p><br></p><p>Raffle: We are giving away a $500 lakewoodhosts.com vacation gift card. How To Enter: Subscribe to our channel, press the bell icon, take a screenshot and send it to Talks@LatestSimchas.com.</p><p>Enter a second time if you comment below, take a screenshot, and include both of your screenshots in the same email.</p><p><br></p><p>#latesttalks #jewish #jaketurx</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Ep-5--Guest-Jake-Turx-evsbmu</link>
+			<guid isPermaLink="false">407ccd44-d800-4e54-9375-0b49db35d600</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 28 Apr 2021 23:41:19 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO8377477570.mp3" length="71748963" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast!&lt;/p&gt;&lt;p&gt;Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&amp;#39;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;&lt;p&gt;Guest:&lt;/p&gt;&lt;p&gt;Jake Turx - Senior White-House Correspondent&lt;/p&gt;&lt;p&gt;Cast:&lt;/p&gt;&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;------------- &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Raffle: We are giving away a $500 lakewoodhosts.com vacation gift card. How To Enter: Subscribe to our channel, press the bell icon, take a screenshot and send it to Talks@LatestSimchas.com.&lt;/p&gt;&lt;p&gt;Enter a second time if you comment below, take a screenshot, and include both of your screenshots in the same email.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;#latesttalks #jewish #jaketurx&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>01:14:44</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1619653287528-6e795d093fafc.jpg"/>
+			<itunes:episode>5</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #4 | Topics: R' Shayele Kerestirer]]></title>
+			<description><![CDATA[Welcome to the Latest Talks Podcast!
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment. 
+
+Episode #4 is a special episode in honor of the Yurtzeit of the holy Tzadik R' Shayele Kerestirer.
+
+About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share & Subscribe. 
+
+Cast:
+Chilu Posen - Owner of Mezamrim Choir
+Moshe Milstein - Designer • Pencil Point
+To place an ad email us at: LatestSimchas@gmail.com
+#latesttalks #jewish #latestsimchas
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-4--Topics-R-Shayele-Kerestirer-ev0vut</link>
+			<guid isPermaLink="false">3f193a58-0360-4ffe-9bc7-6759c8a02257</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Fri, 16 Apr 2021 06:08:33 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2881094743.mp3" length="30587089" type="audio/mpeg"/>
+			<itunes:summary>Welcome to the Latest Talks Podcast!
+Here we shmooze and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment. 
+
+Episode #4 is a special episode in honor of the Yurtzeit of the holy Tzadik R&apos; Shayele Kerestirer.
+
+About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe. 
+
+Cast:
+Chilu Posen - Owner of Mezamrim Choir
+Moshe Milstein - Designer • Pencil Point
+To place an ad email us at: LatestSimchas@gmail.com
+#latesttalks #jewish #latestsimchas
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>00:31:51</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1618553321850-f5c171afdc0e9.jpg"/>
+			<itunes:episode>4</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #3 | Topics: Vaccines - Spirit Airlines - Alzheimer's.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! &nbsp;Here we shmooze talk and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+<p>#latesttalks #jewish #latestsimchas</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-3--Topics-Vaccines---Spirit-Airlines---Alzheimers-euq01i</link>
+			<guid isPermaLink="false">9aa53732-0d7c-4fcb-baff-0ebb67c9b3bf</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Tue, 13 Apr 2021 02:51:44 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2609408642.mp3" length="48226220" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! &amp;nbsp;Here we shmooze talk and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+&lt;p&gt;#latesttalks #jewish #latestsimchas&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>00:50:14</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1618282313034-fd9cfdf5cdf6d.jpg"/>
+			<itunes:episode>3</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #2 | Topics: Anti-Semitism - Dry Goods - Trump.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! &nbsp;Here we shmooze talk and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-2--Topics-Anti-Semitism---Dry-Goods---Trump-eud5so</link>
+			<guid isPermaLink="false">f2ceeb83-776e-468d-aae2-8c0a634b924d</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 07 Apr 2021 07:58:46 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO2786546742.mp3" length="33015013" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! &amp;nbsp;Here we shmooze talk and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>00:34:23</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1617782334326-ccbb5414cc4c.jpg"/>
+			<itunes:episode>2</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+		<item>
+			<title><![CDATA[Latest Talks Podcast - Episode #1 | Topics: Chruptza - Tesla/Bitcoin - NFTs.]]></title>
+			<description><![CDATA[<p>Welcome to the Latest Talks Podcast! &nbsp;Here we shmooze talk and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&nbsp;</p>
+<p>About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he's got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp; Subscribe.</p>
+<p><br></p>
+<p>Cast:</p>
+<p>Chilu Posen - Owner of Mezamrim Choir</p>
+<p>Moshe Milstein - Designer • Pencil Point</p>
+<p><br></p>
+<p>To place an ad email us at: LatestSimchas@gmail.com</p>
+]]></description>
+			<link>https://podcasters.spotify.com/pod/show/latest-talks/episodes/Latest-Talks-Podcast---Episode-1--Topics-Chruptza---TeslaBitcoin---NFTs-eucmr1</link>
+			<guid isPermaLink="false">d23ef47c-a39e-436b-bd3a-16dda10b8a6d</guid>
+			<dc:creator><![CDATA[Latest Talks ]]></dc:creator>
+			<pubDate>Wed, 07 Apr 2021 01:11:31 GMT</pubDate>
+			<enclosure url="https://traffic.megaphone.fm/APO6997388413.mp3" length="49564943" type="audio/mpeg"/>
+			<itunes:summary>&lt;p&gt;Welcome to the Latest Talks Podcast! &amp;nbsp;Here we shmooze talk and try to cover all kinds of interesting topics, so you can enjoy top-quality Yiddish entertainment.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;About The Host: Pinchus Raab is a well-known entrepreneur in the Orthodox Jewish community, he is most famous as the owner of the PR Marketing Group. Pinchus always had a dream to create Yiddish video content for Klal Yisroel, he filmed interviews here and there, but wanted to give all he&apos;s got. About a year ago he teamed up with Latest Simchas and started working on this podcast which is finally here, and will be for anyone who would be interested in Yiddish video entertainment. Like, Share &amp;amp; Subscribe.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Cast:&lt;/p&gt;
+&lt;p&gt;Chilu Posen - Owner of Mezamrim Choir&lt;/p&gt;
+&lt;p&gt;Moshe Milstein - Designer • Pencil Point&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;To place an ad email us at: LatestSimchas@gmail.com&lt;/p&gt;
+</itunes:summary>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:duration>00:51:37</itunes:duration>
+			<itunes:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/14288571/14288571-1617757900425-ae4718f5a6714.jpg"/>
+			<itunes:episode>1</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+		</item>
+	</channel>
+</rss>

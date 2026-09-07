@@ -1,0 +1,86 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "PingHL",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#1B358F",
+    "accent": "#0000EE",
+    "background": "#FFFFFF",
+    "textPrimary": "#2A2C32",
+    "link": "#0000EE"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "PingHL",
+      "heading": "PingHL"
+    },
+    "fontStacks": {
+      "heading": [
+        "PingHL"
+      ],
+      "body": [
+        "PingHL"
+      ],
+      "paragraph": [
+        "PingHL"
+      ]
+    },
+    "fontSizes": {
+      "h1": "16px",
+      "h2": "16px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 12,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "4px"
+    }
+  },
+  "images": {
+    "logo": "https://www.elal.com/media/wqyc35s5/international-svg.svg",
+    "favicon": "https://www.elal.com/assets/elal-assets/icons/favicon.ico",
+    "ogImage": "https://www.elal.com/assets/elal-assets/images/indexHTML-meta-image.jpg"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "The logo matches the brand name 'EL AL' and is located in the header, linking to the homepage, making it the primary brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "Neither button has a vibrant or brand color background. Both buttons have a white background, making it impossible to determine a primary CTA based on color alone."
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "Both buttons are from the same color group (white background), and thus no valid secondary button can be identified."
+    },
+    "confidence": 0.5
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "travelers and airline customers"
+  },
+  "designSystem": {
+    "framework": "unknown",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.5,
+    "colors": 0.9,
+    "overall": 0.7
+  }
+}

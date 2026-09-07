@@ -1,0 +1,116 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Roboto",
+      "role": "body"
+    },
+    {
+      "family": "YouTube Noto",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#065FD4",
+    "accent": "#3EA6FF",
+    "background": "#808080",
+    "textPrimary": "#808080",
+    "link": "#3EA6FF"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Arial",
+      "heading": "Arial"
+    },
+    "fontStacks": {
+      "heading": [
+        "Roboto",
+        "Arial",
+        "sans-serif"
+      ],
+      "body": [
+        "Roboto",
+        "Arial",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Roboto",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "14px",
+      "h2": "15px",
+      "body": "10px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "8px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "8px"
+    },
+    "buttonPrimary": {
+      "background": "#0F0F0F",
+      "textColor": "#FFFFFF",
+      "borderRadius": "18px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#000000",
+      "textColor": "#0F0F0F",
+      "borderRadius": "18px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.jpg",
+    "favicon": "https://www.youtube.com/s/desktop/a444dc7a/img/favicon.ico",
+    "ogImage": "File saved at: attached_assets/ogImage.jpg"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 1,
+    "reasoning": "Logo #1 visually represents the brand 'YouTube' and is located in the header, making it the most suitable choice.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Subscribe",
+      "reasoning": "Button #0 has vibrant colors (#0F0F0F background with white text) and action-oriented text ('Subscribe'), making it the primary CTA."
+    },
+    "secondary": {
+      "index": 2,
+      "text": "Join",
+      "reasoning": "Button #2 has a different background color (#000000) and is less prominent compared to Button #0, making it the secondary action."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "general public, content creators, and viewers interested in diverse topics."
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.8,
+    "overall": 0.8500000000000001
+  }
+}

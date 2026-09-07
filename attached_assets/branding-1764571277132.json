@@ -1,0 +1,68 @@
+{
+  "colorScheme": "dark",
+  "fonts": [
+    {
+      "family": "Times New Roman",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#C069E4",
+    "accent": "#A528D8",
+    "background": "#1A1A1A",
+    "textPrimary": "#A528D8",
+    "link": "#A528D8"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Times New Roman",
+      "heading": "Times New Roman"
+    },
+    "fontStacks": {
+      "heading": [
+        "Times New Roman"
+      ],
+      "body": [
+        "Times New Roman"
+      ],
+      "paragraph": [
+        "Times New Roman"
+      ]
+    },
+    "fontSizes": {
+      "h1": "16px",
+      "h2": "16px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "5px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "5px"
+    }
+  },
+  "images": {
+    "logo": "https://zingmusic.app/icons/Icon-192.png",
+    "favicon": "https://zingmusic.app/icons/Icon-192.png",
+    "ogImage": null
+  },
+  "__framework_hints": [],
+  "personality": {
+    "tone": "modern",
+    "energy": "high",
+    "targetAudience": "music enthusiasts and creators"
+  },
+  "designSystem": {
+    "framework": "unknown",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.95,
+    "overall": 0.925
+  }
+}

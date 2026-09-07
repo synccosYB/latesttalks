@@ -1,0 +1,90 @@
+BUG-0089
+Promo Expiration doesn’t save
+Bug
+New
+High
+Close
+Resolve
+Status
+New
+Priority
+High
+Assigned To
+Unassigned
+Description
+
+Admin portal → Podcast Sponsor page → Edit Sponsor 
+
+Expiration Date: Setting a date in Promo Expiration doesn’t save. Fix the backend so it applies correctly.
+
+Add Time: Allow selecting a time of day along with the date for precise expiration.
+
+Multiple Promo Codes: Allow adding multiple promo codes per sponsor.
+Example: One promo code can remain active while another expires. Both should be applicable simultaneously.
+
+AI Analysis
+
+### Bug Analysis
+
+**Affected Part of Application**:  
+The "Edit Sponsor" modal in the admin portal, specifically within the "Promo Details" section.
+
+---
+
+### Root Cause Analysis
+
+**Observation from Screenshot**:  
+The "Promo Expiration" field allows entering a date but does not save it properly when "Update Sponsor" is clicked. Additionally:
+1. The Promo Expiration currently accepts only a date (`mm/dd/yyyy`) with no field to set a specific time for expiration.
+2. There’s no UI for managing multiple promo codes per sponsor.
+3. No visible error messages are outlined on the screenshot, suggesting potential back-end issues such as unprocessed field data.
+
+**Probable Root Cause (Backend)**:  
+- **Saving Issue**: The backend does not correctly persist the "Promo Expiration" date due to improper handling of this field during the update operation. If the field isn't mapped correctly in the database update logic or lacks validation, it won't save properly.
+- **Time Selection Enhancement**: Adding time requires changes to both the UI and the backend to capture and interpret timestamps, likely involving schema updates.
+- **Multiple Promo Codes Feature**: This needs a schema update to associate multiple codes with one sponsor along with additional UI functionality to manage them.
+
+---
+
+### Recommended Fix and Next Steps
+
+1. **Fix Promo Expiration Save Logic**:
+   - Verify that the promo expiration field is correctly mapped in the backend (at the database level) when the "Update Sponsor" button is clicked.
+   - Ensure validation is applied to the expiration date to confirm acceptable values.
+
+2. **Add Time Selection for Promo Expiration**:
+   - Update the UI field in the "Promo Expiration" section to accept both date and time.
+   - Modify the backend logic to append and process time data (likely converting it into a timestamp format).
+
+3. **Support Multiple Promo Codes**:
+   - Update the database schema to allow multiple promo code entries per sponsor (e.g., one-to-many relationship between sponsor and promo codes).
+   - Add UI elements to manage multiple promo codes (e.g., add/remove buttons alongside details like activation/expiration).
+
+4. **Testing**:
+   - Test UI responsiveness and user interactions.
+   - Validate backend changes: check database entries for correctly saved promo expiration dates, times, and associated promo codes.
+
+---
+
+### JSON Summary
+
+```json
+{
+  "severity": "high",
+  "category": "functionality"
+}
+```
+
+Screenshot
+
+Screenshot
+https://www.latesttalks.com/admin/sponsors
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Pinchus Raab
+Hello@LatestTalks.com
+Client: Latest Talks (www.latesttalks.com)
+Open in Replit
+Replies (0)
+
+No replies yet
+

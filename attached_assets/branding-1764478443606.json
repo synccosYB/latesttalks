@@ -1,0 +1,104 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Roboto",
+      "role": "body"
+    },
+    {
+      "family": "YouTube Noto",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#065FD4",
+    "accent": "#167AC6",
+    "background": "#808080",
+    "textPrimary": "#808080",
+    "link": "#167AC6"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Arial",
+      "heading": "Arial"
+    },
+    "fontStacks": {
+      "heading": [
+        "Roboto",
+        "Arial",
+        "sans-serif"
+      ],
+      "body": [
+        "Roboto",
+        "Arial",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Roboto",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "14px",
+      "h2": "20px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "8px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "8px"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "https://www.youtube.com/s/desktop/a444dc7a/img/favicon.ico",
+    "ogImage": "File saved at: attached_assets/ogImage.jpg"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 1,
+    "reasoning": "The logo is an SVG representation of the YouTube brand, matching the brand name and is located in the header, indicating it is the main brand logo.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "None of the buttons have vibrant or brand colors that would indicate a primary call-to-action. All buttons are dark and muted, making it difficult to classify any as primary."
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "All buttons share the same background color and do not provide a clear secondary option. Therefore, no secondary button can be identified."
+    },
+    "confidence": 0.5
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "general public, content creators, and video consumers"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.5,
+    "colors": 0.8,
+    "overall": 0.65
+  }
+}

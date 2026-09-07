@@ -1,0 +1,74 @@
+
+BUG-0093
+Email to contact
+Bug
+New
+Low
+Close
+Resolve
+Status
+New
+Priority
+Low
+Assigned To
+Unassigned
+Description
+
+Change to Hello@LatestTalks.com
+
+and add a support us button linking to the support page on the bottom left under studio
+
+AI Analysis
+
+### UI Analysis:
+The attached screenshot displays the **Contact Us** page of the website Latest Talks. The page includes:
+1. Three sections in a card layout:
+   - **Email**: Currently displaying two addresses — `Ads@LatestTalks.com` and `Sponsor@LatestTalks.com`. These need to be replaced with `Hello@LatestTalks.com`.
+   - **WhatsApp Status**: A number is provided for WhatsApp updates.
+   - **Studio**: Address information for the studio.
+   
+2. **Send a Message** form: Located on the right-hand side with fields for Name, Email, Subject, and Message, along with a "Send Message" button.
+
+3. The **bottom left corner** is currently empty, and a "Support Us" button needs to be added there. This button should link to the **Support** page.
+
+---
+
+### Recommendations for Fixes:
+1. **Change the Email Address**:
+   - In the Email section, replace the two existing emails with:
+     ```
+     Hello@LatestTalks.com
+     ```
+   - Ensure the email is clickable (a mailto link) for user convenience.
+
+2. **Add the "Support Us" Button**:
+   - Position the button on the **bottom left corner**, aligned with the existing card layout.
+   - Use consistent styling with the website's theme (red color for CTA buttons as seen in the "Send Message" button).
+   - Link the button to the Support page (URL for the link should be confirmed).
+
+3. **Testing**:
+   - Verify UI responsiveness in mobile and desktop views.
+   - Test the functionality of the email link and "Support Us" button.
+
+4. **Accessibility**:
+   - Add appropriate labels and tooltips for any newly introduced element like the "Support Us" button.
+
+---
+
+### JSON Response:
+```json
+{"severity": "low", "category": "ui"}
+```
+
+Screenshot
+
+Screenshot
+https://www.latesttalks.com/contact
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Pinchus Raab
+Hello@LatestTalks.com
+Client: Latest Talks (www.latesttalks.com)
+Open in Replit
+Replies (0)
+
+No replies yet

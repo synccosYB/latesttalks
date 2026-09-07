@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "file": "home.json",
+    "ok": true
+  },
+  {
+    "name": "Podcast",
+    "path": "/podcast",
+    "file": "podcast.json",
+    "ok": true
+  },
+  {
+    "name": "Episode Detail",
+    "path": "/episode/df32c725-92d0-4854-8b24-67a4749329bf",
+    "file": "episode-detail.json",
+    "ok": true
+  },
+  {
+    "name": "Guests",
+    "path": "/guests",
+    "file": "guests.json",
+    "ok": true
+  },
+  {
+    "name": "Guest Profile",
+    "path": "/guest/c078af58-c932-4050-b20d-c43e7e72bbcc",
+    "file": "guest-profile.json",
+    "ok": true
+  },
+  {
+    "name": "Hosts",
+    "path": "/hosts",
+    "file": "hosts.json",
+    "ok": true
+  },
+  {
+    "name": "Sponsors",
+    "path": "/sponsors",
+    "file": "sponsors.json",
+    "ok": true
+  },
+  {
+    "name": "Sponsor Detail",
+    "path": "/sponsor/ffbcd7ff-0c28-4302-9582-c5cff450bdff",
+    "file": "sponsor-detail.json",
+    "ok": true
+  },
+  {
+    "name": "Advertise",
+    "path": "/ads",
+    "file": "advertise.json",
+    "ok": true
+  },
+  {
+    "name": "Community",
+    "path": "/community",
+    "file": "community.json",
+    "ok": true
+  },
+  {
+    "name": "Latest Talks Plus",
+    "path": "/plus",
+    "file": "latest-talks-plus.json",
+    "ok": true
+  },
+  {
+    "name": "Support Us",
+    "path": "/sponsor",
+    "file": "support-us.json",
+    "ok": true
+  },
+  {
+    "name": "Gift",
+    "path": "/gift",
+    "file": "gift.json",
+    "ok": true
+  },
+  {
+    "name": "Contact",
+    "path": "/contact",
+    "file": "contact.json",
+    "ok": true
+  },
+  {
+    "name": "Guest Application",
+    "path": "/apply",
+    "file": "guest-application.json",
+    "ok": true
+  }
+]

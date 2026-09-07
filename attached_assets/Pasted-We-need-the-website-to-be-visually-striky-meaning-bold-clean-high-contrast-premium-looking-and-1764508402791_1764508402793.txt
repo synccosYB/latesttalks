@@ -1,0 +1,182 @@
+We need the website to be visually striky — meaning bold, clean, high-contrast, premium-looking, and attention-grabbing. Below are the exact directives to achieve the look and feel Yoel wants.
+
+✅ 1. Strengthen the Hero Section
+
+The hero section should be the strongest visual of the page.
+
+Do the following:
+
+Use stronger background gradients, dark navy → deep purple (#0d1220 → #1c1f36) with higher contrast.
+
+Increase text size for the main headline (H1):
+
+Desktop: 64–72px, 700–800 weight
+
+Mobile: 42–48px
+
+Add more letter spacing and tighter line height.
+
+Ensure the word “Yiddish” stays in the accent red #DE2026, and increase its font size relative to the line above.
+
+Add slight motion or fade-in animations:
+
+Logo fades in first
+
+Headline slides up
+
+Subheadline fades in
+
+CTA button pulses slightly on hover
+
+This creates the “wow” effect as soon as the website loads.
+
+✅ 2. Improve the Navigation Bar
+
+The nav bar should feel premium and easy to scan.
+
+Do this:
+
+Add subtle shadow under the navbar
+box-shadow: 0 1px 6px rgba(0,0,0,0.25);
+
+Increase spacing between nav items
+
+Make the Latest Talks+ button visually stronger:
+
+Use accent color (#DE2026)
+
+Larger padding
+
+Rounded corners (6–8px)
+
+Hover: darken & raise slightly
+
+Example:
+transform: translateY(-1px);
+
+✅ 3. Use Better Visual Hierarchy
+
+Every section must be clear at first glance.
+
+Ensure:
+
+Section headers have stronger contrast
+
+Use consistent spacing:
+
+80–100px between sections
+
+24–32px between elements
+
+Uniform card design for videos/episodes:
+
+Drop shadow
+
+Rounded corners
+
+Better thumbnail quality
+
+✅ 4. Add Consistent UI Depth
+
+Make important elements pop.
+
+Add:
+
+Soft shadows on:
+
+Episode cards
+
+El Al photos
+
+Buttons
+
+Featured episode
+
+Hover animations:
+
+Thumbnails scale to 1.03
+
+Card shadow increases gradually
+
+Buttons brighten + raise
+
+Use smooth transitions:
+
+transition: 0.25s ease;
+
+✅ 5. Increase the Premium Look & Polish
+Implement:
+
+Better grid alignment
+
+Keep everything on clean 12-column layout
+
+Use consistent border-radius everywhere (6px or 8px)
+
+Use Poppins or Inter with optical sizing if possible
+
+Use font-weight 600–700 for section titles
+
+✅ 6. Address Background & Color Scheme
+
+Stick to the brand colors:
+
+Primary navy: #10213A
+
+Accent red: #DE2026
+
+White text: #FFFFFF
+
+Gray for secondary text: #BFC5D2
+
+Background improvements:
+
+Add slight vignette effect
+
+Add extremely subtle noise to make gradients feel more alive
+
+✅ 7. Featured Episode Should Look Like a Premium Card
+
+Improve the Featured Episode block:
+
+Larger thumbnail
+
+Redefined card container with shadow
+
+Use bolder fonts
+
+Add play icon overlay
+
+Make episode date + guest stand out
+
+✅ 8. Community / El Al Section Should Be More Interactive
+
+Use carousel for fan photos
+
+Add hover zoom effect
+
+“Upload Your Photo” button must be more prominent (accent red)
+
+✅ 9. Footer Must Be Clean & Well Structured
+
+Better spacing, readable links, consistent alignment.
+
+Add horizontal dividers
+
+Use smaller font weight
+
+Add social icons with hover effects
+
+🎯 Goal
+
+Make the site feel like a premium media brand — strong visual identity, bold typography, clean spacing, professional layout, and modern interactions.
+
+This should match or exceed the design quality of top news/media sites like:
+
+TED
+
+MasterClass
+
+Netflix landing pages
+
+Spotify Podcast pages

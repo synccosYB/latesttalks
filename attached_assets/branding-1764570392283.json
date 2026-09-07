@@ -1,0 +1,118 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Noto Sans",
+      "role": "body"
+    },
+    {
+      "family": "Noto Sans Hebrew",
+      "role": "body"
+    },
+    {
+      "family": "Open Sans Hebrew",
+      "role": "body"
+    },
+    {
+      "family": "Font Awesome 6 Pro",
+      "role": "display"
+    }
+  ],
+  "colors": {
+    "primary": "#5A6795",
+    "accent": "#F5B04E",
+    "background": "#FFFFFF",
+    "textPrimary": "#000000",
+    "link": "#0E2046"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Noto Sans",
+      "heading": "Font Awesome 6 Pro"
+    },
+    "fontStacks": {
+      "heading": [
+        "Noto Sans",
+        "Open Sans Hebrew",
+        "sans-serif"
+      ],
+      "body": [
+        "Noto Sans",
+        "Open Sans Hebrew",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Noto Sans",
+        "Open Sans Hebrew",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "22px",
+      "h2": "16px",
+      "body": "10px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "7px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "7px"
+    },
+    "buttonPrimary": {
+      "background": "#F5B04E",
+      "textColor": "#000000",
+      "borderRadius": "3px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#8F3333",
+      "textColor": "#FFFFFF",
+      "borderRadius": "12px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://www.yiddish24.com/images/logo.svg",
+    "favicon": "https://www.yiddish24.com/images/apple-touch-icon.png",
+    "ogImage": "https://www.yiddish24.com/images/apple-icon-180x180.png"
+  },
+  "__framework_hints": [
+    "bootstrap"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 visually represents the brand name 'Yiddish 24' and is located in the header, linking to the homepage, making it the main brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Sign up",
+      "reasoning": "Button #0 has a vibrant orange background (#F5B04E) and action-oriented text 'Sign up', making it the primary call-to-action."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Visit Now",
+      "reasoning": "Button #1 has a different vibrant red background (#8F3333) and is less prominent than the primary button, making it suitable as the secondary action."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "Yiddish-speaking community and culture enthusiasts."
+  },
+  "designSystem": {
+    "framework": "bootstrap",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

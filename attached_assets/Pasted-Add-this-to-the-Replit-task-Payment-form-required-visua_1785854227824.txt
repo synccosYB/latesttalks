@@ -1,0 +1,269 @@
+Add this to the Replit task:
+
+## Payment form — required visual and workflow redesign
+
+The payment form also needs a complete redesign. It must match Latest Talks+, while remaining simpler and more restrained than the public landing page.
+
+The current prototype uses ordinary card-number, expiration, and CVC inputs and then simulates payment processing. That must not ship. The production form must use the real Sola iFields tokenized fields and the existing webhook-driven membership flow. Raw card information must never enter our application state or reach our server. 
+
+### Checkout presentation
+
+Open checkout as a centered modal on desktop and a full-screen sheet on mobile.
+
+Use:
+
+* White checkout surface
+* Pale-blue branded header
+* Latest Talks+ badge at the top
+* Strong royal-blue primary action
+* Minimal shadows
+* Clear rectangular form fields
+* Limited rounding
+* No decorative collage, confetti, floating cards, gradients, or oversized marketing sections inside checkout
+
+The form should feel secure, calm, and easy to complete.
+
+### Header
+
+At the top show:
+
+**Join Latest Talks+**
+
+Then a clear order summary:
+
+**Monthly membership**
+$9.99 charged today
+Renews monthly until canceled
+
+or:
+
+**Annual membership**
+$120.00 charged today
+Renews annually until canceled
+
+Include a visible `Change plan` action.
+
+Do not show only a large price with a small suffix. The customer must understand exactly what is being charged today and how often it will renew.
+
+### Form layout
+
+Use this order:
+
+1. **Contact information**
+
+   * Full name
+   * Email address
+   * Phone number, only when operationally required
+
+2. **Payment information**
+
+   * Card number through Sola iFields
+   * Expiration date
+   * CVV through Sola iFields
+   * Billing ZIP or postal code
+   * Country, only when required by the payment setup
+
+3. **Membership authorization**
+
+   * Required unchecked checkbox
+   * Plain-language renewal terms
+
+4. **Final payment button**
+
+Do not ask for shipping information before payment.
+
+### Exact field treatment
+
+Each field needs:
+
+* Persistent label above it
+* Clear focus state
+* Error text directly underneath
+* No placeholder-only labels
+* No fields squeezed into three narrow equal columns
+* At least 44px field height
+* Proper autofill attributes where applicable
+
+Desktop layout:
+
+* Full name: full width
+* Email and phone: two columns where space allows
+* Card number: full width
+* Expiration and CVV: two columns
+* Billing ZIP: full width or aligned with expiration where comfortable
+
+Mobile layout:
+
+* Everything in one column
+* No horizontal scrolling
+* Native keyboard types
+* Button fixed only when it does not cover fields or error messages
+
+### Sola iFields requirements
+
+Use hosted Sola iFields for sensitive card data.
+
+Required behavior:
+
+* Card number and CVV render inside Sola-hosted secure fields
+* The app receives only single-use tokens
+* No raw PAN or CVV is stored in React state, logs, analytics, error tracking, browser storage, database records, or server requests
+* Expiration and billing fields must follow Sola’s required integration format
+* Tokenization errors display safely without exposing provider internals
+* Disable the final button while tokenization or payment creation is in progress
+* Prevent duplicate submissions
+* Do not create a Stripe checkout session for new memberships
+
+### Required authorization
+
+Add a required checkbox with plan-specific language.
+
+Monthly:
+
+`I authorize Latest Talks to charge $9.99 today and $9.99 each month until I cancel. I understand that I can cancel at any time and will retain access through the end of my paid billing period.`
+
+Annual:
+
+`I authorize Latest Talks to charge $120.00 today and $120.00 each year until I cancel. I understand that I can cancel at any time and will retain access through the end of my paid billing period.`
+
+The checkbox must not be preselected.
+
+Link `Terms` and `Privacy Policy` beneath the authorization.
+
+### Final button labels
+
+Use exact, explicit labels:
+
+* `Start membership — $9.99/month`
+* `Start membership — $120.00/year`
+
+Do not use vague labels such as:
+
+* Continue
+* Submit
+* Pay
+* Get started
+
+The button should show a spinner and change to:
+
+* `Starting membership…`
+
+while processing.
+
+### Trust and reassurance
+
+Directly below the button show a small trust row:
+
+* Secure payment
+* Cancel anytime
+* Receipt emailed immediately
+
+Do not show fake security badges or card-brand logos unless provided by the actual payment integration.
+
+### Error states
+
+Declined or failed payments must:
+
+* Keep the entered non-sensitive contact and billing information
+* Never activate membership
+* Show a clear message above the payment button
+* Allow retry
+* Avoid technical codes in the customer-facing message
+* Record the provider response internally for staff troubleshooting
+
+Customer-safe examples:
+
+**Your payment could not be completed.**
+Please check your card information or try another card.
+
+**We could not connect to the payment service.**
+Your card was not charged. Please try again.
+
+**This payment may already be processing.**
+Please wait a moment before trying again.
+
+Do not display success until the server has confirmed a successful payment state.
+
+### Success behavior
+
+After successful payment:
+
+1. Show:
+
+   **Welcome to Latest Talks+**
+
+2. Confirm:
+
+   * Selected plan
+   * Amount paid
+   * Email used
+   * Membership status
+
+3. Send the receipt and membership email.
+
+4. Activate access from the confirmed payment/webhook result.
+
+5. Then offer the welcome-gift shipping step separately:
+
+   **Where should we send your Latest Talks thank-you gift?**
+
+The user may:
+
+* Add shipping details now
+* Skip and add them later from the member account
+
+Skipping shipping must not affect membership activation.
+
+Do not require the user to create a password before confirming that payment succeeded. Account setup should follow the real identity flow:
+
+* Existing signed-in user: attach membership to that account
+* Existing email without active session: send secure sign-in or account-access instructions
+* New user: send secure account-creation instructions
+
+Do not invent or expose a temporary password.
+
+### Payment state integrity
+
+The UI must accurately represent these states:
+
+* Form ready
+* Tokenizing
+* Creating customer
+* Starting payment
+* Awaiting confirmation
+* Successful and active
+* Payment failed
+* Payment successful but membership activation pending
+* Duplicate or already-processed request
+
+If payment succeeds but membership activation is delayed, show:
+
+**Your payment was received. We are finishing your membership setup. You will receive an email as soon as access is ready.**
+
+Do not ask the customer to pay again.
+
+### Responsive and accessibility requirements
+
+* Trap focus inside the checkout modal
+* Escape closes it only before submission begins
+* Restore focus to the button that opened checkout
+* Use semantic labels and accessible error associations
+* Announce processing and error states to screen readers
+* Support keyboard-only completion
+* Maintain visible focus outlines
+* Respect reduced-motion preferences
+* Confirm the user before closing a checkout containing entered data
+* Test Safari autofill, Chrome autofill, iPhone, Android, and desktop browsers
+
+### Done looks like
+
+* The form visually belongs to Latest Talks+.
+* The selected plan and charge due today are unmistakable.
+* The customer can complete checkout without distractions.
+* The final authorization and recurring billing terms are explicit.
+* Sola iFields securely tokenize sensitive data.
+* Raw card details never enter our application.
+* Declined payments never activate access.
+* Successful payments reliably create and activate the correct recurring membership.
+* Shipping is a separate optional post-payment step.
+* The form works cleanly on mobile and desktop.

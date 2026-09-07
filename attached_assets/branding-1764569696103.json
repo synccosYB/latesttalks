@@ -1,0 +1,103 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Montserrat",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#3E3A8C",
+    "accent": "#01A3E3",
+    "background": "#FFFFFF",
+    "textPrimary": "#3E3A8C",
+    "link": "#3E3A8C"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Montserrat",
+      "heading": "Montserrat"
+    },
+    "fontStacks": {
+      "heading": [
+        "Montserrat",
+        "sans-serif"
+      ],
+      "body": [
+        "Montserrat",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Montserrat",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "48px",
+      "h2": "36px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "18px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "18px"
+    },
+    "buttonPrimary": {
+      "background": "#01A3E3",
+      "textColor": "#FFFFFF",
+      "borderRadius": "93px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#3E3A8C",
+      "textColor": "#FFFFFF",
+      "borderRadius": "93px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.svg",
+    "ogImage": null
+  },
+  "__framework_hints": [
+    "WordPress 6.8.3"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 visually represents the brand name 'CardRight' and is located in the header, linking to the homepage, making it the main brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "SIGN UP",
+      "reasoning": "Button #0 has a vibrant blue background (#01A3E3) and action-oriented text 'SIGN UP', making it the primary call-to-action."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "SIGN UP",
+      "reasoning": "Button #1 has a darker blue background (#3E3A8C) and is less prominent than Button #0, making it the secondary action."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "young adults and professionals seeking financial solutions"
+  },
+  "designSystem": {
+    "framework": "unknown",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

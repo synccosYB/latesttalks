@@ -1,0 +1,115 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Poppins",
+      "role": "body"
+    },
+    {
+      "family": "Questrial",
+      "role": "body"
+    },
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    },
+    {
+      "family": "Open Sans",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#10213A",
+    "accent": "#DE2026",
+    "background": "#F0EDEB",
+    "textPrimary": "#10213A",
+    "link": "#10213A"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Poppins",
+      "heading": "Poppins"
+    },
+    "fontStacks": {
+      "heading": [
+        "Open Sans",
+        "sans-serif"
+      ],
+      "body": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Poppins",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "40px",
+      "h2": "18px",
+      "body": "25px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "2px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "2px"
+    },
+    "buttonPrimary": {
+      "background": "#DE2026",
+      "textColor": "#000000",
+      "borderColor": "#FFFFFF",
+      "borderRadius": "0px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.jpg",
+    "favicon": "File saved at: attached_assets/favicon.png",
+    "ogImage": "https://i.ytimg.com/vi/Nv-HsApcBms/maxresdefault_live.jpg"
+  },
+  "__framework_hints": [
+    "Wix.com Website Builder"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "The logo matches the brand name 'Latest Talks' and is located in the header, making it the most likely candidate for the brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": ">",
+      "reasoning": "The button has a vibrant red/orange background (#DE2026), which is typically associated with primary call-to-action buttons. It stands out and is likely intended to attract immediate attention."
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "There are no other buttons present to serve as a secondary call-to-action, as the only button available is the primary one."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "podcast listeners and content creators"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.95,
+    "overall": 0.925
+  }
+}

@@ -1,0 +1,42 @@
+Before coding, inspect the current official Sola documentation and confirm the exact Transaction API, Customer and Recurring API v2.1, iFields, and webhook request/response formats. Do not invent endpoint URLs, field names, webhook event names, signature algorithms, or recurring-schedule behavior. Document the confirmed Sola contract in the task notes before implementation.
+
+Sola’s current documentation confirms:
+
+iFields returns separate single-use tokens for card and CVV data, keeping those values away from your server.
+The Customer and Recurring API supports customers, stored payment methods, single transactions, and recurring schedules. It requires the API key in the Authorization header and currently documents X-Recurring-Api-Version: 2.1.
+Sola webhooks use the ck-signature header when a webhook PIN is configured.
+Single-use tokens cannot be reused, so retry handling must generate fresh card and CVV tokens rather than resubmitting the same tokens.
+
+I would also add these acceptance requirements:
+
+Add to “Done looks like”
+The Sola API and iFields keys are confirmed to belong to the same Sola account; mismatched keys must produce an honest configuration error.
+Every retry obtains new iFields card and CVV tokens.
+The integration explicitly sends the required Sola software name, software version, API version, and other required gateway fields.
+Replit records the exact webhook signature-validation method used from Sola’s documentation and tests it against an actual sandbox webhook.
+The task may not be marked complete merely because an initial payment works; the recurring schedule must be visible in Sola and a webhook must be received and reconciled.
+The production feature flag remains off until sandbox evidence is attached.
+Change this wording
+
+Current wording:
+
+Webhooks are … the source of truth.
+
+Use:
+
+A confirmed synchronous Sola approval may activate the initial membership immediately, but the transaction must subsequently reconcile with the verified webhook. Webhooks are authoritative for later asynchronous changes such as renewals, declines, refunds, voids, chargebacks, and schedule changes.
+
+Otherwise, Replit might unnecessarily hold a successful customer on a pending screen until the webhook arrives.
+
+One potential architectural issue
+
+Do not automatically create both an initial standalone transaction and a recurring schedule that immediately charges again. Replit must establish the correct Sola sequence from the official API:
+
+Create customer.
+Create/tokenize payment method.
+Charge the initial membership exactly once.
+Create the recurring schedule with its first future billing date set to the next monthly or annual renewal date.
+
+The test must prove there was exactly one initial charge.
+
+You can approve #11 after adding those protections. The task is detailed enough; Replit should now begin by producing an implementation plan and identifying which Sola credentials or sandbox access it still needs, rather than asking you to redesign the workflow.

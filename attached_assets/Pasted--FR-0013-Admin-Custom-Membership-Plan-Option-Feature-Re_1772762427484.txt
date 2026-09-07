@@ -1,0 +1,114 @@
+
+FR-0013
+Admin Custom Membership Plan Option
+Feature Request
+In Progress
+High
+Close
+Resolve
+Status
+In Progress
+Priority
+High
+Assigned To
+Unassigned
+Description
+
+The Admin Portal member creation page should allow admins to
+assign a custom membership plan when adding a member. This is
+needed for cases where a member receives a free membership or
+a manually set price that does not match the standard plans.
+
+Fix Required:
+- Add a small "+ Custom Plan" button in the Membership Plan
+  section of the admin add member page.
+- Only display this option inside the Admin Portal.
+- Allow selecting "Free Membership".
+- Add custom price field.
+- Allow price type selection:
+  - Monthly
+  - Yearly
+- Add payment method field:
+  - Zelle
+  - Or manual text entry for other payment methods.
+- Add "Member Notes" field.
+- Notes should only be visible to admins.
+
+Behavior:
+- Admin can assign a free membership without payment.
+- Admin can set a custom monthly or yearly price.
+- Admin can record how the member paid (Zelle or other).
+- Member notes remain private and are not visible to users.
+- Custom plans should still activate the member account
+  like any normal membership plan.
+
+AI Analysis
+
+#### **Analysis of the Bug Report and Screenshot**
+
+##### **Affected Part of the Application**:
+The "Add Member" modal in the Admin Portal for creating new members.
+
+##### **Issue Description**:
+The current functionality does not allow the admin to assign a custom membership plan. Only predefined options (monthly and annual pricing) are available. There is no mechanism for free memberships, custom pricing, selection of payment methods, or additional admin notes. These limitations can hinder administrative flexibility, especially for unique cases or manual price adjustments.
+
+##### **Observed UI Behavior in Screenshot**:
+1. The modal contains:
+   - Required fields: Email Address, Full Name.
+   - Optional fields: Phone Number and Admin Notes.
+   - The "Membership Plan" section includes two radio buttons ("Monthly" and "Annual").
+   - The "Admin Notes" field (text box) is already present, but only for general text input.
+2. UI components display standard pricing for membership plans without a "Custom Plan" option or a payment method field.
+
+##### **Root Cause Analysis**:
+- **Missing functionality**: No support for custom membership plans as described in the requirements.
+- **Design limitation**: There is no button or mechanism to trigger custom plan creation (e.g., "+ Custom Plan" button).
+- **Payment method field is absent**: Admins cannot specify how payment was received.
+- **Custom price field is missing**: Cannot set pricing manually and specify monthly or yearly price.
+- **Private admin notes**: Notes field exists but operates as a general-purpose text field without restrictions or specific display rules ensuring privacy.
+
+##### **Recommended Fix**:
+1. **UI Enhancements**:
+   - Add a "+ Custom Plan" button near the "Membership Plan" section to dynamically expand a section for additional fields.
+   - Include fields for:
+     - Free membership checkbox.
+     - Custom price text input.
+     - Pricing frequency selection (Monthly/Yearly).
+     - Dropdown or text input for payment methods ("Zelle" or others).
+     - Admin Notes field, ensuring visibility only to admins.
+
+2. **Backend Changes**:
+   - Update the database schema to accommodate:
+     - Custom pricing options with frequency.
+     - Payment methods.
+     - Free membership indicator.
+     - Admin-only notes field.
+   - Modify API endpoints to handle custom membership plan creation.
+
+3. **Testing**:
+   - Verify modal functionality for all conditions:
+     - Free memberships.
+     - Custom plan creation with pricing and payment methods.
+     - Regular membership plan selections (monthly and annual).
+   - Ensure admin-only notes are not visible in the member system.
+
+##### **JSON Output**:
+```json
+{
+  "severity": "high",
+  "category": "functionality"
+}
+```
+
+Screenshot
+
+Screenshot
+https://www.latesttalks.com/admin/members
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Pinchus Raab
+Hello@LatestTalks.com
+Client: Latest Talks (www.latesttalks.com)
+Open in Replit
+Replies (0)
+
+No replies yet

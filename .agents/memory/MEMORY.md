@@ -1,0 +1,2 @@
+- [Rich text rendering convention](rich-text-rendering.md) — full public views render sanitized HTML via RichTextContent; excerpts use stripHtmlToText; never raw innerHTML.
+- [DB schema drift and db:push](db-schema-drift.md) — legacy episode/guest columns must stay in schema.ts or db:push prompts to drop data and hangs post-merge setup.

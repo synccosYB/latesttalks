@@ -1,0 +1,452 @@
+Replace Stripe Membership Checkout with Sola Payments
+What and why
+
+Replace the current Stripe checkout on the Latest Talks+ membership page with a complete Sola Payments integration.
+
+The page already has:
+
+Monthly membership: $9.99/month
+Annual membership: $120.00/year
+“Choose Monthly” and “Choose Annual” buttons
+Stripe payment logos and “Secure payment powered by Stripe”
+
+The design should remain substantially the same. This task is about replacing the payment infrastructure and making membership activation reliable, secure, and fully synchronized with Sola.
+
+Use Sola iFields + the Sola Customer and Recurring API, not raw card inputs and not a fake payment form. Sola recommends iFields for custom checkout pages because card and CVV data are tokenized without touching our server.
+
+Required payment experience
+
+When a visitor clicks Choose Monthly or Choose Annual, open a professional checkout modal or dedicated checkout section on the same site.
+
+The checkout must show:
+
+Selected plan
+Billing frequency
+Amount due today
+Customer name
+Email address
+Card number using Sola iFields
+Expiration date
+CVV using Sola iFields
+Billing ZIP code
+Terms acknowledgment
+Final payment button
+
+Button wording:
+
+Monthly: Start membership — $9.99/month
+Annual: Start membership — $120.00/year
+
+Do not collect card number or CVV through normal application inputs. Those fields must be hosted through Sola iFields and exchanged for Sola single-use tokens before the backend processes the payment.
+
+Environment secrets
+
+Add these as Replit Secrets, never hard-code them:
+
+SOLA_API_KEY=
+VITE_SOLA_IFIELDS_KEY=
+SOLA_WEBHOOK_PIN=
+SOLA_SOFTWARE_NAME=Latest Talks
+SOLA_SOFTWARE_VERSION=1.0.0
+SOLA_ENVIRONMENT=production
+
+Rules:
+
+SOLA_API_KEY is server-only.
+SOLA_WEBHOOK_PIN is server-only.
+Only the iFields key may be used by the browser.
+Never log keys, payment tokens, full card numbers, CVV, or authorization headers.
+Do not expose the API key in Vite variables, frontend bundles, HTML, API responses, or browser network calls.
+
+The existing portal shows:
+
+An API key described as software
+An iFields key described as Website
+
+Use the full values from Replit Secrets, not the masked values shown in Sola.
+
+Database design
+
+Create or update proper membership tables.
+
+Membership plans
+membership_plans
+- id
+- code: latest_plus_monthly | latest_plus_annual
+- name
+- amount_cents
+- currency
+- billing_interval: monthly | annual
+- sola_plan_or_schedule_reference, nullable
+- active
+- created_at
+- updated_at
+
+Seed:
+
+latest_plus_monthly
+$9.99
+999 cents
+monthly
+USD
+latest_plus_annual
+$120.00
+12000 cents
+annual
+USD
+Membership subscriptions
+membership_subscriptions
+- id
+- user_id
+- plan_id
+- status
+- sola_customer_id
+- sola_payment_method_id
+- sola_schedule_id
+- current_period_start
+- current_period_end
+- cancel_at_period_end
+- canceled_at
+- failed_at
+- created_at
+- updated_at
+
+Supported statuses:
+
+pending
+active
+past_due
+cancel_at_period_end
+canceled
+failed
+Payment transactions
+payment_transactions
+- id
+- user_id
+- subscription_id
+- provider: sola
+- transaction_type
+- amount_cents
+- currency
+- status
+- invoice_number
+- sola_reference_number
+- sola_authorization_code
+- sola_result
+- sola_error_code
+- masked_card_number
+- card_type
+- raw_response_encrypted_or_redacted
+- idempotency_key
+- created_at
+- updated_at
+
+Do not store raw card details, CVV, routing numbers, account numbers, or reusable sensitive payment payloads.
+
+Webhook events
+payment_webhook_events
+- id
+- provider
+- external_event_key
+- event_type
+- signature_valid
+- payload_redacted
+- processing_status
+- processing_error
+- received_at
+- processed_at
+
+Webhook processing must be idempotent.
+
+Backend endpoints
+
+Build the following endpoints.
+
+POST /api/payments/sola/start-membership
+
+Authenticated user required.
+
+Request:
+
+{
+  "planCode": "latest_plus_monthly",
+  "cardToken": "single-use-token",
+  "cvvToken": "single-use-token",
+  "expiration": "MMYY",
+  "billingZip": "10950",
+  "name": "Customer Name",
+  "email": "customer@example.com"
+}
+
+Backend responsibilities:
+
+Validate the selected plan against the server-side database.
+Never trust an amount sent by the browser.
+Refuse inactive or unknown plans.
+Prevent duplicate active subscriptions.
+Create or retrieve the Sola customer.
+Create the reusable Sola payment method from the approved tokenized payment flow.
+Process the initial payment.
+Create the monthly or annual recurring schedule using the Sola Customer and Recurring API.
+Save all Sola IDs and transaction references.
+Activate the membership only after confirmed approval.
+Return a safe response without sensitive gateway data.
+
+Sola’s recurring API supports customers, payment methods and recurring schedules. Authentication must use the API key in the server-side authorization header.
+
+Use a unique invoice number for every attempt, for example:
+
+LT-MEM-{userId}-{timestamp}
+
+Sola recommends sending a unique invoice identifier to help detect accidental duplicate transactions.
+
+POST /api/payments/sola/cancel-membership
+
+Authenticated user required.
+
+Behavior:
+
+Default to canceling at the end of the current paid billing period.
+Update the corresponding Sola recurring schedule.
+Set cancel_at_period_end = true.
+Do not immediately remove paid access unless explicitly requested by an administrator.
+Return the final access expiration date.
+POST /api/payments/sola/change-plan
+
+Authenticated user required.
+
+Support:
+
+Monthly to annual
+Annual to monthly
+
+For the initial release, schedule the new plan to begin after the existing paid period rather than calculating complicated mid-cycle prorations.
+
+GET /api/membership/status
+
+Return:
+
+{
+  "isPremium": true,
+  "status": "active",
+  "plan": "latest_plus_monthly",
+  "currentPeriodEnd": "2026-08-20T00:00:00Z",
+  "cancelAtPeriodEnd": false
+}
+POST /api/payments/sola/webhook
+
+This must:
+
+Accept Sola’s form-encoded webhook POST.
+Preserve the raw request body required for signature validation.
+Read the ck-signature header.
+Validate it using the configured Sola webhook PIN.
+Reject invalid signatures.
+Log the event safely.
+Deduplicate previously processed events.
+Match the event using Sola reference number, invoice number, customer ID or schedule ID.
+Update payment and membership status.
+Return a quick successful response and process safely without timing out.
+
+Sola webhooks are POSTed as key-value form data. When a webhook PIN is configured, Sola sends a ck-signature header that must be validated.
+
+Handle at minimum:
+
+Approved initial payment
+Approved recurring payment
+Declined recurring payment
+Error
+Void
+Refund
+Chargeback
+ACH return, only if ACH is enabled later
+
+A browser redirect or frontend success response is not authoritative. The webhook and verified server response must be the source of truth.
+
+Payment result handling
+
+Treat Sola results carefully:
+
+Approved: activate or extend membership.
+Declined: do not activate; show the safe gateway error.
+Error: do not activate; allow retry.
+Partial or mismatched authorization amount: do not activate and flag for review.
+Duplicate submission: reconcile against the existing transaction instead of creating another membership.
+
+Verify that the amount actually authorized equals the plan amount. Sola responses provide the result, authorized amount and a unique reference number that should be retained for reconciliation and support.
+
+Membership access rules
+
+Create one canonical server-side function:
+
+hasActiveLatestTalksMembership(userId)
+
+Premium access is granted only when:
+
+status = active
+AND current_period_end > now
+
+Use this function everywhere:
+
+Premium episodes
+Early-access episodes
+Question submission
+Ad-free controls
+Latest Talks+ navigation
+Premium account page
+Protected APIs
+
+Do not secure content only by hiding frontend buttons. Every protected API and premium media URL must enforce membership server-side.
+
+User interface changes
+
+On the membership page:
+
+Preserve the current layout and branding.
+Replace “Secure payment powered by Stripe” with:
+Secure payment powered by Sola
+Remove Stripe Link branding unless Link remains genuinely supported.
+Do not show Apple Pay or Google Pay logos until those methods are actually configured and working through Sola.
+Show only payment methods that can truly be used.
+Add loading states to both plan buttons.
+Prevent double-click submissions.
+Show inline validation.
+Keep entered non-sensitive information after a decline.
+Never repopulate CVV.
+Provide a clear success state and redirect to the premium dashboard.
+Provide a clear decline state with a retry option.
+Make the modal mobile responsive and keyboard accessible.
+Premium account page
+
+Create /account/membership showing:
+
+Current plan
+Membership status
+Next billing date
+Amount and frequency
+Masked card and card type, when available
+Update payment method
+Change plan
+Cancel at period end
+Reactivate before expiration
+Payment history
+Download/view receipts when supported
+
+All money must use canonical formatting:
+
+$9.99
+$120.00
+Email notifications
+
+Send branded Latest Talks emails for:
+
+Membership activated
+Recurring payment successful
+Recurring payment failed
+Payment method needs attention
+Cancellation scheduled
+Membership expired
+Plan changed
+Refund completed
+
+Do not claim a membership is active until payment approval is confirmed.
+
+Existing Stripe data
+
+Do not delete Stripe code or existing Stripe customer data immediately.
+
+Create a clean provider abstraction:
+
+PaymentProvider
+- startMembership()
+- cancelSubscription()
+- changePlan()
+- processWebhook()
+- getSubscription()
+
+Implement SolaPaymentProvider.
+
+Existing Stripe memberships must continue to work until they are deliberately migrated or expire. New memberships should use Sola after the feature flag is enabled.
+
+Add:
+
+MEMBERSHIP_PAYMENT_PROVIDER=sola
+
+Do not mix one subscription between Stripe and Sola.
+
+Sola portal configuration required
+
+After deployment, configure the Sola portal webhook URL as:
+
+https://<production-domain>/api/payments/sola/webhook
+
+Generate and store a webhook PIN.
+
+The application must provide an admin diagnostics screen showing:
+
+Provider configured
+API key present, without displaying it
+iFields key present, without displaying it
+Webhook PIN present
+Last verified webhook received
+Last successful transaction
+Last declined transaction
+Current environment
+Test connection result
+
+Do not perform a real charge merely to test configuration.
+
+Security requirements
+Never let the backend receive raw card number or CVV.
+Never log raw webhook secrets or payment credentials.
+Redact payment payloads before storing or sending to Sentry.
+Apply rate limiting to payment endpoints.
+Require authentication and CSRF protection where applicable.
+Use server-calculated amounts.
+Use database transactions when activating memberships.
+Add idempotency around every payment submission.
+Validate webhook signatures before changing any records.
+Do not unlock premium content from query-string success parameters.
+Do not accept a frontend claim that payment succeeded.
+Keep sandbox and production keys strictly separated.
+Testing requirements
+
+Create automated tests for:
+
+Monthly approval
+Annual approval
+Declined payment
+Gateway error
+Duplicate button submission
+Replayed webhook
+Invalid webhook signature
+Amount mismatch
+Unknown plan code
+Existing active subscription
+Cancellation at period end
+Recurring renewal approval
+Recurring renewal decline
+Stripe legacy member remains active
+Premium API access without membership is rejected
+Premium API access with active membership succeeds
+
+Use Sola sandbox credentials before production.
+
+Done looks like
+Clicking either plan opens the Sola-powered checkout.
+No Stripe checkout session is created for new members.
+Raw card details never enter our application server.
+Monthly membership charges $9.99 and creates a monthly recurring schedule.
+Annual membership charges $120.00 and creates an annual recurring schedule.
+Successful payment activates Latest Talks+.
+Failed payment does not activate membership.
+Webhooks are signature-verified and idempotent.
+Renewals extend access automatically.
+Failed renewals correctly mark the subscription past due.
+Cancellation preserves access through the paid period.
+The account page accurately shows subscription and payment history.
+Existing Stripe members are not broken.
+Production has an honest diagnostics screen and no secret values are exposed.
+The page says “Secure payment powered by Sola” only after Sola is truly live.
+
+Do not ship a visual-only replacement that still calls Stripe underneath. Do not use a mocked Sola response, and do not mark the work complete until a sandbox monthly purchase, sandbox annual purchase, decline, webhook and cancellation have all been demonstrated end to end.

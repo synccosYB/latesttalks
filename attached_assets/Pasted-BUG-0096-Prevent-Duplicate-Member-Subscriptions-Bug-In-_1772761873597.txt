@@ -1,0 +1,113 @@
+BUG-0096
+Prevent Duplicate Member Subscriptions
+Bug
+In Progress
+High
+Close
+Resolve
+Status
+In Progress
+Priority
+High
+Assigned To
+Unassigned
+Description
+
+Title:
+Prevent Duplicate Member Subscriptions
+
+Description:
+Users are currently able to create duplicate Plus member
+subscriptions using the same account details. This can
+cause the user to be billed multiple times for the same
+membership. The system should detect existing member
+accounts and prevent duplicate subscriptions from being
+created.
+
+Fix Required:
+- Detect existing Plus member accounts before signup
+- Check duplicates by:
+- Email
+- Name
+- Phone number
+- Block subscription if matching member already exists
+- Allow signup only if email, name, or phone differ
+
+Behavior:
+- If a duplicate account is detected, prevent signup
+- Show message to the user during registration
+- Message should state their email is already a member
+- Example message:
+- User with email "X" is already a Plus member
+- Signing up again will result in double billing
+- Prompt user to login instead of registering
+
+AI Analysis
+
+### **Analysis of Bug Report and Screenshot**
+
+#### Affected Part of the App:
+The subscription system in the "LT+ Members" section is impacted. Users are able to create duplicate memberships for Plus accounts, resulting in multiple subscriptions tied to the same email, phone number, and name.
+
+#### Root Cause:
+1. **Missing validation logic:** 
+   The system currently lacks logic to check for duplicate accounts during new membership registrations. Users are permitted to sign up multiple times without checks for an existing subscription associated with their details (email, name, or phone).
+   
+2. **Interface Observation (Screenshot):** 
+   - Example duplicates visible:
+      - *Shlome Seidenfeld* has two subscriptions using different emails but identical names and phones.
+      - *Risa Kupperman* appears repeatedly with identical details.
+      - *Chaim Schwartz* is listed multiple times using slightly modified emails, indicating potential deliberate manipulation.
+   - The Admin interface does not highlight or flag similar entries, nor does it show a consolidated view for a user to quickly identify duplication.
+
+3. **User Behavior Allowed:** 
+   Users with minor variations (e.g., email capitalization or different account formats) can bypass automated checks like email uniqueness, causing multiple entries for the same member.
+
+#### Recommended Fix:
+1. **Backend Validation:** 
+   - Implement checks during registration to validate the uniqueness of subscriber details.
+   - Prevent subscriptions if there’s a match by:
+     - Exact email.
+     - Exact phone number.
+     - Full name comparison (handle case-sensitivity).
+
+2. **Frontend UI Updates:**
+   - During registration:
+     - Show an error message if duplicates are detected.
+     - Suggest login if the user appears to exist already.
+     - Example: "User with email X is already a member. Log in to manage your membership."
+   - In the Admin interface:
+     - Offer visual cues to flag duplicate members (highlight rows or group duplicates).
+     - Add tools for Admins to merge subscriptions or delete duplicates.
+
+3. **Database-Level Constraints:** 
+   - Add database-level constraints for email or phone numbers to prevent duplicate accounts at the data layer.
+
+4. **Testing and Validation:**
+   - Write test cases for scenarios including:
+     - Attempting registration with identical details.
+     - Cross-validating email case-insensitivity.
+     - Handling deliberate manipulation attempts (e.g., adding whitespace in phone numbers).
+
+#### Next Steps:
+- Implement backend validations alongside UI messaging.
+- Add indicators to the Admin interface to flag duplicated members.
+- Enforce stricter constraints in the database layer to avoid bypassing validation logic.
+
+```json
+{"severity": "high", "category": "data"}
+```
+
+Screenshot
+
+Screenshot
+https://www.latesttalks.com/admin/members
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Pinchus Raab
+Hello@LatestTalks.com
+Client: Latest Talks (www.latesttalks.com)
+Open in Replit
+Replies (0)
+
+No replies yet
+

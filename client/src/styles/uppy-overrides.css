@@ -1,0 +1,29 @@
+.uppy-dialog-wrapper .uppy-Dashboard,
+.uppy-dialog-wrapper .uppy-Dashboard--modal {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  z-index: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.uppy-dialog-wrapper .uppy-Dashboard-inner {
+  position: static !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  left: auto !important;
+  right: auto !important;
+}
+
+.uppy-dialog-wrapper .uppy-Dashboard-overlay {
+  display: none !important;
+}
+
+.uppy-dialog-wrapper .uppy-Dashboard-AddFiles {
+  margin: 0 !important;
+}

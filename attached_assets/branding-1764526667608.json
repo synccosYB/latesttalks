@@ -1,0 +1,105 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Poppins",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#10223C",
+    "accent": "#E21D27",
+    "background": "#F0EDEB",
+    "textPrimary": "#1B2B43",
+    "link": "#1B2B43"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Poppins",
+      "heading": "Poppins"
+    },
+    "fontStacks": {
+      "heading": [
+        "Poppins",
+        "system-ui",
+        "sans-serif"
+      ],
+      "body": [
+        "Poppins",
+        "system-ui",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Poppins",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "30px",
+      "h2": "30px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "4px"
+    },
+    "buttonPrimary": {
+      "background": "#E21D27",
+      "textColor": "#FFFFFF",
+      "borderColor": "#BE1921",
+      "borderRadius": "6px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#1B2B43",
+      "textColor": "#FFFFFF",
+      "borderRadius": "8px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://devsynccos.live/assets/logo-BQbrMRb0.jpg",
+    "favicon": "https://devsynccos.live/favicon.png",
+    "ogImage": "https://i.ytimg.com/vi/Nv-HsApcBms/maxresdefault_live.jpg"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 visually represents the brand name 'Latest Talks' and is located in the header, linking to the homepage. It matches the brand name perfectly, making it the best choice.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Post Comment",
+      "reasoning": "Button #0 has a vibrant red/orange background (#E21D27) which is typically associated with primary call-to-action buttons. The text 'Post Comment' is action-oriented, making it the primary CTA."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Latest Talks+",
+      "reasoning": "Button #1 has a neutral background (#1B2B43) and is less vibrant compared to Button #0. It serves as a secondary action with the text 'Latest Talks+', which is less urgent than the primary action. This button is from a different color group than the primary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "young adults and professionals interested in discussions and talks"
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

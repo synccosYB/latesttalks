@@ -1,0 +1,58 @@
+modules = ["nodejs-20", "web", "postgresql-16"]
+run = "npm run dev"
+hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["yt-dlp", "imagemagick"]
+
+[deployment]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
+run = ["npm", "run", "start"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 5904
+externalPort = 3000
+
+[env]
+PORT = "5000"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[agent]
+integrations = ["javascript_mem_db:1.0.0", "javascript_object_storage:1.0.0", "javascript_database:1.0.0", "javascript_stripe:1.0.0"]
+
+[userenv]
+
+[userenv.shared]
+TESTING_VITE_STRIPE_PUBLIC_KEY = "302099c2-9813-4839-a3b7-0c4f14e976f0"
+TESTING_STRIPE_SECRET_KEY = "REDACTED_USE_REPLIT_SECRETS"
+VITE_SYNKDEX_API_KEY = "sk_d21be7279b6262a87a51eaf49135e57b4bd01757e94ee1bd"
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 120000

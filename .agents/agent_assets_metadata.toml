@@ -1,0 +1,20 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "51oD4FNZoRMeSnJXMo4dw"
+uri = "file://exports/marketing-pages.zip"
+type = "unspecified"
+title = "Landing & Marketing Pages (design handoff)"
+
+[[outputs]]
+id = "0CR4nG9epLz9VQu3kDF4W"
+uri = "file://exports/latest-talks-source.zip"
+type = "unspecified"
+title = "Latest Talks - Full Source Code (zip)"
+
+[[outputs]]
+id = "yvP8fq2TzWWOblGvxTiGd"
+uri = "file://exports/latest-talks-figma-export.zip"
+type = "unspecified"
+title = "Latest Talks – Figma Import Package"

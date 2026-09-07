@@ -1,0 +1,73 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "sans-serif",
+      "count": 127
+    },
+    {
+      "family": "Open Sans",
+      "count": 121
+    },
+    {
+      "family": "Roboto",
+      "count": 6
+    }
+  ],
+  "colors": {
+    "primary": "#759B35",
+    "accent": "#0D6EFD",
+    "background": "#FFFFFF",
+    "textPrimary": "#000000",
+    "link": "#0D6EFD"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Open Sans",
+      "heading": "Open Sans"
+    },
+    "fontStacks": {
+      "body": [
+        "Open Sans",
+        "sans-serif"
+      ],
+      "heading": [
+        "Open Sans",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Open Sans",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "66px",
+      "h2": "20px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "4px"
+    }
+  },
+  "images": {
+    "logo": "https://luxurykoshervillas.com/wp-content/uploads/2022/08/FKV-02-Logo-B.jpg",
+    "favicon": "https://luxurykoshervillas.com/wp-content/uploads/2022/09/luxurykoshervillas-logo-white-and-green-150x150.png",
+    "ogImage": "https://luxurykoshervillas.com/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-10-at-13.32.27_fc42a1e6.jpg"
+  },
+  "__framework_hints": [
+    "WordPress 6.8.3",
+    "bootstrap"
+  ],
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  }
+}

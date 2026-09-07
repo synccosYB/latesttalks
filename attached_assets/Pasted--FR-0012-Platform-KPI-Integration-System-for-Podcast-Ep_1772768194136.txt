@@ -1,0 +1,599 @@
+
+FR-0012
+Platform KPI Integration System for Podcast Episodes
+Feature Request
+New
+Medium
+Close
+Resolve
+Status
+New
+Priority
+Medium
+Assigned To
+Unassigned
+Description
+
+Build a system that allows external podcast platforms to submit KPI
+data for each episode. Platforms must be able to submit KPIs manually,
+via spreadsheet upload, or through API integrations.
+
+The system must include:
+
+- Admin platform management
+- Platform login portal
+- Spreadsheet-style KPI editing
+- Excel import
+- API integrations
+- Full edit history logs
+- Aggregated analytics
+- Platform data isolation (platforms only see their own data)
+
+The focus of this system is platform KPI collection only. Other
+analytics features will be handled in separate modules.
+
+This "Platform KPIs" section should be added under "Content"
+---
+
+Core KPIs
+
+Each episode has three KPIs.
+
+KPI 1: Total Watch / Listen Time
+KPI 2: Total Views / Listens
+KPI 3: Average Watch Time Per Viewer
+
+Time display format:
+
+HH:MM:SS
+
+Internally store time as seconds for calculations (if it works smoother).
+
+---
+
+KPI Calculation Logic
+
+The system must automatically calculate the missing KPI when two are
+provided.
+
+Rules:
+
+If KPI 1 and KPI 2 exist
+→ KPI 3 = KPI 1 ÷ KPI 2
+
+If KPI 1 and KPI 3 exist
+→ KPI 2 = KPI 1 ÷ KPI 3
+
+If KPI 2 and KPI 3 exist
+→ KPI 1 = KPI 2 × KPI 3
+
+Validation rules:
+
+- Prevent division by zero
+- Require at least two KPI fields for auto
+- Show validation error if math becomes invalid
+- Mark calculated values as auto-generated
+- Allow admin override of any calculated field
+
+---
+
+Episode Identification
+
+Each episode contains the following data:
+
+- Website Episode ID (primary key)
+- Episode number
+- Title
+- Guest name
+
+Matching priority when importing or syncing data:
+
+1. Website Episode ID
+2. Platform Episode ID
+3. Episode number
+4. Title
+5. Guest name
+
+Guest names cannot be used as a sole matching rule because guests may
+appear on multiple episodes.
+
+Example:
+
+Guest: Issamar Ginzberg
+Episodes: #61, #17, #14
+
+If only the guest name matches, the system must ask for manual input
+to select the correct episode.
+
+The system must never automatically guess based on name matches.
+
+---
+
+Dual Episode ID System
+
+Each episode must support two identifiers.
+
+Website Episode ID
+Created by the website. This is the master identifier.
+
+Platform Episode ID
+Optional ID supplied by the platform.
+
+Both must be stored and linked in the backend.
+
+Example relationship:
+
+Episode
+
+- website_episode_id
+- episode_number
+- title
+- guest_name
+
+PlatformEpisodeLink
+
+- website_episode_id
+- platform_id
+- platform_episode_id
+
+This prevents conflicts when editing episodes on the website or on
+platforms.
+
+---
+
+Platform Data Isolation
+
+Platforms must only see their own data.
+
+Platform users cannot see:
+
+- other platforms
+- other platform KPI data
+- aggregated analytics
+- leaderboard data
+
+Admin users can see all platform data combined.
+
+---
+
+Admin Portal
+
+Create an admin section called Platforms under the content catagory.
+
+Functions:
+
+- View all platforms
+- Add platform
+- Edit platform
+- Disable platform
+- View KPI data per platform
+- View KPI data per episode
+- Lock / unlock each episode KPIs per platform
+- Lock / unlock each episode KPIs globally
+
+---
+
+Add Platform Button
+
+Form Fields:
+
+- Platform name
+- Platform podcast link
+- Primary point of contact
+
+Contacts section:
+
+Allow multiple contacts.
+
+Each contact must include:
+
+- Email
+- Label (manager, technical contact, owner, etc.)
+
+Phones:
+
+Allow multiple phone numbers with labels.
+
+The platform contact card should display:
+
+- Primary contact
+- Additional contacts
+- Phone numbers
+- Platform link
+
+attached to the contact info
+Add Platform Login Setup
+
+---
+
+Platform Login Setup
+
+When adding platform managers:
+
+Admin enters login email(s).
+
+System generates a temporary password.
+
+Admin must have options to:
+
+- Copy login link
+- Copy login credentials
+- Share login link
+- Send login setup email
+
+Login email should include:
+
+- Login link
+- Temporary password
+- Instructions to create a new password
+
+First login behavior:
+
+- User must create a new password
+
+Login system must include:
+
+- Login page
+- Forgot password
+- Password reset email
+
+Admin abilities:
+
+- Reset platform passwords
+- Add or remove platform managers
+- Disable login access
+- Resend login setup email
+
+---
+
+Platform Portal (Mini Dashboard)
+
+After login, platform users see a table of all active episodes.
+
+Display style:
+Spreadsheet-like grid.
+
+Columns:
+
+- Website Episode ID
+- Episode number
+- Episode title
+- Guest name
+- KPI 1 Total Watch Time
+- KPI 2 Views / Listens
+- KPI 3 Average Watch Time
+
+Features:
+
+- Inline editing
+- Fast keyboard navigation
+- Automatic KPI calculation
+- Save changes button
+- Validation checks
+- Contact customer support
+- Bug report option, on the bottom of page
+
+Platforms may only edit and view KPI data belonging to their own platform.
+
+---
+
+Excel Upload
+
+Platforms must be able to upload:
+
+- XLSX files
+- CSV files
+
+Required columns:
+
+- Episode ID (preferred)
+  or
+- Episode number
+  or
+- Title
+
+Optional columns:
+
+- KPI 1
+- KPI 2
+- KPI 3
+
+Import process:
+
+1. Upload file
+2. System attempts episode match
+3. If uncertain, open manual mapping screen
+4. User confirms episode matches
+5. Import KPI data
+
+The system must never auto-assign rows when multiple matches exist.
+
+---
+
+API Integration
+
+Platforms can submit KPI data through APIs.
+
+Admin configuration fields:
+
+- API endpoint URL
+- Authentication type
+- API key or token
+- Field mapping
+
+API sync frequency:
+
+Minimum twice per day.
+
+Admin controls:
+
+- Test API connection
+- Manually run sync
+- Edit API configuration
+- Disable API sync
+- Lock or unlock API updates
+
+---
+
+API Update Behavior
+
+API updates should overwrite existing values unless the API update
+lock is enabled.
+
+Admin can enable or disable API overwrite behavior.
+
+All API updates must still create edit log entries.
+
+---
+
+KPI Storage
+
+Each KPI record is tied to:
+
+- platform_id
+- website_episode_id
+
+Example structure:
+
+EpisodePlatformKPI
+
+- id
+- platform_id
+- website_episode_id
+- total_watch_time_seconds
+- views
+- avg_watch_time_seconds
+- last_updated
+- update_source
+
+Time must be stored internally in seconds.
+
+Displayed to users in HH:MM:SS. am/pm
+
+---
+
+KPI History and Versioning
+
+Every KPI change must create a history record.
+
+History fields:
+
+- platform_id
+- website_episode_id
+- field_changed
+- previous_value
+- new_value
+- timestamp
+- user_id
+- edit_source
+
+Edit sources include:
+
+- platform manual edit
+- admin edit
+- Excel import
+- API update
+
+---
+
+Data Drop Warning
+
+If a new KPI value is lower than the previous value:
+
+The system must trigger a warning.
+
+Example:
+
+"New KPI value is lower than the previous value.
+Confirm update."
+
+Admin must receive a notification.
+
+---
+
+Duplicate Protection
+
+The system must prevent duplicate KPI rows.
+
+Only one record allowed per:
+
+platform_id + website_episode_id
+
+Updates modify the existing row while still creating history records.
+
+---
+
+Episode Release Automation
+
+When a new episode is published on the website:
+
+The system must automatically:
+
+1. Create the episode record
+2. Add the episode to platform dashboards
+3. Send email notifications to platforms that manually update KPIs
+4. Mark the KPI status as pending
+
+---
+
+KPI Reminder Emails
+
+If KPI data has not been submitted for a newly released episode:
+
+Send reminder emails after:
+
+- 2 weeks
+- 1 month
+
+Reminder emails should only apply to recent episodes and not older
+episodes.
+
+---
+
+Episode Locking
+
+Admin must be able to:
+
+Lock KPI editing for a specific platform on a specific episode.
+
+or
+
+Lock KPI editing globally across all platforms.
+
+Locked episodes:
+
+- KPIs remain visible
+- Editing is disabled
+
+Archived episodes:
+
+- Remain editable
+- Metrics remain available
+
+---
+
+KPI Restore System
+
+If a KPI field becomes empty:
+
+Trigger an admin notification.
+
+The field must display a history dropdown with previous values.
+
+Example:
+
+Views History
+
+12,000 – Jan 10 – 12:05 am
+11,800 – Jan 4 – 10:30 pm
+10,300 – Dec 22 – 2:15 pm
+
+Admin can restore any previous value.
+
+---
+
+Admin Dashboard Metrics
+
+Top dashboard boxes must display:
+
+Combined totals across all local platforms.
+
+Metrics:
+
+- Total Views (All Time)
+- Total Watch Time (All Time)
+- Average Watch Time 7D/28D/90D/360D/Lifetime
+- Views Last 7D/28D/90D/360D/Lifetime
+- Watch Time Last 7D/28D/90D/360D/Lifetime
+
+Default setting on 28 Days, with a toggle to swich to other filter options
+
+These appear as small tracker boxes at the top of the dashboard.
+
+---
+
+Future Platform Integration
+
+The system must be built so that future platforms such as:
+
+- El Al
+- 24Six
+- Zing
+- Spotify
+- Apple Podcasts
+
+can later feed data into the same dashboard even if they use
+separate ingestion pipelines.
+
+Including payment tracking per episode
+---
+
+End of Platform KPI System Specification
+
+AI Analysis
+
+### Analysis
+
+1. **Affected Part of the App**:
+The described system appears to impact multiple critical modules in the application, particularly data ingestion and management for podcast platform key performance indicators (KPIs). The affected parts include:
+   - Admin platform
+   - Platform login portal
+   - Spreadsheet upload and editing capabilities
+   - API-integrated KPI submission
+   - Platform-specific dashboards
+   - Episode management logic and KPI history/versioning
+
+2. **Root Cause Analysis**:
+While no specific technical bugs are provided, the potential risks identified relate to implementation and validation logic:
+   - **Episode identification mismatch** can occur due to overly reliant or ambiguous rules. For instance:
+     - If guest name appears in multiple episodes and manual intervention isn't triggered, data misalignment could ensue.
+   - **Calculation logic validation failures**:
+     - Division by zero errors when "Total Views/Listens" is zero.
+     - Missing validation of input formats (e.g., time format conversion).
+     - Lack of handling for edge cases in formula-derived KPIs.
+   - **Duplicate KPI records**:
+     - Concurrent API updates may cause integrity issues if the platform_id + website_episode_id key isn't enforced properly.
+   - **Platform data isolation**:
+     - Misconfigured permissions could allow data leakage across platforms.
+   - **KPI submission delays**:
+     - Unhandled late submissions or failures to trigger reminder emails might lead to missing data analytics for newer episodes.
+
+3. **Recommendations**:
+   - **Hard Validation Rules**:
+     - Ensure strict validation checks for KPI calculations, including handling division by zero scenarios and ensuring at least 2 KPI fields are present.
+   - **Episode Matching Logic**:
+     - Implement clear fallback prioritization for ambiguous matches, with manual intervention checks if no primary key (Website Episode ID) is available.
+   - **Permission Enforcement**:
+     - Explicitly test platform isolation by simulating platform login scenarios to ensure no cross-platform visibility of KPIs.
+   - **Concurrency Protection**:
+     - Use database-level constraints to prevent duplicate records based on platform_id + website_episode_id, alongside locking mechanisms during bulk edits/uploads.
+   - **Reminder Email Tracking**:
+     - Add automated checks for episode status, sending reminders to platforms if KPI submission remains pending past specified time intervals (2 weeks and 1 month).
+   - **API Configuration Testing**:
+     - Run robustness tests for API integration (authentication and field mapping) to verify sync frequency, overwrite protection, and edit log integrity.
+   - **Episode Automation**:
+     - Validate that every new episode triggers its associated workflow correctly (record creation, platform notification, KPI reminder emails).
+
+### Next Steps:
+Conduct a comprehensive review of:
+   - Data validation logic for KPI ingestion, calculation, and submission.
+   - Permissions and security measures for platform data isolation.
+   - API integration and concurrency handling to ensure stability in simultaneous edits or updates.
+
+```json
+{"severity": "high", "category":
+
+https://www.latesttalks.com/admin/analytics
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Pinchus Raab
+Hello@LatestTalks.com
+Client: Latest Talks (www.latesttalks.com)
+Open in Replit
+Replies (1)
+
+Clientclient
+about 10 hours ago
+this is a api to ah blick, they sent up this email back in jan when we first discussed this build out.
+
+Here is the link https://ahblicklive.com/extras/api/get_video_info.php?secret=62H0RV7r0akS&limit=5&start=1736901649&end=1768437662&order=id&order_dir=desc
+Params, I think are self explanatory. Except for `order`. `order` can be `id` or `title`

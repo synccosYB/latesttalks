@@ -1,0 +1,120 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Helvetica Neue",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    },
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Karla",
+      "role": "body"
+    },
+    {
+      "family": "albtrs",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#DEBC62",
+    "accent": "#337AB7",
+    "background": "#FAFBFC",
+    "textPrimary": "#333337",
+    "link": "#337AB7"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Helvetica Neue",
+      "heading": "Helvetica Neue"
+    },
+    "fontStacks": {
+      "heading": [
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif"
+      ],
+      "body": [
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "albtrs"
+      ]
+    },
+    "fontSizes": {
+      "h1": "15px",
+      "h2": "15px",
+      "body": "25px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "4px"
+    },
+    "buttonPrimary": {
+      "background": "#DEBC62",
+      "textColor": "#2C2921",
+      "borderRadius": "0px",
+      "shadow": "rgba(222, 198, 98, 0.5) 0px 0px 10px 0px"
+    },
+    "buttonSecondary": {
+      "background": "#D5D5D6",
+      "textColor": "#DEBC62",
+      "borderRadius": "0px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://ahblicklive.com/archives.php?tag=%D7%9C%D7%A2%D7%99%D7%98%D7%A2%D7%A1%D7%98%20%D7%98%D7%90%D7%9C%D7%A7%D7%A1&allowed_categories=2#",
+    "favicon": "https://ahblicklive.com/logos/logo_share.png",
+    "ogImage": "https://ahblicklive.com/logos/logo_share.png"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "The logo in the header matches the brand name 'AhBlickLive.com' and is visible, making it the primary brand logo.",
+    "confidence": 0.98
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 2,
+      "text": "ווייז מער",
+      "reasoning": "Button #2 has a vibrant background color (#DEBC62) which is the brand color, making it the most prominent call-to-action. The text 'ווייז מער' is action-oriented, indicating a strong CTA."
+    },
+    "secondary": {
+      "index": 0,
+      "text": "א מינוט מיט רבי מיילך",
+      "reasoning": "Button #0 has a different background color (#D5D5D6) and is less prominent compared to the primary button. It serves as a secondary action with less urgency."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "general audience interested in media and archives"
+  },
+  "designSystem": {
+    "framework": "bootstrap",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

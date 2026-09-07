@@ -1,0 +1,124 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Poppins",
+      "role": "body"
+    },
+    {
+      "family": "Open Sans",
+      "role": "body"
+    },
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    },
+    {
+      "family": "Questrial",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#10213A",
+    "accent": "#DE2026",
+    "background": "#FFFFFF",
+    "textPrimary": "#10213A",
+    "link": "#10213A"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Poppins",
+      "heading": "Poppins"
+    },
+    "fontStacks": {
+      "heading": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "body": [
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Poppins",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "10px",
+      "h2": "17px",
+      "body": "25px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "4px"
+    },
+    "buttonPrimary": {
+      "background": "#DE2026",
+      "textColor": "#000000",
+      "borderColor": "#FFFFFF",
+      "borderRadius": "0px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "transparent",
+      "textColor": "#0000EE",
+      "borderColor": "#FFFFFF",
+      "borderRadius": "0px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.jpg",
+    "favicon": "File saved at: attached_assets/favicon.png",
+    "ogImage": "File saved at: attached_assets/ogImage.png"
+  },
+  "__framework_hints": [
+    "Wix.com Website Builder",
+    "bootstrap"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 1,
+    "reasoning": "Logo #1 visually represents the brand name 'Latest Talks' and is located in the header, making it the most likely candidate for the main brand logo.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": ">",
+      "reasoning": "Button #0 has a vibrant red/orange background (#DE2026), which is a strong indicator for a primary call-to-action. The text is action-oriented, making it the most prominent button on the page."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Listen Now",
+      "reasoning": "Button #1 has a transparent background, which makes it less prominent compared to the primary button. It is a different color group than the primary button, fulfilling the requirement for a secondary action."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "general audience interested in podcasts and discussions"
+  },
+  "designSystem": {
+    "framework": "bootstrap",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

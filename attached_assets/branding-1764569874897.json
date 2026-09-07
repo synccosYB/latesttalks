@@ -1,0 +1,116 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Jost",
+      "role": "body"
+    },
+    {
+      "family": "Hoefler Text",
+      "role": "body"
+    },
+    {
+      "family": "Garamond",
+      "role": "body"
+    },
+    {
+      "family": "Times New Roman",
+      "role": "body"
+    },
+    {
+      "family": "serif",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#083738",
+    "accent": "#10CF06",
+    "background": "#FFFFFF",
+    "textPrimary": "#083738",
+    "link": "#083738"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Jost",
+      "heading": "Jost"
+    },
+    "fontStacks": {
+      "heading": [
+        "Jost"
+      ],
+      "body": [
+        "Jost"
+      ],
+      "paragraph": [
+        "Jost"
+      ]
+    },
+    "fontSizes": {
+      "h1": "70px",
+      "h2": "50px",
+      "body": "22px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "3px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "3px"
+    },
+    "buttonPrimary": {
+      "background": "#10CF06",
+      "textColor": "#FFFFFF",
+      "borderRadius": "0px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#083738",
+      "textColor": "#10CF06",
+      "borderRadius": "0px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://hiring4less.com/wp-content/uploads/2021/09/logo.png",
+    "favicon": "https://hiring4less.com/wp-content/uploads/2021/10/footer-logo.png",
+    "ogImage": "https://hiring4less.com/wp-content/uploads/2022/05/mobile.png"
+  },
+  "__framework_hints": [
+    "WordPress 6.8.3"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 3,
+    "reasoning": "Logo #3 visually represents 'Hiring 4 Less' and is located in the header, linking to the homepage, making it the most suitable choice for the brand logo.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 6,
+      "text": "how it works",
+      "reasoning": "Button #6 has a vibrant green background (#10CF06) and action-oriented text ('how it works'), making it the primary call-to-action. It stands out due to its bright color and clear intent to engage users."
+    },
+    "secondary": {
+      "index": 4,
+      "text": "LET’S CHAT",
+      "reasoning": "Button #4 has a dark background (#083738) with contrasting text color, making it a suitable secondary option. It is less vibrant than the primary button and serves a different purpose ('LET’S CHAT')."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "job seekers and employers looking for hiring solutions."
+  },
+  "designSystem": {
+    "framework": "unknown",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

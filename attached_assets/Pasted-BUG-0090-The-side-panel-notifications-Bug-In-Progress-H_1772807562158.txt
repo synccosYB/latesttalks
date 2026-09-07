@@ -1,0 +1,88 @@
+BUG-0090
+The side panel notifications
+Bug
+In Progress
+High
+Close
+Resolve
+Status
+In Progress
+Priority
+High
+Assigned To
+Unassigned
+Description
+
+The sidebar notification badges in the Admin Portal currently only appear on one or two pages (seems like only Community Photos). Notifications should work for all important sections.
+
+Fix Required:
+Add sidebar notifications for:
+- Comments
+- Messages
+- Guest Applications
+- LT+ Members
+- Subscribers
+- Whatapp
+- Etc
+
+Behavior:
+- When an admin clicks into a section, the notification should be marked as seen only for that admin.
+- It should not clear for all admins, so other admins can still see their notifications.
+
+AI Analysis
+
+### Analysis
+
+#### 1. Affected Area:
+- The **sidebar notification badges** in the admin portal are functioning partially. They are only active and visible under the "Community Photos" section, leaving the rest of the sidebar sections (e.g., Comments, Messages, Guest Applications, LT+ Members, Subscribers, WhatsApp, etc.) without notification indicators.
+- The issue seems to involve both **UI functionality (notifications not appearing)** and **back-end logic for managing seen/unseen notifications per admin**.
+
+#### 2. Observations from the Screenshot:
+- A notification badge is visible next to **"Community Photos"** (red dot).
+- Notifications are absent for the other sections in **"Audience"** and **"Community"**, despite it being expected functionality.
+- The sidebar visually maintains consistency otherwise, meaning this is likely an issue of integration or logic rather than styling/UI design.
+
+#### 3. Root Cause Analysis:
+- **Notification Generation Logic**:
+  - Backend notification logic may not be firing events correctly for sections other than "Community Photos." This could be because other sections are not linked to notification events or those events are not being properly serialized/sent to the front end.
+- **Notification State Update**:
+  - From the behavior details, notifications should remain per-admin-specific. It is possible the notification clearing logic works globally instead of per user.
+- **Frontend Rendering**:
+  - It seems only "Community Photos" is pulling from the notification source dynamically at runtime. This suggests that the front-end is not triggering similar logic for other sections, reducing visibility for notifications.
+
+#### 4. Recommended Actions:
+##### Backend:
+- Investigate the notification generation logic to ensure all critical sections post appropriate events to the notification system. Ensure sections like **Comments, Messages, Subscribers, Guest Applications**, etc., are covered.
+- Implement a feature that ensures notification state is stored on a per-admin basis. Use unique identifiers for each admin to track seen/unseen status without affecting others. The table/model should track:
+  1. Admin ID
+  2. Notification Type/Source
+  3. Seen/Unseen Status
+
+##### Frontend:
+- Update frontend logic to correctly fetch and dynamically display notification badges for all relevant sidebar sections.
+- Ensure badges only disappear upon admin interaction with the specific section.
+- Add UX improvements, such as hover tooltips or animations, to better communicate notification counts or statuses.
+
+##### Testing:
+- Test rendering of notifications across all sidebar sections.
+- Confirm that notification visibility and clearance persist independently for each admin.
+
+---
+
+```json
+{
+  "severity": "high",
+  "category": "functionality"
+}
+```
+
+Screenshot
+
+Screenshot
+https://www.latesttalks.com/admin/sponsors
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+Pinchus Raab
+Hello@LatestTalks.com
+Client: Latest Talks (www.latesttalks.com)
+Open in Replit
+Replies (0)

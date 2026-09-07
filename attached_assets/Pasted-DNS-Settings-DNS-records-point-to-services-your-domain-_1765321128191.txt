@@ -1,0 +1,156 @@
+DNS Settings
+DNS records point to services your domain uses, like forwarding your domain or setting up an email service. Learn more about DNS settings
+
+
+Add Preset
+You're using custom nameservers
+
+Your DNS records are managed with your third-party nameserver provider. To activate the DNS records below, switch to Squarespace nameservers.
+
+Squarespace Domain Connect
+
+
+Host
+Type
+Priority
+TTL
+Data
+_domainconnect
+
+CNAME
+
+0
+
+4 hrs
+
+_domainconnect.domains.squarespace.com
+
+Google Workspace
+
+Host
+Type
+Priority
+TTL
+Data
+@
+
+MX
+
+1
+
+4 hrs
+
+aspmx.l.google.com
+
+@
+
+MX
+
+5
+
+4 hrs
+
+alt1.aspmx.l.google.com
+
+@
+
+MX
+
+5
+
+4 hrs
+
+alt2.aspmx.l.google.com
+
+@
+
+MX
+
+10
+
+4 hrs
+
+alt3.aspmx.l.google.com
+
+@
+
+MX
+
+10
+
+4 hrs
+
+alt4.aspmx.l.google.com
+
+Custom records
+
+Add record
+Host
+
+Type
+
+Priority
+TTL
+
+Data
+
+google._domainkey
+
+TXT
+
+N/A
+
+4 hrs
+
+v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8rqBYIbRDKJVJHxUKMFwSwc4YGZ+TqekOh+9NOpcbe3HJg9wnxC0h/Wu35Cy78Ik8otE1EFoz63UPBmHHBVOFzf4W2xc0vq0J8ZNXNaudZiTpZeORs3T+pmSkGs7TBOIDsp7E8hdDiKwc0sgAPRSq9eVuE9HbikuyON+J2jcJH0PqW1zvzFhF40rm0illdY2DwQ1PWs5n4cLw29ea7tCxuehRPK339C/n5PpX0S63FFR2qzZoobplm8+YFOVCyxVh3/iruM4dbfLCDxaDtin+/RsLCpj06reMdDHFCL7hJjy+FGY5qPlyjcVJRvzG8UugUm4MHXQOSgqS/SS8F4/7QIDAQAB
+
+
+
+google._domainkey
+
+TXT
+
+N/A
+
+4 hrs
+
+v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA85dhfivYm//BKi/C/IqNraLL+tCsZN/y9bXiep7aUt1du5DQc+nnSKZN+kpYqLf8czUH2N+S7vhu24JeYj9aQnlHOBOBJRF1HxwaULWKiQt2C5mN72U2+zX8OaCLnBsK7b2p/tMbMWxr7ClL9zVeCmmspU859NWNgZ4iKUGo08Mp6gyiboi8X0yxDaUevEv4rHnTgbi657Ti7MJduiB7g8CeIabLqztC2itC1QigE1e92RZQqib9j28+tAEno+Zt0MOXURYIOgaTALdB/qczR4sNKM8i/d1YjpU/fvH0E1EcbqwbpPS/FDkXvOU4hO//Znmpe2QR2ldGvqlnGQA2bQIDAQAB
+
+
+
+@
+
+TXT
+
+N/A
+
+4 hrs
+
+v=spf1 include:_spf.google.com ~all
+
+
+
+@
+
+A
+
+N/A
+
+4 hrs
+
+34.111.179.208
+
+
+
+@
+
+TXT
+
+N/A
+
+4 hrs
+
+replit-verify=b0b47273-d936-4f37-be17-34a3edaa2958
+
+
+

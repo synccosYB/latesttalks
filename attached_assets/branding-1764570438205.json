@@ -1,0 +1,113 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Montserrat",
+      "role": "body"
+    },
+    {
+      "family": "Roboto",
+      "role": "body"
+    },
+    {
+      "family": "Unbounded",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#337AB7",
+    "accent": "#0500F3",
+    "background": "#FFFFFF",
+    "textPrimary": "#0500F3",
+    "link": "#0500F3"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Montserrat",
+      "heading": "Montserrat"
+    },
+    "fontStacks": {
+      "heading": [
+        "Unbounded",
+        "sans-serif"
+      ],
+      "body": [
+        "Montserrat",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Montserrat",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "42.24px",
+      "h2": "42.24px",
+      "body": "12px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "4px"
+    },
+    "buttonPrimary": {
+      "background": "#0500F3",
+      "textColor": "#FFFFFF",
+      "borderColor": "#0500F3",
+      "borderRadius": "100px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#F0F0F0",
+      "textColor": "#333333",
+      "borderColor": "#DDDDDD",
+      "borderRadius": "4px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://koshertube.co.uk/wp-content/uploads/2023/07/cropped-Group-66.png",
+    "favicon": "https://koshertube.co.uk/wp-content/uploads/2023/07/%D7%A1%D7%9E%D7%9C-%D7%90%D7%AA%D7%A8.png",
+    "ogImage": "https://koshertube.co.uk/wp-content/uploads/2025/11/Latest-Talks-1.jpg"
+  },
+  "__framework_hints": [
+    "WordPress 6.8.3"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 matches the brand name 'koshertube' and is located in the header, linking to the homepage, making it the main brand logo.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Send",
+      "reasoning": "Button #0 has a vibrant blue background (#0500F3), which is the brand color, and action-oriented text 'Send'. This makes it the primary CTA."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "Next »",
+      "reasoning": "Button #1 has a light background (#F0F0F0) and is less prominent compared to Button #0. It serves as a secondary action, making it suitable as the secondary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "Individuals interested in Jewish content and discussions."
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}

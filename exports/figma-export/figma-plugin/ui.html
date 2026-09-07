@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: Inter, system-ui, sans-serif; font-size: 12px; margin: 0; padding: 16px; color: #222; }
+  h2 { font-size: 14px; margin: 0 0 8px; }
+  p { margin: 4px 0 12px; color: #555; }
+  #drop { border: 2px dashed #bbb; border-radius: 8px; padding: 24px; text-align: center; color: #777; cursor: pointer; }
+  #drop.over { border-color: #DE2026; color: #DE2026; }
+  button { margin-top: 12px; width: 100%; padding: 10px; background: #DE2026; color: #fff; border: 0; border-radius: 6px; font-weight: 600; cursor: pointer; }
+  button:disabled { background: #ccc; cursor: default; }
+  #log { margin-top: 12px; max-height: 180px; overflow-y: auto; background: #f5f5f5; border-radius: 6px; padding: 8px; white-space: pre-wrap; font-family: monospace; font-size: 11px; }
+  input[type=file] { display: none; }
+</style>
+</head>
+<body>
+  <h2>Latest Talks Website Importer</h2>
+  <p>Select ALL the JSON files from the <b>data</b> folder (tokens.json + everything inside data/pages).</p>
+  <div id="drop">Click to choose files<br>(or drag &amp; drop them here)</div>
+  <input type="file" id="fileInput" multiple accept=".json">
+  <button id="build" disabled>Build in Figma</button>
+  <div id="log">Waiting for files...</div>
+
+<script>
+  var tokens = null;
+  var pages = [];
+  var drop = document.getElementById('drop');
+  var input = document.getElementById('fileInput');
+  var buildBtn = document.getElementById('build');
+  var logEl = document.getElementById('log');
+
+  function log(msg) {
+    logEl.textContent += '\n' + msg;
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  function handleFiles(files) {
+    var pending = files.length;
+    Array.prototype.forEach.call(files, function (f) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        try {
+          var data = JSON.parse(reader.result);
+          if (data && data.colors && data.colors.light) {
+            tokens = data;
+            log('Loaded design tokens (' + f.name + ')');
+          } else if (data && (data.desktop || data.mobile)) {
+            pages.push(data);
+            log('Loaded page: ' + data.name);
+          } else if (Array.isArray(data)) {
+            log('Skipped ' + f.name + ' (index file, not needed)');
+          } else {
+            log('Skipped ' + f.name + ' (unrecognized)');
+          }
+        } catch (e) {
+          log('Could not read ' + f.name + ': ' + e.message);
+        }
+        pending--;
+        if (pending === 0) {
+          buildBtn.disabled = !(tokens || pages.length);
+          log('Ready. ' + pages.length + ' page(s)' + (tokens ? ' + tokens' : '') + '. Click "Build in Figma".');
+        }
+      };
+      reader.readAsText(f);
+    });
+  }
+
+  drop.onclick = function () { input.click(); };
+  input.onchange = function () { handleFiles(input.files); };
+  drop.ondragover = function (e) { e.preventDefault(); drop.classList.add('over'); };
+  drop.ondragleave = function () { drop.classList.remove('over'); };
+  drop.ondrop = function (e) {
+    e.preventDefault();
+    drop.classList.remove('over');
+    handleFiles(e.dataTransfer.files);
+  };
+
+  var queue = [];
+  buildBtn.onclick = function () {
+    buildBtn.disabled = true;
+    queue = pages.slice().sort(function (a, b) { return a.name.localeCompare(b.name); });
+    parent.postMessage({ pluginMessage: { type: 'start', tokens: tokens, pageCount: queue.length } }, '*');
+  };
+
+  window.onmessage = function (event) {
+    var msg = event.data.pluginMessage;
+    if (!msg) return;
+    if (msg.type === 'log') log(msg.text);
+    if (msg.type === 'next-page') {
+      var page = queue.shift();
+      if (page) {
+        parent.postMessage({ pluginMessage: { type: 'page', page: page } }, '*');
+      } else {
+        parent.postMessage({ pluginMessage: { type: 'finish' } }, '*');
+      }
+    }
+    if (msg.type === 'done') {
+      log('All done! You can close the plugin.');
+      buildBtn.disabled = false;
+    }
+  };
+</script>
+</body>
+</html>

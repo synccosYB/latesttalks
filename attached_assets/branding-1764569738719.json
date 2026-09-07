@@ -1,0 +1,104 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#51934E",
+    "accent": "#135C9F",
+    "background": "#FFFFFF",
+    "textPrimary": "#135C9F",
+    "link": "#135C9F"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "DM Sans",
+      "heading": "DM Sans"
+    },
+    "fontStacks": {
+      "heading": [
+        "DM Sans",
+        "sans-serif"
+      ],
+      "body": [
+        "DM Sans",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "DM Sans",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "14px",
+      "h2": "28px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "6px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "6px"
+    },
+    "buttonPrimary": {
+      "background": "#51934E",
+      "textColor": "#135C9F",
+      "borderColor": "#135C9F",
+      "borderRadius": "8px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#F4F4F4",
+      "textColor": "#333333",
+      "borderRadius": "0px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://unitedrefuahhs.org/wp-content/uploads/2024/10/UnitedRefuahLogo.svg",
+    "favicon": "https://unitedrefuahhs.org/wp-content/uploads/2021/10/smallLogo-36x36.png",
+    "ogImage": "https://unitedrefuahhs.org/wp-content/uploads/2024/11/avatarSingle.png"
+  },
+  "__framework_hints": [
+    "WordPress 6.8.3"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 2,
+    "reasoning": "Logo #2 visually represents 'United Refuah HealthShare' and is located in the header, linking to the homepage, making it the most suitable brand logo.",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 9,
+      "text": "Apply Now",
+      "reasoning": "Button #9 has a vibrant green background (#51934E) and action-oriented text 'Apply Now', making it the primary call-to-action."
+    },
+    "secondary": {
+      "index": 1,
+      "text": "APPLY NOW",
+      "reasoning": "Button #1 has a light background (#F4F4F4) and the same action-oriented text 'APPLY NOW', making it a suitable secondary button as it is from a different color group than the primary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "Individuals seeking health share options and community support."
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}
