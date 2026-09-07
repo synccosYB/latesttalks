@@ -56,7 +56,7 @@ import { insertWhatsappContactSchema, insertWhatsappTemplateSchema } from "@shar
 import { stripHtmlToText } from "@shared/textUtils";
 import { db } from "./db";
 import { eventTickets } from "@shared/schema";
-import { asc, desc, eq, sql } from "drizzle-orm";
+import { and, asc, desc, eq, sql } from "drizzle-orm";
 import { EVENT, sendTicketEmails } from "./eventTickets";
 
 // Token-based auth for webview cookie issues
