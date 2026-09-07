@@ -52,7 +52,7 @@ import {
   type PlatformEpisodeLink, type InsertPlatformEpisodeLink,
   type EpisodePlatformKpi, type InsertEpisodePlatformKpi,
   type KpiHistory, type InsertKpiHistory,
-  adminSectionViews,
+  adminSectionViews, eventTickets,
   type AdminSectionView,
   whatsappContacts,
   sponsorPromoCodes,
@@ -1266,7 +1266,7 @@ export class DatabaseStorage implements IStorage {
       return view?.lastViewedAt || epoch;
     };
 
-    const [commentsLv, messagesLv, guestAppsLv, membersLv, subscribersLv, whatsappLv, photosLv, bugsLv] = await Promise.all([
+    const [commentsLv, messagesLv, guestAppsLv, membersLv, subscribersLv, whatsappLv, photosLv, bugsLv, eventTicketsLv] = await Promise.all([
       getLastViewed("comments"),
       getLastViewed("messages"),
       getLastViewed("guest-applications"),
@@ -1275,6 +1275,7 @@ export class DatabaseStorage implements IStorage {
       getLastViewed("whatsapp"),
       getLastViewed("photos"),
       getLastViewed("bug-reports"),
+      getLastViewed("event-tickets"),
     ]);
 
     const [commentsCount] = await db.select({ count: count() }).from(comments)
@@ -1303,6 +1304,9 @@ export class DatabaseStorage implements IStorage {
     const [bugsCount] = await db.select({ count: count() }).from(bugReports)
       .where(and(eq(bugReports.isRead, false), gt(bugReports.createdAt, bugsLv)));
 
+    const [eventTicketsCount] = await db.select({ count: count() }).from(eventTickets)
+      .where(and(eq(eventTickets.paymentStatus, "paid"), gt(eventTickets.createdAt, eventTicketsLv)));
+
     return {
       comments: commentsCount?.count || 0,
       messages: (contactMsgCount?.count || 0) + (inquiryCount?.count || 0),
@@ -1312,6 +1316,7 @@ export class DatabaseStorage implements IStorage {
       whatsapp: whatsappCount?.count || 0,
       photos: photosCount?.count || 0,
       "bug-reports": bugsCount?.count || 0,
+      "event-tickets": eventTicketsCount?.count || 0,
     };
   }
 
