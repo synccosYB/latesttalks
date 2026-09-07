@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 40455)
-Total output lines: 4136
-
 import type { Express, Request, Response, NextFunction } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
@@ -1516,7 +1513,1157 @@ export async function registerRoutes(
   });
 
   // Member signup
-  app.post("/api/members…10455 tokens truncated…   const flight = data.data[0];
+  app.post("/api/members/signup", async (req, res) => {
+    const parsed = insertMemberSchema.safeParse(req.body);
+    if (!parsed.success) return res.status(400).json({ error: parsed.error });
+    
+    const duplicate = await storage.findDuplicateMembers({
+      email: parsed.data.email.trim().toLowerCase(),
+      name: parsed.data.name.trim(),
+      phone: parsed.data.phone?.trim() || undefined,
+    });
+    if (duplicate) {
+      const messages: Record<string, string> = {
+        email: `The email "${parsed.data.email}" is already associated with a Plus member account. Signing up again will result in double billing. Please log in instead.`,
+        phone: `The phone number you entered is already associated with a Plus member account. Please log in with your existing account instead.`,
+        name: `An account with the name "${parsed.data.name}" already exists. If this is you, please log in instead.`,
+      };
+      return res.status(409).json({ error: messages[duplicate.field], code: "DUPLICATE_MEMBER", duplicateField: duplicate.field });
+    }
+    
+    const hashedPassword = await bcrypt.hash(parsed.data.password, 10);
+    const member = await storage.createMember({
+      ...parsed.data,
+      password: hashedPassword,
+    });
+    
+    req.session.memberId = member.id;
+    res.status(201).json({ 
+      id: member.id, 
+      email: member.email, 
+      name: member.name,
+      subscriptionStatus: member.subscriptionStatus 
+    });
+  });
+
+  // Member login
+  app.post("/api/members/login", async (req, res) => {
+    const parsed = memberLoginSchema.safeParse(req.body);
+    if (!parsed.success) return res.status(400).json({ error: parsed.error });
+    
+    const member = await storage.getMemberByEmail(parsed.data.email);
+    if (!member) return res.status(401).json({ error: "Invalid email or password" });
+    
+    const valid = await bcrypt.compare(parsed.data.password, member.password);
+    if (!valid) return res.status(401).json({ error: "Invalid email or password" });
+    
+    req.session.memberId = member.id;
+    res.json({ 
+      id: member.id, 
+      email: member.email, 
+      name: member.name,
+      subscriptionStatus: member.subscriptionStatus 
+    });
+  });
+
+  // Member logout
+  app.post("/api/members/logout", (req, res) => {
+    req.session.memberId = undefined;
+    res.json({ success: true });
+  });
+
+  // Get current member
+  app.get("/api/members/me", requireMember, async (req, res) => {
+    const member = await storage.getMember(req.session.memberId!);
+    if (!member) return res.status(404).json({ error: "Member not found" });
+    res.json({
+      id: member.id,
+      email: member.email,
+      name: member.name,
+      phone: member.phone,
+      subscriptionStatus: member.subscriptionStatus,
+      subscriptionEndDate: member.subscriptionEndDate,
+      adminApproved: member.adminApproved,
+      createdAt: member.createdAt,
+    });
+  });
+
+  // Update member profile
+  app.patch("/api/members/me", requireMember, async (req, res) => {
+    const { name, phone } = req.body;
+    const member = await storage.updateMember(req.session.memberId!, { name, phone });
+    if (!member) return res.status(404).json({ error: "Member not found" });
+    res.json({
+      id: member.id,
+      email: member.email,
+      name: member.name,
+      phone: member.phone,
+      subscriptionStatus: member.subscriptionStatus,
+    });
+  });
+
+  // Get all members (admin only)
+  app.get("/api/members", requireAdmin, async (req, res) => {
+    const members = await storage.getMembers();
+    res.json(members.map(m => ({
+      id: m.id,
+      email: m.email,
+      name: m.name,
+      phone: m.phone,
+      subscriptionStatus: m.subscriptionStatus,
+      subscriptionEndDate: m.subscriptionEndDate,
+      createdAt: m.createdAt,
+    })));
+  });
+
+  // Update member (admin only)
+  app.patch("/api/members/:id", requireAdmin, async (req, res) => {
+    const member = await storage.updateMember(req.params.id, req.body);
+    if (!member) return res.status(404).json({ error: "Member not found" });
+    res.json({
+      id: member.id,
+      email: member.email,
+      name: member.name,
+      phone: member.phone,
+      subscriptionStatus: member.subscriptionStatus,
+    });
+  });
+
+  // Get premium episodes
+  app.get("/api/premium-episodes", async (req, res) => {
+    const episodes = await storage.getPremiumEpisodes();
+    
+    // If not logged in as member or not active, return episodes with limited info
+    if (!req.session?.memberId) {
+      return res.json(episodes.map(e => ({
+        ...e,
+        youtubeUrl: null, // Hide actual video for non-members
+        youtubeId: null,
+        isLocked: true,
+      })));
+    }
+    
+    const member = await storage.getMember(req.session.memberId);
+    if (!member || member.subscriptionStatus !== "active") {
+      return res.json(episodes.map(e => ({
+        ...e,
+        youtubeUrl: null,
+        youtubeId: null,
+        isLocked: true,
+      })));
+    }
+    
+    res.json(episodes.map(e => ({ ...e, isLocked: false })));
+  });
+
+  // ============ STRIPE CHECKOUT ============
+  
+  // Create payment intent for embedded card form (subscriptions)
+  app.post("/api/stripe/create-subscription-intent", requireMember, async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment system not configured. Please contact support." });
+    }
+
+    const member = await storage.getMember(req.session.memberId!);
+    if (!member) return res.status(404).json({ error: "Member not found" });
+
+    const { plan } = req.body; // 'monthly' or 'yearly'
+
+    try {
+      // Create or retrieve Stripe customer
+      let customerId = member.stripeCustomerId;
+      if (!customerId) {
+        const customer = await stripe.customers.create({
+          email: member.email,
+          name: member.name,
+          metadata: { memberId: member.id },
+        });
+        customerId = customer.id;
+        await storage.updateMember(member.id, { stripeCustomerId: customerId });
+      }
+
+      // Get the price ID based on plan (resolves from env vars or Stripe API)
+      let prices: { monthlyPriceId: string; yearlyPriceId: string };
+      try {
+        prices = await resolveSubscriptionPrices();
+      } catch (err: any) {
+        return res.status(503).json({ error: err.message || "Subscription price not configured. Please contact support." });
+      }
+      const priceId = plan === 'yearly' ? prices.yearlyPriceId : prices.monthlyPriceId;
+
+      // Create a subscription with incomplete payment
+      const subscription = await stripe.subscriptions.create({
+        customer: customerId,
+        items: [{ price: priceId }],
+        payment_behavior: 'default_incomplete',
+        payment_settings: { save_default_payment_method: 'on_subscription' },
+        expand: ['latest_invoice'],
+        metadata: { memberId: member.id },
+      });
+
+      const invoice = subscription.latest_invoice as Stripe.Invoice | null;
+      if (!invoice) {
+        console.error("[Stripe] Subscription created but latest_invoice is null:", subscription.id);
+        return res.status(500).json({ error: "Subscription created but invoice not available. Please contact support." });
+      }
+
+      // Stripe API 2025-04-30.basil removed invoice.payment_intent; the client_secret
+      // is now under invoice.confirmation_secret (expanded explicitly).
+      const invoiceExpanded = await stripe.invoices.retrieve(invoice.id, {
+        expand: ['confirmation_secret'],
+      } as any);
+
+      const confirmationSecret = (invoiceExpanded as any).confirmation_secret as
+        | { client_secret: string; type: string }
+        | null
+        | undefined;
+
+      const clientSecret = confirmationSecret?.client_secret ?? null;
+
+      if (!clientSecret) {
+        console.error("[Stripe] No client_secret for subscription:", subscription.id,
+          "invoice:", invoice.id, "invoice_status:", invoice.status,
+          "confirmation_secret:", confirmationSecret);
+        return res.status(500).json({ error: "Could not initialize payment. Please try again or contact support." });
+      }
+
+      console.log(`[Stripe] Subscription intent created — sub: ${subscription.id}, invoice: ${invoice.id}, plan: ${plan}`);
+
+      res.json({
+        subscriptionId: subscription.id,
+        clientSecret,
+      });
+    } catch (error: any) {
+      console.error("Stripe subscription intent error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Create checkout session for subscription
+  app.post("/api/stripe/create-checkout-session", requireMember, async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment system not configured. Please contact support." });
+    }
+
+    const member = await storage.getMember(req.session.memberId!);
+    if (!member) return res.status(404).json({ error: "Member not found" });
+
+    try {
+      // Create or retrieve Stripe customer
+      let customerId = member.stripeCustomerId;
+      if (!customerId) {
+        const customer = await stripe.customers.create({
+          email: member.email,
+          name: member.name,
+          metadata: { memberId: member.id },
+        });
+        customerId = customer.id;
+        await storage.updateMember(member.id, { stripeCustomerId: customerId });
+      }
+
+      // Get or create the price for Latest Talks+ (resolves from env vars or Stripe API)
+      const { plan } = req.body; // 'monthly' (default) or 'yearly'
+      let prices: { monthlyPriceId: string; yearlyPriceId: string };
+      try {
+        prices = await resolveSubscriptionPrices();
+      } catch (err: any) {
+        return res.status(503).json({ error: err.message || "Subscription price not configured. Please contact support." });
+      }
+      const priceId = plan === 'yearly' ? prices.yearlyPriceId : prices.monthlyPriceId;
+
+      const session = await stripe.checkout.sessions.create({
+        customer: customerId,
+        payment_method_types: ["card"],
+        line_items: [{ price: priceId, quantity: 1 }],
+        mode: "subscription",
+        success_url: `${req.headers.origin}/plus/welcome?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${req.headers.origin}/plus`,
+        metadata: { memberId: member.id },
+      });
+
+      res.json({ url: session.url });
+    } catch (error: any) {
+      console.error("Stripe checkout error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Create portal session for managing subscription
+  app.post("/api/stripe/create-portal-session", requireMember, async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment system not configured" });
+    }
+
+    const member = await storage.getMember(req.session.memberId!);
+    if (!member?.stripeCustomerId) {
+      return res.status(400).json({ error: "No subscription found" });
+    }
+
+    try {
+      const session = await stripe.billingPortal.sessions.create({
+        customer: member.stripeCustomerId,
+        return_url: `${req.headers.origin}/plus/account`,
+      });
+
+      res.json({ url: session.url });
+    } catch (error: any) {
+      console.error("Stripe portal error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Donation checkout (no login required)
+  app.post("/api/stripe/create-donation-session", async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment system not configured" });
+    }
+
+    const { priceId, email, name } = req.body;
+    if (!priceId) {
+      return res.status(400).json({ error: "Price ID required" });
+    }
+
+    try {
+      const session = await stripe.checkout.sessions.create({
+        payment_method_types: ["card"],
+        line_items: [{ price: priceId, quantity: 1 }],
+        mode: "payment",
+        customer_email: email || undefined,
+        success_url: `${req.headers.origin}/donate/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${req.headers.origin}/donate`,
+        metadata: { 
+          type: "donation",
+          donorName: name || "Anonymous",
+        },
+      });
+
+      res.json({ url: session.url });
+    } catch (error: any) {
+      console.error("Stripe donation error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Gift subscription checkout (no login required)
+  app.post("/api/stripe/create-gift-session", async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment system not configured" });
+    }
+
+    const { priceId, buyerEmail, buyerName, recipientEmail, recipientName, message } = req.body;
+    if (!priceId || !recipientEmail) {
+      return res.status(400).json({ error: "Price ID and recipient email required" });
+    }
+
+    try {
+      const session = await stripe.checkout.sessions.create({
+        payment_method_types: ["card"],
+        line_items: [{ price: priceId, quantity: 1 }],
+        mode: "payment",
+        customer_email: buyerEmail || undefined,
+        success_url: `${req.headers.origin}/gift/thank-you?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${req.headers.origin}/gift`,
+        metadata: { 
+          type: "gift",
+          buyerName: buyerName || "A friend",
+          recipientEmail,
+          recipientName: recipientName || "",
+          giftMessage: message || "",
+        },
+      });
+
+      res.json({ url: session.url });
+    } catch (error: any) {
+      console.error("Stripe gift error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Get available Stripe products/prices (public)
+  app.get("/api/stripe/products", async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Payment system not configured" });
+    }
+
+    try {
+      const products = await stripe.products.list({ active: true, limit: 20 });
+      const allPrices = await stripe.prices.list({ active: true, limit: 50 });
+
+      const result: any = {
+        subscription: null,
+        donation: null,
+        gift: null,
+      };
+
+      for (const product of products.data) {
+        const productPrices = allPrices.data.filter(p => p.product === product.id);
+        
+        if (product.metadata?.type === "subscription" || product.name === "Latest Talks+") {
+          result.subscription = {
+            id: product.id,
+            name: product.name,
+            description: product.description,
+            prices: {
+              monthly: productPrices.find(p => p.recurring?.interval === "month"),
+              annual: productPrices.find(p => p.recurring?.interval === "year"),
+            },
+          };
+        } else if (product.metadata?.type === "donation" || product.name === "Support Latest Talks") {
+          result.donation = {
+            id: product.id,
+            name: product.name,
+            description: product.description,
+            price: productPrices.find(p => p.custom_unit_amount),
+          };
+        } else if (product.metadata?.type === "gift" || product.name === "Latest Talks+ Gift") {
+          result.gift = {
+            id: product.id,
+            name: product.name,
+            description: product.description,
+            prices: {
+              monthly: productPrices.find(p => p.metadata?.gift_duration === "1-month"),
+              annual: productPrices.find(p => p.metadata?.gift_duration === "1-year"),
+            },
+          };
+        }
+      }
+
+      res.json(result);
+    } catch (error: any) {
+      console.error("Stripe products error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Get Stripe configuration status (admin only)
+  app.get("/api/stripe/status", requireAdmin, async (req, res) => {
+    const stripe = getStripe();
+    const hasStripe = !!stripe;
+    const hasPriceId = !!process.env.STRIPE_PRICE_ID;
+    const hasWebhookSecret = !!process.env.STRIPE_WEBHOOK_SECRET;
+    
+    res.json({
+      configured: hasStripe && hasPriceId,
+      hasApiKey: hasStripe,
+      hasPriceId,
+      hasWebhookSecret,
+      priceId: process.env.STRIPE_PRICE_ID || null,
+    });
+  });
+
+  // Create Stripe subscription products (admin only)
+  app.post("/api/stripe/setup-products", requireAdmin, async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(503).json({ error: "Stripe API key not configured" });
+    }
+
+    try {
+      // Check if products already exist
+      const products = await stripe.products.list({ limit: 20 });
+      
+      // 1. Latest Talks+ Subscription Product
+      let subscriptionProduct = products.data.find(p => p.name === "Latest Talks+" && p.active);
+      if (!subscriptionProduct) {
+        subscriptionProduct = await stripe.products.create({
+          name: "Latest Talks+",
+          description: "Premium membership with exclusive content, early access, and ad-free experience",
+          metadata: { app: "latest-talks", type: "subscription" },
+        });
+      }
+
+      // 2. Donation Product
+      let donationProduct = products.data.find(p => p.name === "Support Latest Talks" && p.active);
+      if (!donationProduct) {
+        donationProduct = await stripe.products.create({
+          name: "Support Latest Talks",
+          description: "Make a one-time donation to support the podcast. Any amount is appreciated!",
+          metadata: { app: "latest-talks", type: "donation" },
+        });
+      }
+
+      // 3. Gift Subscription Product
+      let giftProduct = products.data.find(p => p.name === "Latest Talks+ Gift" && p.active);
+      if (!giftProduct) {
+        giftProduct = await stripe.products.create({
+          name: "Latest Talks+ Gift",
+          description: "Buy a Latest Talks+ subscription for a friend or family member",
+          metadata: { app: "latest-talks", type: "gift" },
+        });
+      }
+
+      // Get existing prices for subscription product
+      const subPrices = await stripe.prices.list({ product: subscriptionProduct.id, active: true });
+      
+      // Monthly price - $9.99
+      let monthlyPrice = subPrices.data.find(p => 
+        p.recurring?.interval === "month" && p.unit_amount === 999
+      );
+      if (!monthlyPrice) {
+        monthlyPrice = await stripe.prices.create({
+          product: subscriptionProduct.id,
+          unit_amount: 999, // $9.99
+          currency: "usd",
+          recurring: { interval: "month" },
+          metadata: { plan: "monthly" },
+        });
+      }
+
+      // Annual price - $119.99 (deactivate old $99.99 price if exists)
+      let annualPrice = subPrices.data.find(p => 
+        p.recurring?.interval === "year" && p.unit_amount === 11999
+      );
+      
+      // Deactivate old $99.99 annual price if it exists
+      const oldAnnualPrice = subPrices.data.find(p => 
+        p.recurring?.interval === "year" && p.unit_amount === 9999
+      );
+      if (oldAnnualPrice) {
+        await stripe.prices.update(oldAnnualPrice.id, { active: false });
+      }
+      
+      if (!annualPrice) {
+        annualPrice = await stripe.prices.create({
+          product: subscriptionProduct.id,
+          unit_amount: 11999, // $119.99
+          currency: "usd",
+          recurring: { interval: "year" },
+          metadata: { plan: "annual" },
+        });
+      }
+
+      // Get existing prices for donation product
+      const donationPrices = await stripe.prices.list({ product: donationProduct.id, active: true });
+      
+      // Custom amount donation price
+      let donationPrice = donationPrices.data.find(p => 
+        p.custom_unit_amount && !p.recurring
+      );
+      if (!donationPrice) {
+        donationPrice = await stripe.prices.create({
+          product: donationProduct.id,
+          currency: "usd",
+          custom_unit_amount: {
+            enabled: true,
+            minimum: 100, // $1 minimum
+            preset: 1800, // $18 default (chai)
+          },
+          metadata: { type: "donation" },
+        });
+      }
+
+      // Get existing prices for gift product
+      const giftPrices = await stripe.prices.list({ product: giftProduct.id, active: true });
+      
+      // Gift subscription prices (one-time payments)
+      let giftMonthlyPrice = giftPrices.data.find(p => 
+        !p.recurring && p.unit_amount === 999 && p.metadata?.gift_duration === "1-month"
+      );
+      if (!giftMonthlyPrice) {
+        giftMonthlyPrice = await stripe.prices.create({
+          product: giftProduct.id,
+          unit_amount: 999, // $9.99
+          currency: "usd",
+          metadata: { type: "gift", gift_duration: "1-month" },
+        });
+      }
+
+      let giftAnnualPrice = giftPrices.data.find(p => 
+        !p.recurring && p.unit_amount === 11999 && p.metadata?.gift_duration === "1-year"
+      );
+      if (!giftAnnualPrice) {
+        giftAnnualPrice = await stripe.prices.create({
+          product: giftProduct.id,
+          unit_amount: 11999, // $119.99
+          currency: "usd",
+          metadata: { type: "gift", gift_duration: "1-year" },
+        });
+      }
+
+      res.json({
+        success: true,
+        products: {
+          subscription: { id: subscriptionProduct.id, name: subscriptionProduct.name },
+          donation: { id: donationProduct.id, name: donationProduct.name },
+          gift: { id: giftProduct.id, name: giftProduct.name },
+        },
+        prices: {
+          monthly: { id: monthlyPrice.id, amount: "$9.99/month" },
+          annual: { id: annualPrice.id, amount: "$119.99/year" },
+          donation: { id: donationPrice.id, amount: "Custom amount" },
+          giftMonthly: { id: giftMonthlyPrice.id, amount: "$9.99 (1 month)" },
+          giftAnnual: { id: giftAnnualPrice.id, amount: "$119.99 (1 year)" },
+        },
+        message: `All products created! Add STRIPE_PRICE_ID=${monthlyPrice.id} to your secrets.`,
+      });
+    } catch (error: any) {
+      console.error("Stripe setup error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  // Stripe webhook handler
+  app.post("/api/stripe/webhook", async (req, res) => {
+    const stripe = getStripe();
+    if (!stripe) return res.status(503).send("Stripe not configured");
+
+    const sig = req.headers["stripe-signature"] as string;
+    const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+
+    if (!webhookSecret) {
+      console.error("Stripe webhook secret not configured");
+      return res.status(503).send("Webhook not configured");
+    }
+
+    let event: Stripe.Event;
+    try {
+      // Note: req.body needs to be raw for signature verification
+      event = stripe.webhooks.constructEvent(req.body, sig, webhookSecret);
+    } catch (err: any) {
+      console.error("Webhook signature verification failed:", err.message);
+      return res.status(400).send(`Webhook Error: ${err.message}`);
+    }
+
+    try {
+      switch (event.type) {
+        case "checkout.session.completed": {
+          const session = event.data.object as Stripe.Checkout.Session;
+          const memberId = session.metadata?.memberId;
+          if (memberId && session.subscription) {
+            // Get the member to check their plan type
+            const member = await storage.getMember(memberId);
+            const endDate = new Date();
+            if (member?.planType === "annual") {
+              endDate.setFullYear(endDate.getFullYear() + 1);
+            } else {
+              endDate.setDate(endDate.getDate() + 30);
+            }
+            
+            await storage.updateMember(memberId, {
+              subscriptionId: session.subscription as string,
+              subscriptionStatus: "active",
+              subscriptionEndDate: endDate,
+            });
+            await storage.createSubscriptionHistory({
+              memberId,
+              event: "created",
+              amount: session.amount_total || 999,
+              stripeEventId: event.id,
+            });
+          }
+          break;
+        }
+
+        case "invoice.payment_succeeded": {
+          const invoice = event.data.object as Stripe.Invoice & { subscription?: string };
+          if (invoice.subscription && invoice.customer) {
+            const member = await storage.getMemberByStripeCustomerId(invoice.customer as string);
+            if (member) {
+              // Calculate new subscription end date based on plan type
+              const endDate = new Date();
+              if (member.planType === "annual") {
+                endDate.setFullYear(endDate.getFullYear() + 1);
+              } else {
+                endDate.setDate(endDate.getDate() + 30);
+              }
+              
+              await storage.updateMember(member.id, {
+                subscriptionStatus: "active",
+                subscriptionEndDate: endDate,
+              });
+              await storage.createSubscriptionHistory({
+                memberId: member.id,
+                event: "renewed",
+                amount: invoice.amount_paid,
+                stripeEventId: event.id,
+              });
+            }
+          }
+          break;
+        }
+
+        case "invoice.payment_failed": {
+          const invoice = event.data.object as Stripe.Invoice;
+          if (invoice.customer) {
+            const member = await storage.getMemberByStripeCustomerId(invoice.customer as string);
+            if (member) {
+              await storage.updateMember(member.id, {
+                subscriptionStatus: "past_due",
+              });
+              await storage.createSubscriptionHistory({
+                memberId: member.id,
+                event: "payment_failed",
+                stripeEventId: event.id,
+              });
+            }
+          }
+          break;
+        }
+
+        case "customer.subscription.deleted": {
+          const subscription = event.data.object as Stripe.Subscription;
+          if (subscription.customer) {
+            const member = await storage.getMemberByStripeCustomerId(subscription.customer as string);
+            if (member) {
+              await storage.updateMember(member.id, {
+                subscriptionStatus: "cancelled",
+                subscriptionId: null,
+              });
+              await storage.createSubscriptionHistory({
+                memberId: member.id,
+                event: "cancelled",
+                stripeEventId: event.id,
+              });
+            }
+          }
+          break;
+        }
+      }
+
+      res.json({ received: true });
+    } catch (error) {
+      console.error("Webhook processing error:", error);
+      res.status(500).json({ error: "Webhook processing failed" });
+    }
+  });
+
+  // ============ MARKETING AUTOMATION ============
+  // Get email notifications history
+  app.get("/api/marketing/notifications", requireAdmin, async (req, res) => {
+    const { type, status } = req.query;
+    const notifications = await storage.getEmailNotifications({
+      type: type as string,
+      status: status as string,
+    });
+    res.json(notifications);
+  });
+
+  // Get single notification details
+  app.get("/api/marketing/notifications/:id", requireAdmin, async (req, res) => {
+    const notification = await storage.getEmailNotification(req.params.id);
+    if (!notification) return res.status(404).json({ error: "Notification not found" });
+    res.json(notification);
+  });
+
+  // Get marketing settings
+  app.get("/api/marketing/settings", requireAdmin, async (req, res) => {
+    const settings = await storage.getMarketingSettings();
+    res.json(settings);
+  });
+
+  // Update marketing settings
+  app.patch("/api/marketing/settings", requireAdmin, async (req, res) => {
+    const settings = await storage.updateMarketingSettings(req.body);
+    res.json(settings);
+  });
+
+  // Get sponsor view metrics
+  app.get("/api/marketing/sponsor-metrics", requireAdmin, async (req, res) => {
+    const metrics = await storage.getSponsorViewMetrics();
+    const sponsors = await storage.getSponsors();
+    
+    const enrichedMetrics = metrics.map(m => {
+      const sponsor = sponsors.find(s => s.id === m.sponsorId);
+      return {
+        ...m,
+        sponsorName: sponsor?.name || "Unknown",
+        sponsorEmail: sponsor?.contactEmail,
+      };
+    });
+    
+    res.json(enrichedMetrics);
+  });
+
+  // Get active subscribers count for marketing dashboard
+  app.get("/api/marketing/stats", requireAdmin, async (req, res) => {
+    const activeSubscribers = await storage.getActiveSubscribers();
+    const allNotifications = await storage.getEmailNotifications({});
+    const sponsors = await storage.getSponsors();
+    const metrics = await storage.getSponsorViewMetrics();
+    
+    const totalEmailsSent = allNotifications.reduce((acc, n) => acc + (n.sentCount || 0), 0);
+    const pendingNotifications = allNotifications.filter(n => n.status === "pending").length;
+    
+    res.json({
+      subscriberCount: activeSubscribers.length,
+      sponsorCount: sponsors.length,
+      totalEmailsSent,
+      pendingNotifications,
+      totalSponsorViews: metrics.reduce((acc, m) => acc + (m.totalViews || 0), 0),
+    });
+  });
+
+  // Trigger new episode notification manually
+  app.post("/api/marketing/send-episode-notification", requireAdmin, async (req, res) => {
+    const { episodeId } = req.body;
+    if (!episodeId) return res.status(400).json({ error: "Episode ID required" });
+    
+    const episode = await storage.getEpisode(episodeId);
+    if (!episode) return res.status(404).json({ error: "Episode not found" });
+    
+    const settings = await storage.getMarketingSettings();
+    if (!settings.newEpisodeEnabled) {
+      return res.status(400).json({ error: "New episode notifications are disabled" });
+    }
+    
+    const subscribers = await storage.getActiveSubscribers();
+    if (subscribers.length === 0) {
+      return res.status(400).json({ error: "No active subscribers" });
+    }
+    
+    const subject = `New Episode: ${episode.title}`;
+    const html = generateNewEpisodeEmail(episode);
+    
+    const notification = await storage.createEmailNotification({
+      type: "new-episode",
+      subject,
+      htmlContent: html,
+      status: "sending",
+      recipientCount: subscribers.length,
+      episodeId: episode.id,
+    });
+    
+    const emails = subscribers.map(s => s.email);
+    const result = await emailService.sendBulkEmails(emails, subject, html);
+    
+    await storage.updateEmailNotification(notification.id, {
+      status: "sent",
+      sentCount: result.sent,
+      failedCount: result.failed,
+      sentAt: new Date(),
+    });
+    
+    res.json({
+      success: true,
+      notificationId: notification.id,
+      sent: result.sent,
+      failed: result.failed,
+    });
+  });
+
+  // Trigger sponsor milestone notification manually
+  app.post("/api/marketing/send-milestone-notification", requireAdmin, async (req, res) => {
+    const { sponsorId, milestone } = req.body;
+    if (!sponsorId || !milestone) {
+      return res.status(400).json({ error: "Sponsor ID and milestone required" });
+    }
+    
+    const sponsor = await storage.getSponsor(sponsorId);
+    if (!sponsor) return res.status(404).json({ error: "Sponsor not found" });
+    
+    if (!sponsor.contactEmail) {
+      return res.status(400).json({ error: "Sponsor has no contact email" });
+    }
+    
+    const settings = await storage.getMarketingSettings();
+    if (!settings.sponsorMilestoneEnabled) {
+      return res.status(400).json({ error: "Sponsor milestone notifications are disabled" });
+    }
+    
+    const metrics = await storage.getSponsorViewMetric(sponsorId);
+    const totalViews = metrics?.totalViews || milestone;
+    
+    const subject = `Milestone Reached: ${milestone.toLocaleString()} Views!`;
+    const html = generateMilestoneEmail(sponsor, milestone, totalViews);
+    
+    const notification = await storage.createEmailNotification({
+      type: "sponsor-milestone",
+      subject,
+      htmlContent: html,
+      status: "sending",
+      recipientCount: 1,
+      sponsorId: sponsor.id,
+      milestone,
+    });
+    
+    const result = await emailService.sendBulkEmails([sponsor.contactEmail], subject, html);
+    
+    await storage.updateEmailNotification(notification.id, {
+      status: result.sent > 0 ? "sent" : "failed",
+      sentCount: result.sent,
+      failedCount: result.failed,
+      sentAt: new Date(),
+    });
+    
+    if (result.sent > 0) {
+      await storage.updateSponsorMilestone(sponsorId, milestone);
+    }
+    
+    res.json({
+      success: result.sent > 0,
+      notificationId: notification.id,
+    });
+  });
+
+  // Send test email
+  app.post("/api/marketing/test-email", requireAdmin, async (req, res) => {
+    const { to, subject, message } = req.body;
+    
+    if (!to || !subject || !message) {
+      return res.status(400).json({ error: "Recipient email, subject, and message are required" });
+    }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(to)) {
+      return res.status(400).json({ error: "Invalid email address" });
+    }
+    
+    const html = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${subject}</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #F0EDEB;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+    <tr>
+      <td style="background-color: #10213A; padding: 20px; text-align: center;">
+        <h1 style="color: #ffffff; margin: 0; font-size: 24px;">Latest Talks</h1>
+        <p style="color: #DE2026; margin: 5px 0 0 0; font-size: 14px;">Test Email</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 30px 20px;">
+        <div style="color: #444; line-height: 1.6;">
+          ${message.replace(/\n/g, '<br>')}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="background-color: #10213A; padding: 20px; text-align: center;">
+        <p style="color: #888; margin: 0; font-size: 12px;">
+          This is a test email from the Latest Talks admin portal.
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+    `.trim();
+    
+    try {
+      const result = await emailService.sendEmail({
+        to: [to],
+        subject,
+        html,
+      });
+      
+      if (result.success) {
+        res.json({ success: true, message: "Test email sent successfully" });
+      } else {
+        res.status(500).json({ success: false, error: result.error || "Failed to send email" });
+      }
+    } catch (error: any) {
+      console.error("Test email error:", error);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  });
+
+  // Preview email template
+  app.post("/api/marketing/preview-email", requireAdmin, async (req, res) => {
+    const { type, episodeId, sponsorId, milestone } = req.body;
+    
+    if (type === "new-episode") {
+      if (!episodeId) return res.status(400).json({ error: "Episode ID required" });
+      const episode = await storage.getEpisode(episodeId);
+      if (!episode) return res.status(404).json({ error: "Episode not found" });
+      const html = generateNewEpisodeEmail(episode);
+      return res.json({ html, subject: `New Episode: ${episode.title}` });
+    }
+    
+    if (type === "sponsor-milestone") {
+      if (!sponsorId) return res.status(400).json({ error: "Sponsor ID required" });
+      const sponsor = await storage.getSponsor(sponsorId);
+      if (!sponsor) return res.status(404).json({ error: "Sponsor not found" });
+      const viewMilestone = milestone || 1000;
+      const html = generateMilestoneEmail(sponsor, viewMilestone, viewMilestone);
+      return res.json({ html, subject: `Milestone Reached: ${viewMilestone.toLocaleString()} Views!` });
+    }
+    
+    res.status(400).json({ error: "Invalid email type" });
+  });
+
+  // Update sponsor view tracking (called when episodes are viewed)
+  app.post("/api/marketing/track-sponsor-view", async (req, res) => {
+    const { episodeId } = req.body;
+    if (!episodeId) return res.status(400).json({ error: "Episode ID required" });
+    
+    const sponsors = await storage.getEpisodeSponsors(episodeId);
+    
+    for (const epSponsor of sponsors) {
+      const metric = await storage.createOrUpdateSponsorViewMetric(epSponsor.sponsorId, 1);
+      
+      const nextMilestone = Math.floor((metric.totalViews || 0) / 1000) * 1000;
+      const lastMilestone = metric.lastMilestone || 0;
+      
+      if (nextMilestone > lastMilestone && nextMilestone >= 1000) {
+        const settings = await storage.getMarketingSettings();
+        if (settings.sponsorMilestoneEnabled) {
+          const sponsor = await storage.getSponsor(epSponsor.sponsorId);
+          if (sponsor?.contactEmail) {
+            const html = generateMilestoneEmail(sponsor, nextMilestone, metric.totalViews || 0);
+            
+            const notification = await storage.createEmailNotification({
+              type: "sponsor-milestone",
+              subject: `Milestone Reached: ${nextMilestone.toLocaleString()} Views!`,
+              htmlContent: html,
+              status: "pending",
+              recipientCount: 1,
+              sponsorId: sponsor.id,
+              milestone: nextMilestone,
+            });
+            
+            emailService.sendBulkEmails([sponsor.contactEmail], notification.subject, html)
+              .then(async (result: { sent: number; failed: number }) => {
+                await storage.updateEmailNotification(notification.id, {
+                  status: result.sent > 0 ? "sent" : "failed",
+                  sentCount: result.sent,
+                  failedCount: result.failed,
+                  sentAt: new Date(),
+                });
+                if (result.sent > 0) {
+                  await storage.updateSponsorMilestone(sponsor.id, nextMilestone);
+                }
+              })
+              .catch(console.error);
+          }
+        }
+      }
+    }
+    
+    res.json({ success: true });
+  });
+
+  // YouTube view sync
+  app.get("/api/youtube/status", requireAdmin, async (req, res) => {
+    res.json({ configured: isYouTubeConfigured() });
+  });
+
+  app.post("/api/youtube/sync-views", requireAdmin, async (req, res) => {
+    try {
+      if (!isYouTubeConfigured()) {
+        return res.status(400).json({ 
+          success: false, 
+          error: "YouTube API key not configured. Please add YOUTUBE_API_KEY to your secrets." 
+        });
+      }
+
+      const allEpisodes = await storage.getEpisodes();
+      const episodesWithYouTube = allEpisodes.filter(ep => ep.youtubeId);
+      
+      if (episodesWithYouTube.length === 0) {
+        return res.json({ success: true, message: "No episodes with YouTube IDs found", updated: 0 });
+      }
+
+      const youtubeIds = episodesWithYouTube.map(ep => ep.youtubeId!);
+      const viewCounts = await getVideoStatistics(youtubeIds);
+      
+      let updated = 0;
+      for (const episode of episodesWithYouTube) {
+        const ytViews = viewCounts.get(episode.youtubeId!);
+        if (ytViews !== undefined && ytViews !== episode.viewCount) {
+          await storage.setEpisodeViewCount(episode.id, ytViews);
+          updated++;
+        }
+      }
+
+      res.json({ 
+        success: true, 
+        message: `Synced view counts for ${updated} episodes`,
+        updated,
+        total: episodesWithYouTube.length
+      });
+    } catch (error: any) {
+      console.error("YouTube sync error:", error);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  });
+
+  // ============================================
+  // FLIGHT ROUTE LOOKUP (for In-Flight Photos)
+  // ============================================
+  
+  app.post("/api/flight-lookup", async (req, res) => {
+    try {
+      const { airline, flightNumber, flightDate } = req.body;
+      
+      if (!flightNumber) {
+        return res.status(400).json({ error: "Flight number is required" });
+      }
+
+      const apiKey = process.env.AVIATIONSTACK_API_KEY;
+      
+      if (!apiKey) {
+        return res.status(503).json({ 
+          error: "Flight lookup not configured",
+          message: "Flight route lookup is not available at this time"
+        });
+      }
+
+      // Get airline code from the AIRLINES list or use the provided one
+      const airlineCodes: Record<string, string> = {
+        elal: "LY",
+        united: "UA",
+        delta: "DL",
+        american: "AA",
+        lufthansa: "LH",
+        british: "BA",
+        emirates: "EK",
+        turkish: "TK",
+        swiss: "LX",
+        austrian: "OS",
+      };
+      
+      // Construct flight IATA code (e.g., UA80 -> UA80)
+      let flightIata = flightNumber.toUpperCase().replace(/\s+/g, '');
+      
+      // If the flight number doesn't start with letters, prepend airline code
+      if (/^\d/.test(flightIata) && airline && airlineCodes[airline]) {
+        flightIata = airlineCodes[airline] + flightIata;
+      }
+
+      // Call AviationStack API
+      const params = new URLSearchParams({
+        access_key: apiKey,
+        flight_iata: flightIata,
+      });
+      
+      // Add date if provided
+      if (flightDate) {
+        params.append('flight_date', flightDate);
+      }
+
+      const response = await fetch(
+        `http://api.aviationstack.com/v1/flights?${params.toString()}`
+      );
+      
+      const data = await response.json();
+      
+      if (data.error) {
+        console.error("AviationStack error:", data.error);
+        return res.status(400).json({ 
+          error: "Failed to lookup flight",
+          message: data.error.message || "Could not find flight information"
+        });
+      }
+
+      if (!data.data || data.data.length === 0) {
+        return res.status(404).json({ 
+          error: "Flight not found",
+          message: "No flight information found for this flight number"
+        });
+      }
+
+      // Get the first matching flight
+      const flight = data.data[0];
       
       const departureCode = flight.departure?.iata || '';
       const arrivalCode = flight.arrival?.iata || '';
