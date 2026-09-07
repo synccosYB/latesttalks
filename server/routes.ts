@@ -250,6 +250,7 @@ export async function registerRoutes(
     try {
       const [inventory] = await db.select({ sold: sql<number>`coalesce(sum(${eventTickets.quantity}), 0)::int` }).from(eventTickets).where(sql`${eventTickets.paymentStatus} = 'paid'`);
       if (Number(inventory?.sold || 0) + qty > EVENT.capacity) return res.status(409).json({ error: "There are not enough tickets remaining for this order." });
+      const ticketNumber = Number(inventory?.sold || 0) + 1;
       const orderNumber = `LT-EVT-${Date.now()}-${crypto.randomUUID().slice(0, 6).toUpperCase()}`;
       const ticketCode = `LTE-${crypto.randomUUID().replace(/-/g, "").slice(0, 14).toUpperCase()}`;
       const amountCents = EVENT.priceCents * qty;
@@ -269,7 +270,7 @@ export async function registerRoutes(
         console.error("Ticket email delivery failed", error);
         emailError = error instanceof Error ? error.message : "Ticket email could not be sent.";
       }
-      return res.status(201).json({ success: true, orderNumber, ticketCode, quantity: qty, amountCents, emailSent, emailError });
+      return res.status(201).json({ success: true, orderNumber, ticketCode, ticketNumber, quantity: qty, amountCents, emailSent, emailError });
     } catch (error) {
       console.error("Event ticket purchase failed", error);
       return res.status(500).json({ error: "We could not complete the purchase. Please contact Hello@latesttalks.com before trying again." });
