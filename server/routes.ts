@@ -243,6 +243,49 @@ export async function registerRoutes(
     }
   });
 
+  app.post("/api/admin/event-tickets/:id/refund", requireAdmin, async (req, res) => {
+    const [ticket] = await db.select().from(eventTickets).where(eq(eventTickets.id, req.params.id));
+    if (!ticket) return res.status(404).json({ error: "Ticket order not found." });
+    if (ticket.paymentStatus !== "paid") return res.status(409).json({ error: ticket.paymentStatus === "refunded" ? "This ticket order has already been refunded." : "Only paid ticket orders can be refunded." });
+    if (ticket.checkedInCount > 0) return res.status(409).json({ error: "Checked-in tickets cannot be refunded." });
+
+    const solaKey = process.env.SOLA_API_KEY;
+    if (!solaKey) return res.status(503).json({ error: "Sola refunds are not configured." });
+
+    try {
+      const gatewayResponse = await fetch("https://x1.cardknox.com/gatewayjson", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          xKey: solaKey,
+          xVersion: "5.0.0",
+          xSoftwareName: process.env.SOLA_SOFTWARE_NAME || "Latest Talks",
+          xSoftwareVersion: process.env.SOLA_SOFTWARE_VERSION || "1.0.0",
+          xCommand: "cc:voidrefund",
+          xRefNum: ticket.solaReferenceNumber,
+          xCustom01: ticket.orderNumber,
+        }),
+      });
+      const gateway = await gatewayResponse.json() as Record<string, string>;
+      if (!gatewayResponse.ok || gateway.xResult !== "A") {
+        return res.status(402).json({ error: gateway.xError || "Sola did not approve the refund." });
+      }
+
+      const refundReferenceNumber = gateway.xRefNumCurrent || gateway.xRefNum;
+      const [updated] = await db.update(eventTickets).set({
+        paymentStatus: "refunded",
+        refundReferenceNumber,
+        refundAmountCents: ticket.amountCents,
+        refundedAt: new Date(),
+      }).where(and(eq(eventTickets.id, ticket.id), eq(eventTickets.paymentStatus, "paid"))).returning();
+      if (!updated) return res.status(409).json({ error: "The refund was processed, but the ticket status changed at the same time. Contact support with the refund reference." });
+      return res.json({ success: true, ticket: updated, refundReferenceNumber });
+    } catch (error) {
+      console.error("Event ticket refund failed", error);
+      return res.status(502).json({ error: error instanceof Error ? error.message : "The refund could not be processed." });
+    }
+  });
+
   app.post("/api/events/live/purchase", async (req, res) => {
     const { name, email, phone, quantity, cardToken, cvvToken, expiration, billingZip } = req.body || {};
     const qty = Number(quantity);
@@ -1298,7 +1341,7 @@ export async function registerRoutes(
     }
   });
 
-  const validSectionKeys = new Set(["comments", "messages", "guest-applications", "members", "subscribers", "whatsapp", "photos", "bug-reports"]);
+  const validSectionKeys = new Set(["comments", "messages", "guest-applications", "members", "subscribers", "whatsapp", "photos", "bug-reports", "event-tickets"]);
 
   app.post("/api/admin/notifications/mark-seen", requireAdmin, async (req, res) => {
     try {
