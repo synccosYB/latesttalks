@@ -56,7 +56,7 @@ import { insertWhatsappContactSchema, insertWhatsappTemplateSchema } from "@shar
 import { stripHtmlToText } from "@shared/textUtils";
 import { db } from "./db";
 import { eventTickets } from "@shared/schema";
-import { desc, eq, sql } from "drizzle-orm";
+import { asc, desc, eq, sql } from "drizzle-orm";
 import { EVENT, sendTicketEmails } from "./eventTickets";
 
 // Token-based auth for webview cookie issues
@@ -229,7 +229,13 @@ export async function registerRoutes(
     const [ticket] = await db.select().from(eventTickets).where(eq(eventTickets.id, req.params.id));
     if (!ticket) return res.status(404).json({ error: "Ticket order not found." });
     try {
-      const messageId = await sendTicketEmails(ticket);
+      const paidTickets = await db.select().from(eventTickets).where(eq(eventTickets.paymentStatus, "paid")).orderBy(asc(eventTickets.createdAt));
+      let ticketNumber = 1;
+      for (const paidTicket of paidTickets) {
+        if (paidTicket.id === ticket.id) break;
+        ticketNumber += paidTicket.quantity;
+      }
+      const messageId = await sendTicketEmails({ ...ticket, ticketNumber });
       return res.json({ success: true, messageId });
     } catch (error) {
       console.error("Ticket resend failed", error);
@@ -264,7 +270,7 @@ export async function registerRoutes(
       let emailSent = false;
       let emailError: string | undefined;
       try {
-        await sendTicketEmails(ticket);
+        await sendTicketEmails({ ...ticket, ticketNumber });
         emailSent = true;
       } catch (error) {
         console.error("Ticket email delivery failed", error);
